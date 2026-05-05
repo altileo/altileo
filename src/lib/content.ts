@@ -113,13 +113,13 @@ export const comparison = {
   title: 'Pourquoi Altileo plutot qu\u2019un integrateur generaliste\u00a0?',
   columns: [
     { name: 'Altileo', subtitle: 'Specialiste froid', highlighted: true },
-    { name: 'Integrateurs generalistes', subtitle: 'Schneider, Trane, Carrier', highlighted: false },
-    { name: 'Plateformes IA tertiaires', subtitle: 'BeeBryte, Hive Optimal', highlighted: false },
+    { name: 'Integrateurs generalistes', subtitle: 'Acteurs historiques du CVC', highlighted: false },
+    { name: 'Plateformes IA tertiaires', subtitle: 'Plateformes logicielles tertiaires', highlighted: false },
   ],
   rows: [
     { criterion: 'Specialisation froid', values: ['Exclusivement', 'Multi-domaines', 'CVC tertiaire'] },
-    { criterion: 'Audit instrumente avant deploiement', values: ['Inclus', 'Devis sur cahier des charges', 'Souvent absent'] },
-    { criterion: 'Stockage PCM integre', values: ['Partenariat exclusif FR', 'Non', 'Non'] },
+    { criterion: 'Audit instrumente avant deploiement', values: ['Inclus', 'Devis sur cahier des charges', 'Module additionnel'] },
+    { criterion: 'Stockage PCM integre', values: ['Partenariat fabricant français', 'Non', 'Non'] },
     { criterion: 'Modularite par couche', values: ['Vous payez ce qui marche', 'Solution complete obligatoire', 'Logiciel uniquement'] },
     { criterion: 'Conformite Decret BACS', values: ['Clé en main', 'Avec configuration', 'Perimetre logiciel'] },
   ],
