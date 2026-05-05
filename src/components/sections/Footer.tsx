@@ -13,7 +13,6 @@ const methodLinks = [
 const altileoLinks = [
   { label: 'Entreprise', href: '/entreprise' },
   { label: 'Compétences', href: '/competences' },
-  { label: 'Cas client', href: '/#cas-client' },
   { label: 'Contact', href: '/contact' },
 ];
 

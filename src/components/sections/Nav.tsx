@@ -6,7 +6,6 @@ const navItems = [
   { label: 'Le produit', href: '/#produit' },
   { label: 'Méthode', href: '/#methode' },
   { label: 'Compétences', href: '/competences' },
-  { label: 'Cas client', href: '/#cas-client' },
   { label: 'Entreprise', href: '/entreprise' },
 ];
 
