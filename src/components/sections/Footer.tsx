@@ -3,11 +3,18 @@ import { Logo } from '@/components/ui/Logo';
 import { site } from '@/lib/content';
 
 const methodLinks = [
-  'Audit instrumenté',
-  'Capteurs IoT',
-  'Automatisation',
-  'Dégivrage',
-  'Stockage PCM',
+  { label: 'Audit instrumenté', href: '/#methode' },
+  { label: 'Capteurs IoT', href: '/#methode' },
+  { label: 'Automatisation', href: '/#methode' },
+  { label: 'Dégivrage', href: '/#methode' },
+  { label: 'Stockage PCM', href: '/#methode' },
+];
+
+const altileoLinks = [
+  { label: 'Compétences', href: '/competences' },
+  { label: 'L\u2019equipe', href: '/#equipe' },
+  { label: 'Cas client', href: '/#cas-client' },
+  { label: 'Décret BACS', href: '/#bacs' },
 ];
 
 export function Footer() {
@@ -15,12 +22,10 @@ export function Footer() {
     <footer className="bg-ink text-white/70 py-16">
       <Container>
         <div className="grid md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
-          <div className="md:col-span-2">
+          <div className="md:col-span-1">
             <Logo theme="dark" />
-            <p className="mt-4 text-sm leading-relaxed max-w-md">
-              Spécialistes de l’optimisation énergétique du froid. Audit,
-              capteurs, automatisation, stockage PCM. Pour grossistes,
-              logisticiens et industriels.
+            <p className="mt-4 text-sm leading-relaxed">
+              Spécialistes de l\u2019optimisation énergétique du froid. Audit, capteurs, automatisation, stockage PCM.
             </p>
           </div>
           <div>
@@ -28,10 +33,24 @@ export function Footer() {
               Méthode
             </div>
             <ul className="space-y-2 text-sm">
-              {methodLinks.map((label) => (
-                <li key={label}>
-                  <a href="#methode" className="hover:text-white transition">
-                    {label}
+              {methodLinks.map((l) => (
+                <li key={l.label}>
+                  <a href={l.href} className="hover:text-white transition">
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <div className="text-xs font-semibold uppercase tracking-wide text-white/50 mb-4">
+              Altileo
+            </div>
+            <ul className="space-y-2 text-sm">
+              {altileoLinks.map((l) => (
+                <li key={l.label}>
+                  <a href={l.href} className="hover:text-white transition">
+                    {l.label}
                   </a>
                 </li>
               ))}

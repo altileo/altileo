@@ -3,11 +3,12 @@ import { Logo } from '@/components/ui/Logo';
 import { ButtonLink } from '@/components/ui/Button';
 
 const navItems = [
-  { label: 'Le produit', href: '#produit' },
-  { label: 'Méthode', href: '#methode' },
-  { label: 'Cas client', href: '#cas-client' },
-  { label: 'Décret BACS', href: '#bacs' },
-  { label: 'L’équipe', href: '#equipe' },
+  { label: 'Le produit', href: '/#produit' },
+  { label: 'Méthode', href: '/#methode' },
+  { label: 'Cas client', href: '/#cas-client' },
+  { label: 'Compétences', href: '/competences' },
+  { label: 'Décret BACS', href: '/#bacs' },
+  { label: 'L\u2019equipe', href: '/#equipe' },
 ];
 
 export function Nav() {
@@ -29,7 +30,7 @@ export function Nav() {
             </a>
           ))}
         </nav>
-        <ButtonLink href="#audit" size="md">
+        <ButtonLink href="/#audit" size="md">
           Demander un audit
         </ButtonLink>
       </Container>
