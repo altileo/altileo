@@ -214,7 +214,7 @@ export default function ContactPage() {
             </div>
           </Container>
         </section>
-        {/* /* FAQ_HIGHLIGHTS_SECTION */ */}
+        {}
         <section className="py-16 lg:py-24 bg-white border-t border-line">
           <Container>
             <div className="max-w-3xl mx-auto">
