@@ -17,8 +17,10 @@ export function Hero() {
           </div>
           <h1 className="text-5xl lg:text-7xl font-bold tracking-tight leading-[1.02] text-ink">
             Réduisez de{' '}
-            <span className="num text-navy">{hero.savingsRange}</span> la
-            facture électrique de vos installations frigorifiques.
+            <span className="num text-highlight bg-navy px-3 py-1 rounded-lg inline-block">
+              {hero.savingsRange}
+            </span>{' '}
+            la facture électrique de vos installations frigorifiques.
           </h1>
           <p className="mt-8 text-lg lg:text-xl text-muted leading-relaxed max-w-3xl">
             On audite. On déploie capteurs et automatisation. On ajoute du
