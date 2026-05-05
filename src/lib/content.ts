@@ -273,3 +273,134 @@ export const entreprise = {
     body: 'Le meilleur moyen de savoir si Altileo a sa place chez vous, c\u2019est de mesurer. Audit instrumente en 4 semaines, rapport chiffre complet, sans engagement.',
   },
 };
+
+export const faqGroups = [
+  {
+    title: 'L’audit énergétique',
+    items: [
+      {
+        q: 'Combien coûte un audit énergétique ?',
+        a: 'L’audit instrumenté coûte entre 5 000 € et 7 000 € selon la taille du site et le nombre de zones froides. Cela inclut : visite sur site, pose des capteurs de mesure pendant 4 à 6 semaines, analyse des données, et un rapport écrit chiffré avec les pertes identifiées et les économies réalisables.\n\nSi nous ne trouvons pas au moins 25 % d’économies réalisables sur votre site, vous ne payez que les frais d’instrumentation (environ 1 500 €). Si nous dépliquons ensuite la méthode complète chez vous, le coût de l’audit est déduit du déploiement.',
+      },
+      {
+        q: 'Combien de temps prend un audit ?',
+        a: 'Quatre à six semaines au total. Une journée sur site pour la pose des capteurs, 4 semaines de mesures continues sans intervention de votre part, puis 1 à 2 semaines d’analyse et de rédaction du rapport. Vous recevez le rapport final en main propre lors d’un rendez-vous de restitution.',
+      },
+      {
+        q: 'Qu’est-ce que je reçois à la fin de l’audit ?',
+        a: 'Un rapport écrit complet contenant : le bilan énergétique détaillé par zone froide, l’identification des sources de pertes (cycles de dégivrage, mauvais réglages, surdimensionnement, ouvertures de portes), un chiffrage précis des économies réalisables couche par couche, le ROI estimé pour chaque option, et notre recommandation de déploiement. Tout est documenté, vous pouvez utiliser ce rapport avec n’importe quel autre prestataire.',
+      },
+      {
+        q: 'Que se passe-t-il si l’audit ne révèle pas d’économies suffisantes ?',
+        a: 'C’est rare — sur les sites froid alimentaire et logistique que nous auditons, les économies réalisables dépassent presque toujours 25 %. Si toutefois ce seuil n’est pas atteint, vous ne payez que les frais d’instrumentation. Vous gardez le rapport, qui peut servir d’état des lieux pour vos obligations réglementaires (Décret Tertiaire, reporting OPERAT).',
+      },
+    ],
+  },
+  {
+    title: 'Le déploiement',
+    items: [
+      {
+        q: 'Combien de temps prend un déploiement complet ?',
+        a: 'Entre 3 et 6 mois selon les couches retenues. Couches 1 à 4 (audit, capteurs, automatisation, dégivrage) : 2 à 3 mois. Ajout de la couche 5 (stockage PCM) : 2 à 3 mois supplémentaires. Le déploiement est progressif : chaque couche commence à générer des économies dès sa mise en service.',
+      },
+      {
+        q: 'Faut-il arrêter mon activité pendant l’installation ?',
+        a: 'Non. Tous nos travaux sont planifiés pour ne pas interrompre votre activité. Pose des capteurs et câblage : en dehors des heures de pic, par phases. Mise en place de l’armoire de pilotage : une coupure courte planifiée à l’avance avec votre frigoriste. Stockage PCM : installé sans interruption du froid (couplage en parallèle).',
+      },
+      {
+        q: 'Faut-il remplacer mes équipements existants ?',
+        a: 'Dans 95 % des cas, non. Notre méthode est conçue pour s’intégrer aux installations existantes : groupes froids, évaporateurs, condenseurs, automates. Nous ajoutons une couche d’instrumentation et de pilotage qui optimise le fonctionnement sans remplacer le matériel sain. Si l’audit révèle qu’un équipement est en fin de vie ou surdimensionné, nous vous le disons — mais c’est votre décision.',
+      },
+      {
+        q: 'Quels sont les risques pour mes stocks pendant l’installation ?',
+        a: 'Zéro perte de chaîne du froid pendant nos déploiements depuis 18 mois. Notre processus inclut : une analyse de risque préalable, un plan de coupure validé par votre frigoriste, des températures monitorées en continu pendant les travaux, et un protocole de secours si un équipement critique pose problème. La sécurité alimentaire reste votre responsabilité, mais nous travaillons en respectant strictement vos plans HACCP.',
+      },
+      {
+        q: 'Comment se déroule l’installation ?',
+        a: 'Quatre phases : (1) cadrage technique avec votre équipe et votre frigoriste, (2) fabrication de l’armoire en interne dans nos locaux (3 à 5 semaines), (3) intervention sur site pour pose, câblage et mise en service (3 à 5 jours), (4) période de réglage et de tuning (2 à 4 semaines avec ajustements à distance). Vous avez un seul interlocuteur pendant toute la durée du projet.',
+      },
+    ],
+  },
+  {
+    title: 'Les économies et le ROI',
+    items: [
+      {
+        q: 'Comment vérifiez-vous les économies promises ?',
+        a: 'Mesure avant et après par compteurs énergétiques dédiés, installés sur les arrivées électriques de vos installations frigorifiques. Les valeurs sont enregistrées 24/7 et accessibles dans votre dashboard. La période de référence (avant) est mesurée sur 4 semaines minimum. Après déploiement, les économies sont comparées à cette baseline avec ajustement pour les conditions extérieures (température, saisonnalité, volumes). Tout est trans-parent.',
+      },
+      {
+        q: 'Que se passe-t-il si les économies promises ne se réalisent pas ?',
+        a: 'Notre engagement est contractuel. Si les économies réelles mesurées sur 12 mois sont inférieures de plus de 20 % à ce qui était prévu dans l’audit, nous intervenons gratuitement pour comprendre l’écart et corriger — réglages, capteurs supplémentaires, ajustement des consignes. Dans les cas extrêmes où l’écart dépasse 30 %, nous remboursons une partie du déploiement selon les conditions du contrat.',
+      },
+      {
+        q: 'En combien de temps amortit-on l’investissement ?',
+        a: 'Notre cible est systématiquement un ROI sous 18 mois sur les couches retenues. Sur les sites où nous avons déployé la méthode complète (5 couches), le ROI moyen est entre 12 et 16 mois. Les couches à ROI rapide (capteurs + automatisation, 6 à 12 mois) sont déployées en priorité. Le stockage PCM a un ROI plus long (24 à 36 mois) mais une durée de vie de 15 à 20 ans.',
+      },
+      {
+        q: 'Qui possède les données de mes installations ?',
+        a: 'Vous. Toutes les données collectées sur votre site (consommations, températures, économies) vous appartiennent. Vous y avez accès 24/7 via votre dashboard. Vous pouvez les exporter à tout moment. Nous les utilisons uniquement pour piloter votre système et pour notre R&D agrégée — jamais partagées avec un tiers, jamais vendues. Hébergement en France.',
+      },
+    ],
+  },
+  {
+    title: 'La conformité réglementaire',
+    items: [
+      {
+        q: 'Comment savoir si je suis concerné par le Décret BACS ?',
+        a: 'Vous êtes concerné si vos installations frigorifiques dépassent 70 kW de puissance installée ET sont dans un bâtiment tertiaire (entrepôt, bureaux, locaux commerciaux — mais pas un bâtiment purement industriel). Échéance pour le retrofit : 2027. Notre diagnostic en 3 questions sur la page d’accueil vous donne une réponse immédiate. Si vous voulez une analyse plus précise, l’audit la fournit.',
+      },
+      {
+        q: 'Votre solution couvre-t-elle aussi le Décret Tertiaire ?',
+        a: 'Oui. Notre dashboard exporte automatiquement les consommations annuelles au format requis pour le reporting OPERAT (plateforme ADEME). Vous pouvez déclarer en quelques clics. Nous accompagnons aussi les sites qui doivent prouver leurs réductions par rapport à l’année de référence (10 %, 20 %, 30 % selon les seuils 2030/2040/2050).',
+      },
+      {
+        q: 'Êtes-vous compatibles avec les nouvelles règles F-Gas ?',
+        a: 'Notre méthode est neutre vis-à-vis du fluide frigorigène. Que vos installations utilisent du R-404A, R-134a, R-744 (CO₂) ou de l’ammoniac, notre instrumentation et notre pilotage fonctionnent. Lors de l’audit, nous identifions les équipements aux fluides en sortie de phase (R-404A notamment) et nous intégrons cette donnée dans le plan de modernisation. Cela vous permet d’anticiper plutôt que de subir.',
+      },
+    ],
+  },
+  {
+    title: 'Le contrat et la maintenance',
+    items: [
+      {
+        q: 'Quelle est la durée d’engagement ?',
+        a: 'Le déploiement initial (matériel + armoire + mise en service) est un achat ferme, sans engagement de durée côté matériel. L’abonnement au pilotage et au dashboard est mensuel, résiliable avec un préavis de 3 mois. Pas de contrat verrouillé sur 5 ans, pas de pénalité cachée. Notre objectif est que vous restiez parce que ça marche, pas parce que vous êtes piégé.',
+      },
+      {
+        q: 'Que devient le système si je ne renouvelle pas l’abonnement ?',
+        a: 'Les capteurs, l’armoire de pilotage et le matériel restent installés sur votre site — ils vous appartiennent. Le pilotage automatique se réduit aux fonctions de base programmées localement. Vous perdez l’accès au dashboard cloud, au pilotage avancé et au support à distance. Vos données historiques vous sont remises avant la clôture du compte. Vous pouvez redémarrer plus tard ou changer de prestataire — votre site reste exploitable.',
+      },
+      {
+        q: 'Quel SAV proposez-vous ?',
+        a: 'Trois niveaux : (1) monitoring continu — nous détectons les anomalies souvent avant vous et vous alertons, (2) support à distance par téléphone et accès sécurisé à votre installation pour interventions logicielles, (3) intervention sur site sous 48h en Île-de-France, sous 5 jours ouvrés en région, pour les pannes matérielles. Inclus dans l’abonnement.',
+      },
+      {
+        q: 'Que se passe-t-il si Altileo cesse son activité ?',
+        a: 'Question légitime et honnête. Trois protections : (1) le matériel installé vous appartient et continue à fonctionner localement, (2) tous les schémas, codes et documentations sont déposés en séquestre légal accessibles si Altileo disparaît, (3) notre stack technique repose sur des standards ouverts (Modbus, RS485, MQTT, Postgres) — n’importe quel intégrateur peut reprendre l’exploitation. Vous n’êtes jamais coincé.',
+      },
+    ],
+  },
+];
+
+export const faqHighlights = [
+  {
+    q: 'Combien coûte un audit énergétique ?',
+    a: 'Entre 5 000 € et 7 000 € selon la taille du site. Si nous ne trouvons pas 25 % d’économies réalisables, vous ne payez que les frais d’instrumentation (~1 500 €). Si vous dépliquez ensuite la méthode, le coût de l’audit est déduit.',
+  },
+  {
+    q: 'Que se passe-t-il si vous ne trouvez pas d’économies ?',
+    a: 'Vous ne payez que les frais d’instrumentation. Vous gardez le rapport, qui peut servir d’état des lieux pour vos obligations réglementaires.',
+  },
+  {
+    q: 'Combien de temps avant que je sois recontacté ?',
+    a: 'Sous 48 heures par un de nos ingénieurs. Pas de commercial intermédiaire, pas de chatbot. La première analyse téléphonique est gratuite et sans engagement.',
+  },
+  {
+    q: 'Faut-il arrêter mon activité pendant l’installation ?',
+    a: 'Non. Tous nos travaux sont planifiés en dehors des heures de pic, par phases. Aucune perte de chaîne du froid sur nos déploiements depuis 18 mois.',
+  },
+  {
+    q: 'Et si je ne renouvelle pas l’abonnement ?',
+    a: 'Le matériel installé vous appartient et reste sur site. Vous perdez le dashboard cloud et le support à distance, mais l’installation continue de fonctionner. Pas de verrouillage.',
+  },
+];

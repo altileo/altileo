@@ -5,6 +5,9 @@ import { Nav } from '@/components/sections/Nav';
 import { Footer } from '@/components/sections/Footer';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
+import Link from 'next/link';
+import { faqHighlights } from '@/lib/content';
+import { cn } from '@/lib/cn';
 
 const ACCESS_KEY = 'c97a95c9-1e42-42f2-b2f9-9323baaa5280';
 
@@ -13,6 +16,7 @@ type Status = 'idle' | 'sending' | 'success' | 'error';
 export default function ContactPage() {
   const [status, setStatus] = useState<Status>('idle');
   const [errorMsg, setErrorMsg] = useState<string>('');
+  const [openFaqId, setOpenFaqId] = useState<number | null>(null);
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -207,6 +211,61 @@ export default function ContactPage() {
                   contact@altileo.com
                 </a>
               </p>
+            </div>
+          </Container>
+        </section>
+        {/* /* FAQ_HIGHLIGHTS_SECTION */ */}
+        <section className="py-16 lg:py-24 bg-white border-t border-line">
+          <Container>
+            <div className="max-w-3xl mx-auto">
+              <div className="mb-10">
+                <div className="text-sm font-semibold text-brand-deep tracking-wide uppercase mb-3">
+                  Avant de nous écrire
+                </div>
+                <h2 className="text-3xl lg:text-4xl font-bold tracking-tight text-ink">
+                  Questions fréquentes.
+                </h2>
+              </div>
+              <div>
+                {faqHighlights.map((item, idx) => {
+                  const isOpen = openFaqId === idx;
+                  return (
+                    <div key={idx} className="border-b border-line">
+                      <button
+                        type="button"
+                        onClick={() => setOpenFaqId(isOpen ? null : idx)}
+                        className="w-full flex items-center justify-between gap-4 py-5 text-left hover:text-brand-deep transition"
+                        aria-expanded={isOpen}
+                      >
+                        <span className="font-semibold text-ink text-base lg:text-lg pr-4">
+                          {item.q}
+                        </span>
+                        <span
+                          className={cn(
+                            'flex-shrink-0 w-8 h-8 rounded-full bg-bg flex items-center justify-center transition-transform',
+                            isOpen && 'rotate-45',
+                          )}
+                          aria-hidden="true"
+                        >
+                          <svg className="w-4 h-4 text-brand-deep" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+                          </svg>
+                        </span>
+                      </button>
+                      {isOpen && (
+                        <div className="pb-6 pr-12 text-muted leading-relaxed whitespace-pre-line">
+                          {item.a}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="mt-10 text-center">
+                <Link href="/faq" className="text-brand-deep font-semibold hover:underline">
+                  Voir toutes les questions fréquentes →
+                </Link>
+              </div>
             </div>
           </Container>
         </section>

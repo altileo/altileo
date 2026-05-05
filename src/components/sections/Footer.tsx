@@ -14,6 +14,7 @@ const altileoLinks = [
   { label: 'Entreprise', href: '/entreprise' },
   { label: 'Compétences', href: '/competences' },
   { label: 'Contact', href: '/contact' },
+  { label: 'FAQ', href: '/faq' },
 ];
 
 export function Footer() {
