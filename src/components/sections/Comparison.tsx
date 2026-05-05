@@ -2,11 +2,69 @@ import { Container } from '@/components/ui/Container';
 import { comparison } from '@/lib/content';
 import { cn } from '@/lib/cn';
 
-function formatCell(value: string, highlighted: boolean): string {
-  if (highlighted && value.startsWith('✓')) {
-    return 'text-success font-semibold';
+// Cells that mean a clear yes for the highlighted column
+const positiveValues = new Set([
+  'Exclusivement',
+  'Inclus',
+  'Partenariat exclusif FR',
+  'Vous payez ce qui marche',
+  'Cl\u00e9 en main',
+  'Avec configuration',
+]);
+
+// Cells that mean a clear no
+const negativeValues = new Set(['Non']);
+
+function Cell({ value, highlighted }: { value: string; highlighted: boolean }) {
+  const isPositive = positiveValues.has(value);
+  const isNegative = negativeValues.has(value);
+
+  if (isPositive) {
+    return (
+      <span className="inline-flex items-center gap-2">
+        <svg
+          className={cn(
+            'w-4 h-4 flex-shrink-0',
+            highlighted ? 'text-success' : 'text-muted',
+          )}
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={3}
+          aria-hidden="true"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+        <span
+          className={cn(
+            highlighted ? 'text-ink font-semibold' : 'text-muted',
+          )}
+        >
+          {value}
+        </span>
+      </span>
+    );
   }
-  return 'text-muted';
+
+  if (isNegative) {
+    return (
+      <span className="inline-flex items-center gap-2">
+        <svg
+          className="w-4 h-4 flex-shrink-0 text-muted/50"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={3}
+          aria-hidden="true"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+        <span className="text-muted/70">{value}</span>
+      </span>
+    );
+  }
+
+  return <span className="text-muted">{value}</span>;
 }
 
 export function Comparison() {
@@ -27,7 +85,7 @@ export function Comparison() {
             <thead>
               <tr className="border-b border-line">
                 <th className="text-left px-4 py-4 text-sm font-medium text-muted">
-                  <span className="sr-only">Critère</span>
+                  <span className="sr-only">Crit\u00e8re</span>
                 </th>
                 {comparison.columns.map((col) => (
                   <th
@@ -37,12 +95,8 @@ export function Comparison() {
                       col.highlighted && 'bg-brand/5 rounded-t-xl',
                     )}
                   >
-                    <div className="font-bold text-ink text-base">
-                      {col.name}
-                    </div>
-                    <div className="text-xs text-muted mt-0.5">
-                      {col.subtitle}
-                    </div>
+                    <div className="font-bold text-ink text-base">{col.name}</div>
+                    <div className="text-xs text-muted mt-0.5">{col.subtitle}</div>
                   </th>
                 ))}
               </tr>
@@ -67,9 +121,7 @@ export function Comparison() {
                             col.highlighted && isLast && 'rounded-b-xl',
                           )}
                         >
-                          <span className={formatCell(value, col.highlighted)}>
-                            {value}
-                          </span>
+                          <Cell value={value} highlighted={col.highlighted} />
                         </td>
                       );
                     })}

@@ -117,11 +117,11 @@ export const comparison = {
     { name: 'Plateformes IA tertiaires', subtitle: 'BeeBryte, Hive Optimal', highlighted: false },
   ],
   rows: [
-    { criterion: 'Specialisation froid', values: ['OK Exclusivement', 'Multi-domaines', 'CVC tertiaire'] },
-    { criterion: 'Audit instrumente avant deploiement', values: ['OK Inclus', 'Devis sur cahier des charges', 'Souvent absent'] },
-    { criterion: 'Stockage PCM integre', values: ['OK Partenariat exclusif FR', 'Non', 'Non'] },
-    { criterion: 'Modularite par couche', values: ['OK Vous payez ce qui marche', 'Solution complete obligatoire', 'Logiciel uniquement'] },
-    { criterion: 'Conformite Decret BACS', values: ['OK Cle en main', 'OK Avec configuration', 'Perimetre logiciel'] },
+    { criterion: 'Specialisation froid', values: ['Exclusivement', 'Multi-domaines', 'CVC tertiaire'] },
+    { criterion: 'Audit instrumente avant deploiement', values: ['Inclus', 'Devis sur cahier des charges', 'Souvent absent'] },
+    { criterion: 'Stockage PCM integre', values: ['Partenariat exclusif FR', 'Non', 'Non'] },
+    { criterion: 'Modularite par couche', values: ['Vous payez ce qui marche', 'Solution complete obligatoire', 'Logiciel uniquement'] },
+    { criterion: 'Conformite Decret BACS', values: ['Clé en main', 'Avec configuration', 'Perimetre logiciel'] },
   ],
 };
 
