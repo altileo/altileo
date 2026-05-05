@@ -5,10 +5,9 @@ import { ButtonLink } from '@/components/ui/Button';
 const navItems = [
   { label: 'Le produit', href: '/#produit' },
   { label: 'Méthode', href: '/#methode' },
-  { label: 'Cas client', href: '/#cas-client' },
   { label: 'Compétences', href: '/competences' },
-  { label: 'Décret BACS', href: '/#bacs' },
-  { label: 'L\u2019equipe', href: '/#equipe' },
+  { label: 'Cas client', href: '/#cas-client' },
+  { label: 'Entreprise', href: '/entreprise' },
 ];
 
 export function Nav() {
@@ -21,17 +20,13 @@ export function Nav() {
           aria-label="Navigation principale"
         >
           {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="hover:text-brand-deep transition"
-            >
+            <a key={item.href} href={item.href} className="hover:text-brand-deep transition">
               {item.label}
             </a>
           ))}
         </nav>
         <ButtonLink href="/contact" size="md">
-          Demander un audit
+          Contact
         </ButtonLink>
       </Container>
     </header>

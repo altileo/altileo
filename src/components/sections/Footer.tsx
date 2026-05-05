@@ -11,11 +11,10 @@ const methodLinks = [
 ];
 
 const altileoLinks = [
-  { label: 'Contact', href: '/contact' },
+  { label: 'Entreprise', href: '/entreprise' },
   { label: 'Compétences', href: '/competences' },
-  { label: 'L\u2019equipe', href: '/#equipe' },
   { label: 'Cas client', href: '/#cas-client' },
-  { label: 'Décret BACS', href: '/#bacs' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 export function Footer() {
@@ -64,20 +63,12 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>{site.city}</li>
               <li>
-                <a
-                  href={`mailto:${site.email}`}
-                  className="hover:text-white transition"
-                >
+                <a href={`mailto:${site.email}`} className="hover:text-white transition">
                   {site.email}
                 </a>
               </li>
               <li>
-                <a
-                  href={site.linkedinUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition"
-                >
+                <a href={site.linkedinUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
                   LinkedIn
                 </a>
               </li>
