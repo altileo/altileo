@@ -247,15 +247,15 @@ export const entreprise = {
     ],
   },
   team: {
-    title: 'Pourquoi vous ne voyez pas nos visages.',
-    body1: 'Altileo est porte par quatre ingenieurs electriciens et thermiciens, bases a Paris. Nos profils combinent etudes electriques BT, automatisme industriel, ingenierie frigorifique et deploiement sur site.',
-    body2: 'Pour l\u2019instant, nous restons discrets sur nos identites\u00a0: la plupart d\u2019entre nous occupons encore des postes salaries que nous quitterons des que les premiers contrats Altileo le permettront. Cette transparence vaut mieux qu\u2019une fausse photo d\u2019equipe ou un titre gonfle.',
-    body3: 'Quand vous prenez contact avec Altileo, vous parlez a l\u2019un des quatre fondateurs. Pas a un commercial intermediaire, pas a un junior, pas a un sous-traitant.',
+    title: 'Une équipe d’ingénieurs, accessible.',
+    body1: 'Altileo est porté par quatre ingénieurs électriciens et thermiciens. Études électriques BT, automatisme industriel, ingénierie frigorifique, déploiement sur site.',
+    body2: 'Quand vous nous écrivez, vous parlez directement à l’un des fondateurs. Pas à un commercial, pas à un junior, pas à un sous-traitant.',
+    body3: 'C’est tout ce qu’il y a à savoir avant de prendre contact.',
     roles: [
-      { icon: 'E', title: 'Etudes electriques', body: 'Schemas, dimensionnement, calculs de charge et de court-circuit. Maitrise des normes NF C 15-100 et NF C 13-100.' },
-      { icon: 'A', title: 'Automatisme & instrumentation', body: 'Capteurs IoT, controleurs programmables, commande VFD, passerelles, integration BMS/GTB.' },
-      { icon: 'F', title: 'Ingenierie frigorifique', body: 'Bilans thermiques, dimensionnement des groupes, optimisation des cycles, stockage PCM.' },
-      { icon: 'D', title: 'Deploiement & SAV', body: 'Mise en service, formation utilisateurs, suivi de performance, intervention rapide en cas d\u2019anomalie.' },
+      { icon: 'E', title: 'Études électriques', body: 'Schémas, dimensionnement, calculs de charge et de court-circuit. Maîtrise des normes NF C 15-100 et NF C 13-100.' },
+      { icon: 'A', title: 'Automatisme & instrumentation', body: 'Capteurs IoT, contrôleurs programmables, commande VFD, passerelles, intégration BMS/GTB.' },
+      { icon: 'F', title: 'Ingénierie frigorifique', body: 'Bilans thermiques, dimensionnement des groupes, optimisation des cycles, stockage PCM.' },
+      { icon: 'D', title: 'Déploiement & SAV', body: 'Mise en service, formation utilisateurs, suivi de performance, intervention rapide en cas d’anomalie.' },
     ],
   },
   location: {
