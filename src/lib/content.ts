@@ -134,8 +134,8 @@ export const bacs = {
 
 export const pcm = {
   pill: 'Partenariat exclusif',
-  title: 'Le stockage thermique, fabrique en France.',
-  body: 'Altileo travaille en partenariat exclusif avec [A completer : nom du fabricant], fabricant francais de materiaux a changement de phase (PCM/MCP). Cette collaboration nous permet de deployer du stockage thermique haute performance, made in France, a des conditions exclusives.',
+  title: 'Le stockage thermique, fabriqué en France.',
+  body: 'Altileo travaille en partenariat exclusif avec un fabricant français de matériaux à changement de phase (PCM/MCP). Cette collaboration nous permet de déployer du stockage thermique haute performance, fabriqué en France, à des conditions exclusives — là où la majorité du marché importe.',
   bullets: [
     { strong: 'Duree de vie 15-20 ans', body: 'contre 7-10 ans pour les batteries lithium' },
     { strong: 'Maintenance quasi-nulle', body: 'pas de cycles de recharge a gerer' },

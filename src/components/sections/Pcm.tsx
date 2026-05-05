@@ -1,12 +1,10 @@
+import Image from 'next/image';
 import { Container } from '@/components/ui/Container';
 import { pcm } from '@/lib/content';
 
 export function Pcm() {
   return (
-    <section
-      className="py-24 bg-white border-y border-line"
-      aria-label="Partenariat PCM"
-    >
+    <section className="py-24 bg-white border-y border-line" aria-label="Partenariat PCM">
       <Container className="grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <div className="inline-flex items-center gap-2 bg-highlight/30 rounded-full px-3 py-1 text-xs font-medium text-ink mb-5">
@@ -19,12 +17,7 @@ export function Pcm() {
           <ul className="mt-8 space-y-3">
             {pcm.bullets.map((b) => (
               <li key={b.strong} className="flex items-start gap-3">
-                <span
-                  className="text-success font-bold mt-0.5"
-                  aria-hidden="true"
-                >
-                  ✓
-                </span>
+                <span className="text-success font-bold mt-0.5" aria-hidden="true">✓</span>
                 <span className="text-muted">
                   <strong className="text-ink">{b.strong}</strong> — {b.body}
                 </span>
@@ -32,18 +25,20 @@ export function Pcm() {
             ))}
           </ul>
         </div>
-        <div className="grid-dots bg-bg rounded-3xl border border-line h-96 flex items-center justify-center">
-          <div className="text-center text-muted">
-            <div
-              className="text-7xl font-bold text-highlight mb-3"
-              aria-hidden="true"
-            >
-              *
-            </div>
-            <div className="text-xs uppercase tracking-wider">
-              Photo PCM à insérer
-            </div>
+        <div className="relative">
+          <div className="screen-frame">
+            <Image
+              src="/screenshots/mcp05.png"
+              alt="Panneaux de stockage thermique PCM (matériaux à changement de phase) installés en chambre froide — déploiement Altileo"
+              width={1600}
+              height={1200}
+              className="w-full block h-auto"
+              sizes="(max-width: 1024px) 100vw, 600px"
+            />
           </div>
+          <p className="mt-3 text-xs text-muted text-center">
+            Panneaux PCM installés en chambre froide — déploiement réel.
+          </p>
         </div>
       </Container>
     </section>
