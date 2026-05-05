@@ -8,13 +8,33 @@ import { entreprise } from '@/lib/content';
 export const metadata: Metadata = {
   title: 'Entreprise',
   description:
-    'Altileo est porté par quatre ingénieurs spécialistes du froid, basés à Paris. Notre mission, nos principes, et comment nous travaillons.',
+    'Altileo est porté par quatre ingénieurs spécialistes du froid, basés à Paris. Notre mission, nos principes opérationnels, et notre couverture géographique sur la France.',
+  keywords: ['Altileo entreprise', 'ingénieurs froid', 'spécialistes cold chain', 'efficacité énergétique France'],
   alternates: { canonical: '/entreprise' },
+  openGraph: {
+    title: 'Entreprise · Altileo',
+    description: 'Une équipe d’ingénieurs spécialistes du froid, basés à Paris.',
+    url: '/entreprise',
+    type: 'website',
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: '/' },
+    { '@type': 'ListItem', position: 2, name: 'Entreprise', item: '/entreprise' },
+  ],
 };
 
 export default function EntreprisePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Nav />
       <main>
         {/* Hero */}

@@ -2,8 +2,16 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Demandez un audit ou parlez à un ingénieur Altileo. Réponse sous 48 heures.',
+  description:
+    'Demandez un audit énergétique ou parlez à un ingénieur Altileo. Réponse sous 48 heures, sans engagement.',
+  keywords: ['contact Altileo', 'audit énergétique froid', 'demande de devis', 'ingénieur cold chain'],
   alternates: { canonical: '/contact' },
+  openGraph: {
+    title: 'Contact · Altileo',
+    description: 'Demandez un audit énergétique. Réponse sous 48 heures.',
+    url: '/contact',
+    type: 'website',
+  },
 };
 
 export default function ContactLayout({ children }: { children: React.ReactNode }) {

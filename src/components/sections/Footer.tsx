@@ -77,7 +77,7 @@ export function Footer() {
         </div>
         <div className="pt-8 flex flex-col md:flex-row justify-between gap-4 text-xs text-white/50">
           <div>
-            © {new Date().getFullYear()} Altileo · SIREN [à compléter]
+            © {new Date().getFullYear()} Altileo — une marque de Valtrys
           </div>
           <div className="flex gap-6">
             <a href="/legal" className="hover:text-white transition">

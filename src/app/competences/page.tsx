@@ -8,13 +8,33 @@ import { competences } from '@/lib/content';
 export const metadata: Metadata = {
   title: 'Compétences techniques',
   description:
-    'L’ingénierie électrique et thermique derrière chaque déploiement Altileo. Études, schémas, armoires sur mesure, automatisme, conformité, intégration BMS, stockage PCM.',
+    'L’ingénierie électrique et thermique derrière chaque déploiement Altileo. Études électriques BT, schémas, armoires sur mesure, automatisme, conformité NF C 15-100, intégration BMS/GTB, stockage PCM.',
+  keywords: ['ingénierie électrique', 'armoires électriques sur mesure', 'NF C 15-100', 'études électriques BT', 'automatisme industriel', 'BMS GTB'],
   alternates: { canonical: '/competences' },
+  openGraph: {
+    title: 'Compétences techniques · Altileo',
+    description: 'L’ingénierie électrique et thermique derrière chaque déploiement Altileo.',
+    url: '/competences',
+    type: 'website',
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: '/' },
+    { '@type': 'ListItem', position: 2, name: 'Compétences', item: '/competences' },
+  ],
 };
 
 export default function CompetencesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Nav />
       <main>
         {/* Hero */}
