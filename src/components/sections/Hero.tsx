@@ -30,7 +30,7 @@ export function Hero() {
             </span>
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-3">
-            <ButtonLink href="#audit" size="lg">
+            <ButtonLink href="/contact" size="lg">
               {hero.primaryCta}
             </ButtonLink>
             <ButtonLink href="#produit" variant="secondary" size="lg">

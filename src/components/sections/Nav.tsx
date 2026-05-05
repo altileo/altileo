@@ -30,7 +30,7 @@ export function Nav() {
             </a>
           ))}
         </nav>
-        <ButtonLink href="/#audit" size="md">
+        <ButtonLink href="/contact" size="md">
           Demander un audit
         </ButtonLink>
       </Container>

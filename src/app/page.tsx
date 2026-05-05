@@ -9,7 +9,7 @@ import { Comparison } from '@/components/sections/Comparison';
 import { BacsDiagnostic } from '@/components/sections/BacsDiagnostic';
 import { Pcm } from '@/components/sections/Pcm';
 import { Team } from '@/components/sections/Team';
-import { FinalCta } from '@/components/sections/FinalCta';
+import { ContactCta } from '@/components/sections/ContactCta';
 import { Footer } from '@/components/sections/Footer';
 
 export default function HomePage() {
@@ -27,7 +27,7 @@ export default function HomePage() {
         <BacsDiagnostic />
         <Pcm />
         <Team />
-        <FinalCta />
+        <ContactCta />
       </main>
       <Footer />
     </>

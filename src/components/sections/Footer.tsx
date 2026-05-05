@@ -11,6 +11,7 @@ const methodLinks = [
 ];
 
 const altileoLinks = [
+  { label: 'Contact', href: '/contact' },
   { label: 'Compétences', href: '/competences' },
   { label: 'L\u2019equipe', href: '/#equipe' },
   { label: 'Cas client', href: '/#cas-client' },
