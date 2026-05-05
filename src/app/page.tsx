@@ -8,7 +8,6 @@ import { Profiles } from '@/components/sections/Profiles';
 import { Comparison } from '@/components/sections/Comparison';
 import { BacsDiagnostic } from '@/components/sections/BacsDiagnostic';
 import { Pcm } from '@/components/sections/Pcm';
-import { Team } from '@/components/sections/Team';
 import { ContactCta } from '@/components/sections/ContactCta';
 import { Footer } from '@/components/sections/Footer';
 
@@ -26,7 +25,6 @@ export default function HomePage() {
         <Comparison />
         <BacsDiagnostic />
         <Pcm />
-        <Team />
         <ContactCta />
       </main>
       <Footer />
