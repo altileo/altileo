@@ -3,7 +3,6 @@ import { Hero } from '@/components/sections/Hero';
 import { Stats } from '@/components/sections/Stats';
 import { Product } from '@/components/sections/Product';
 import { Method } from '@/components/sections/Method';
-import { CaseStudy } from '@/components/sections/CaseStudy';
 import { Profiles } from '@/components/sections/Profiles';
 import { Comparison } from '@/components/sections/Comparison';
 import { BacsDiagnostic } from '@/components/sections/BacsDiagnostic';
@@ -20,7 +19,6 @@ export default function HomePage() {
         <Stats />
         <Product />
         <Method />
-        <CaseStudy />
         <Profiles />
         <Comparison />
         <BacsDiagnostic />
