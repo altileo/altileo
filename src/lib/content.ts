@@ -30,7 +30,7 @@ export const hero = {
 
 export const stats = [
   { value: '60%', body: 'de la consommation electrique d\u2019un grossiste alimentaire vient du froid.' },
-  { value: '\u20ac80 000+', body: 'facture annuelle moyenne en electricite froid pour un grossiste de 1500 m\u00b2 a Rungis.' },
+  { value: '\u20ac80 000+', body: 'facture électricité froid d’un grossiste alimentaire de 1500 m\u00b2 (estimation marché sur prix réglementé 2024).' },
   { value: '2026', body: 'deadline Decret BACS\u00a0: monitoring et automatisation obligatoires sur installations superieures a 70 kW.' },
 ];
 
@@ -174,15 +174,15 @@ export const competences = {
     body: 'Une optimisation energetique mal cablee detruit son propre ROI. Une armoire mal dimensionnee cree des pannes en pleine campagne. Un degivrage mal pilote peut compromettre votre stock. Avoir des ingenieurs qui maitrisent la chaine complete - de la mise a la terre au pilotage predictif - c\u2019est ce qui separe un deploiement qui dure de celui qui revient en SAV tous les six mois.',
   },
   capabilities: [
-    { icon: 'E', title: 'Etudes electriques BT industrielles', body: 'Conception, dimensionnement, calcul de charges et verification court-circuit. Schemas unifilaires et de principe, bilans de puissance, plans d\u2019implantation.', example: 'Conception et redlining d\u2019un schema d\u2019armoire 230V/24V pour pilotage frigorifique multi-zones, avec calcul des sections cables et coordination des protections.' },
-    { icon: 'A', title: 'Armoires electriques sur mesure', body: 'Conception et fabrication d\u2019armoires de pilotage adaptees a vos installations. Integration des automates, des modules d\u2019acquisition et des departs moteurs.', example: 'Armoire de pilotage VFD avec acquisition PT100 et bus RS485 pour remontee des capteurs de chambre froide vers le serveur Altileo.' },
-    { icon: 'C', title: 'Mise en conformite electrique', body: 'Audit de conformite aux normes NF C 15-100 et NF C 13-100. Identification des ecarts, plan de remise a niveau, suivi de levee de reserves.', example: 'Diagnostic d\u2019un site grossiste : reperage des defauts de mise a la terre, absence de PE sur certaines arrivees, propositions de mise en conformite chiffrees.' },
-    { icon: 'I', title: 'Instrumentation et automatisme', body: 'Capteurs temperature, humidite, courant, ouverture de portes. Controleurs programmables, commande VFD des compresseurs, passerelles IoT.', example: 'Integration d\u2019une carte d\u2019acquisition PT100 et capteurs de courant cote primaire et secondaire transformateur, avec remontee temps reel sur dashboard.' },
-    { icon: 'T', title: 'Etudes thermiques et frigorifiques', body: 'Bilans thermiques de chambres froides, dimensionnement des groupes, etude des cycles de degivrage, optimisation des consignes.', example: 'Bilan thermique multi-zones d\u2019un grossiste alimentaire - identification de 18% de surconsommation liee a des cycles de degivrage non optimises.' },
-    { icon: 'B', title: 'Integration BMS / GTB', body: 'Mise en place d\u2019un systeme d\u2019automatisation et de controle conforme au Decret BACS. Pilotage centralise, reporting OPERAT pour le Decret Tertiaire.', example: 'Architecture GTB pour un site tertiaire avec installation frigorifique > 70 kW, livree cle en main avec attestation de conformite BACS.' },
-    { icon: 'S', title: 'Stockage thermique PCM', body: 'Etude, dimensionnement et deploiement de stockage par materiaux a changement de phase. Integration au systeme de pilotage pour decalage de charge.', example: 'Dimensionnement d\u2019une reserve de stockage PCM pour decalage de la consommation aux heures creuses, en partenariat avec un fabricant francais.' },
-    { icon: 'D', title: 'Schemas et documentation', body: 'Schemas electriques, plans d\u2019implantation, dossiers d\u2019armoire, notices d\u2019exploitation. Livrables conformes aux exigences industrielles et au DOE.', example: 'Dossier complet d\u2019armoire avec schema de principe, schema de cablage, liste de materiel et notice d\u2019exploitation pour le mainteneur du site.' },
-    { icon: 'M', title: 'Mise en service et SAV', body: 'Mise en service sur site, parametrage, tests fonctionnels, formation des utilisateurs. Support a distance et intervention sur site en cas d\u2019anomalie.', example: 'Mise en service d\u2019un systeme complet capteurs + armoire + dashboard sur un site Rungis, formation du gerant et du frigoriste mainteneur.' },
+    { icon: 'A', title: 'Audit énergétique instrumenté', body: 'Mesure précise sur site (consommation, températures, humidité, ouvertures de portes, cycles de dégivrage). Analyse des données, identification chiffrée des pertes, plan d’action priorisable par ROI.', example: 'Audit instrumenté d’un site grossiste — identification des sources principales de surconsommation et chiffrage des économies réalisables couche par couche.' },
+    { icon: 'C', title: 'Conception électrique et thermique', body: 'Études électriques BT, dimensionnement, spécifications techniques d’armoires de pilotage, schémas, plans d’implantation. Conception thermique : bilans, dimensionnement, optimisation des cycles.', example: 'Conception et redlining d’un schéma d’armoire 230V/24V pour pilotage frigorifique multi-zones, avec calcul des sections câbles et coordination des protections.' },
+    { icon: 'I', title: 'Instrumentation et capteurs IoT', body: 'Sélection, spécification et intégration de capteurs (température, humidité, courant, ouverture de portes). Architecture du réseau IoT, passerelles, remontée des données vers la plateforme.', example: 'Intégration de cartes d’acquisition PT100 et capteurs de courant côté primaire et secondaire, avec remontée temps réel sur dashboard.' },
+    { icon: 'P', title: 'Pilotage adaptatif et automatisme', body: 'Algorithmes de modulation des compresseurs (commande VFD), points de consigne adaptatifs, optimisation des cycles de dégivrage à la demande, intégration BMS/GTB.', example: 'Commande VFD du compresseur sur la base des données temps réel des capteurs PT100, avec déclenchement à la demande des cycles de dégivrage.' },
+    { icon: 'T', title: 'Stockage thermique PCM', body: 'Étude, dimensionnement et intégration de stockage par matériaux à changement de phase. Couplage avec le pilotage pour décalage de charge aux heures creuses.', example: 'Dimensionnement d’une réserve PCM pour décalage de la consommation aux heures creuses, en partenariat avec un fabricant français.' },
+    { icon: 'D', title: 'Plateforme logicielle et dashboard', body: 'Dashboard web et mobile en temps réel, alertes, exports réglementaires (OPERAT), historisation des données, monitoring 24/7. Hébergement européen, propriété des données au client.', example: 'Plateforme de monitoring déployée sur un site Rungis avec accès mobile pour le gérant et le frigoriste, alertes automatiques sur dérive de température.' },
+    { icon: 'O', title: 'Gestion de projet et coordination', body: 'Pilotage du projet de bout en bout, planning, coordination des intervenants techniques, supervision des travaux, mise en service. Vous avez un seul interlocuteur.', example: 'Coordination complète d’un déploiement : planning, suivi des intervenants, tests fonctionnels, mise en service, formation utilisateurs.' },
+    { icon: 'R', title: 'Conseil réglementaire', body: 'Diagnostic Décret BACS, accompagnement Décret Tertiaire (reporting OPERAT), anticipation règlement F-Gas. Mise en relation avec les bons interlocuteurs si besoin.', example: 'Diagnostic BACS d’un site grossiste, plan de mise en conformité chiffré, accompagnement reporting OPERAT.' },
+    { icon: 'V', title: 'Suivi de performance et SAV logiciel', body: 'Monitoring continu après déploiement, alertes sur dérive de performance, reporting mensuel, ajustements à distance, support téléphonique.', example: 'Monitoring 24/7 du site pilote depuis sa mise en service, ajustements distants des consignes selon les saisons et les volumes stockés.' },
   ],
   process: {
     title: 'Quatre etapes, du brief a l\u2019exploitation.',
@@ -195,13 +195,13 @@ export const competences = {
     ],
   },
   guarantees: {
-    title: 'On engage notre responsabilite, pas celle d\u2019un sous-traitant anonyme.',
-    body: 'Tout ce que nous livrons est concu, calcule et valide par nos ingenieurs. Vous avez un seul interlocuteur pour la conception, la realisation, et le suivi.',
+    title: 'Ce sur quoi nous nous engageons.',
+    body: 'On ne fait pas tout. Ce qu’on livre, on le garantit. Ce qu’on ne fait pas, on le coordonne avec des intervenants compétents et on en pilote la qualité.',
     items: [
-      { label: 'Conformite aux normes', body: 'NF C 15-100, NF C 13-100, exigences Decret BACS et Decret Tertiaire respectees sur chaque livrable.' },
-      { label: 'Documentation complete', body: 'Schemas, plans, notes de calcul, notices d\u2019exploitation et DOE livres systematiquement.' },
-      { label: 'Garantie sur le materiel', body: 'Garantie constructeur sur tout le materiel installe, plus garantie de bonne execution sur la conception.' },
-      { label: 'Un seul interlocuteur', body: 'Vous parlez aux memes ingenieurs pendant l\u2019etude, la realisation et le SAV. Pas de chaine diluee, pas de renvoi de balle.' },
+      { label: 'Engagement sur le résultat', body: 'Si l’audit ne révèle pas au moins 25% d’économies réalisables, vous payez uniquement les frais d’instrumentation. Si le déploiement réel dévie de plus de 20% de la trajectoire visée sur 12 mois, on intervient gratuitement pour comprendre et corriger.' },
+      { label: 'Méthode trans-parente', body: 'Mesure avant et après, données accessibles 24/7, exports possibles à tout moment. Pas de boîte noire, pas de chiffres marketing.' },
+      { label: 'Documentation complète', body: 'Rapport d’audit, spécifications, schémas, notices, DOE — tout est documenté et vous appartient. Si demain vous changez de prestataire, votre site reste pleinement exploitable.' },
+      { label: 'Un seul interlocuteur', body: 'Du cadrage au SAV, vous parlez aux mêmes ingénieurs. Pas de chaine diluée, pas de renvoi de balle entre prestataires.' },
     ],
   },
   cta: {
@@ -313,7 +313,7 @@ export const faqGroups = [
       },
       {
         q: 'Quels sont les risques pour mes stocks pendant l’installation ?',
-        a: 'Zéro perte de chaîne du froid pendant nos déploiements depuis 18 mois. Notre processus inclut : une analyse de risque préalable, un plan de coupure validé par votre frigoriste, des températures monitorées en continu pendant les travaux, et un protocole de secours si un équipement critique pose problème. La sécurité alimentaire reste votre responsabilité, mais nous travaillons en respectant strictement vos plans HACCP.',
+        a: 'Sur notre déploiement pilote, aucune perte de chaîne du froid pendant les phases de travaux. Notre processus inclut : une analyse de risque préalable, un plan de coupure validé par votre frigoriste, des températures monitorées en continu pendant les travaux, et un protocole de secours si un équipement critique pose problème. La sécurité alimentaire reste votre responsabilité, mais nous travaillons en respectant strictement vos plans HACCP.',
       },
       {
         q: 'Comment se déroule l’installation ?',
@@ -372,11 +372,11 @@ export const faqGroups = [
       },
       {
         q: 'Quel SAV proposez-vous ?',
-        a: 'Trois niveaux : (1) monitoring continu — nous détectons les anomalies souvent avant vous et vous alertons, (2) support à distance par téléphone et accès sécurisé à votre installation pour interventions logicielles, (3) intervention sur site sous 48h en Île-de-France, sous 5 jours ouvrés en région, pour les pannes matérielles. Inclus dans l’abonnement.',
+        a: 'Trois niveaux : (1) monitoring continu — nous détectons les anomalies souvent avant vous et vous alertons, (2) support à distance par téléphone et accès sécurisé à votre installation pour interventions logicielles, (3) objectif d’intervention sous 48h en Île-de-France, sous 5 jours ouvrés en région. Le SAV matériel est coordonné avec nos partenaires techniques. Inclus dans l’abonnement.',
       },
       {
         q: 'Que se passe-t-il si Altileo cesse son activité ?',
-        a: 'Question légitime et honnête. Trois protections : (1) le matériel installé vous appartient et continue à fonctionner localement, (2) tous les schémas, codes et documentations sont déposés en séquestre légal accessibles si Altileo disparaît, (3) notre stack technique repose sur des standards ouverts (Modbus, RS485, MQTT, Postgres) — n’importe quel intégrateur peut reprendre l’exploitation. Vous n’êtes jamais coincé.',
+        a: 'Question légitime. Deux protections concrètes : (1) le matériel installé vous appartient et continue à fonctionner localement même sans la plateforme cloud, (2) notre stack technique repose sur des standards ouverts (Modbus, RS485, MQTT, Postgres) — n’importe quel intégrateur peut reprendre l’exploitation à partir de la documentation que nous vous remettons. Vos données historiques vous sont restituées à tout moment. Vous n’êtes jamais coincé.',
       },
     ],
   },
