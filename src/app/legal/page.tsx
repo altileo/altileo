@@ -6,7 +6,7 @@ import { site } from '@/lib/content';
 
 export const metadata: Metadata = {
   title: 'Mentions légales',
-  description: 'Mentions légales et politique de confidentialité d’Altileo (Valtrys).',
+  description: 'Mentions légales et politique de confidentialité d’Altileo.',
   robots: { index: false, follow: true },
   alternates: { canonical: '/legal' },
 };
@@ -19,6 +19,7 @@ export default function LegalPage() {
           <Logo />
         </Container>
       </header>
+
       <main className="flex-1 py-16">
         <Container className="max-w-3xl">
           <h1 className="text-4xl font-bold tracking-tight text-ink mb-8">
@@ -26,70 +27,126 @@ export default function LegalPage() {
           </h1>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-ink mt-8 mb-4">
+            <h2 className="text-2xl font-bold text-ink mb-4">
               Éditeur du site
             </h2>
+
             <p className="text-muted leading-relaxed">
-              Le site altileo.com est édité par <strong className="text-ink">Valtrys</strong>, société propriétaire de la marque et du produit Altileo.
-              <br /><br />
-              <strong className="text-ink">Dénomination sociale :</strong> Valtrys
+              Le site altileo.com est édité par <strong>VALTRYS</strong>,
+              société propriétaire de la marque et du produit Altileo.
               <br />
-              <strong className="text-ink">Forme juridique :</strong> [À compléter]
               <br />
-              <strong className="text-ink">Siège social :</strong> [Adresse à compléter]
+              <strong>Dénomination sociale :</strong> VALTRYS
               <br />
-              <strong className="text-ink">SIRET :</strong> [À compléter]
+              <strong>Forme juridique :</strong> SAS
               <br />
-              <strong className="text-ink">RCS :</strong> [À compléter]
+              <strong>Siège social :</strong> 60 rue François 1er, 75008 Paris,
+              France
               <br />
-              <strong className="text-ink">TVA intracommunautaire :</strong> [À compléter]
+              <strong>RCS :</strong> Paris 999 201 296
               <br />
-              <strong className="text-ink">Email :</strong>{' '}
-              <a href={`mailto:${site.email}`} className="text-brand-deep hover:underline">
+              <strong>Email :</strong>{' '}
+              <a
+                href={`mailto:${site.email}`}
+                className="text-brand-deep hover:underline"
+              >
                 {site.email}
               </a>
             </p>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-ink mt-8 mb-4">Directeur de la publication</h2>
-            <p className="text-muted leading-relaxed">[À compléter : Prénom Nom, fonction]</p>
+            <h2 className="text-2xl font-bold text-ink mb-4">
+              Directeur de la publication
+            </h2>
+
+            <p className="text-muted leading-relaxed">
+              Le Président de VALTRYS
+            </p>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-ink mt-8 mb-4">Hébergement</h2>
+            <h2 className="text-2xl font-bold text-ink mb-4">
+              Hébergement
+            </h2>
+
             <p className="text-muted leading-relaxed">
-              Ce site est hébergé par Vercel Inc.
+              Vercel Inc.
               <br />
-              440 N Barranca Ave #4133, Covina, CA 91723, USA
+              440 N Barranca Ave #4133
               <br />
-              <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" className="text-brand-deep hover:underline">vercel.com</a>
+              Covina, CA 91723
+              <br />
+              États-Unis
+              <br />
+              <a
+                href="https://vercel.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand-deep hover:underline"
+              >
+                vercel.com
+              </a>
             </p>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-ink mt-8 mb-4">Politique de confidentialité</h2>
+            <h2 className="text-2xl font-bold text-ink mb-4">
+              Politique de confidentialité
+            </h2>
+
             <p className="text-muted leading-relaxed">
-              Les informations transmises via les formulaires du site sont utilisées uniquement afin de répondre aux demandes adressées à VALTRYS concernant Altileo. Les données ne sont pas vendues à des tiers.
-              <br /><br />
-              Conformément à la réglementation applicable, vous pouvez demander l’accès, la rectification ou la suppression de vos données personnelles.
-              <br /><br />
-              Pour exercer ces droits :{' '}
-              <a href={`mailto:${site.email}`} className="text-brand-deep hover:underline">{site.email}</a>
+              Les informations transmises via les formulaires du site sont
+              utilisées uniquement afin de répondre aux demandes adressées à
+              VALTRYS concernant Altileo.
+              <br />
+              <br />
+              Les données ne sont pas vendues à des tiers.
+              <br />
+              <br />
+              Conformément à la réglementation applicable, vous pouvez demander
+              l’accès, la rectification ou la suppression de vos données
+              personnelles en écrivant à :
+              <br />
+              <br />
+              <a
+                href={`mailto:${site.email}`}
+                className="text-brand-deep hover:underline"
+              >
+                {site.email}
+              </a>
             </p>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-ink mt-8 mb-4">Cookies</h2>
+            <h2 className="text-2xl font-bold text-ink mb-4">
+              Cookies
+            </h2>
+
             <p className="text-muted leading-relaxed">
-              Le site peut utiliser des cookies ou technologies similaires strictement nécessaires à son fonctionnement.
+              Le site peut utiliser des cookies ou technologies similaires
+              strictement nécessaires à son fonctionnement.
             </p>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-ink mt-8 mb-4">Propriété intellectuelle</h2>
+            <h2 className="text-2xl font-bold text-ink mb-4">
+              Propriété intellectuelle
+            </h2>
+
             <p className="text-muted leading-relaxed">
-              L’ensemble des contenus présents sur ce site (textes, images, schémas, marque Altileo, logo) est la propriété exclusive de Valtrys ou de ses partenaires. Toute reproduction, représentation, modification ou exploitation, totale ou partielle, sans autorisation écrite préalable est interdite.
+              L’ensemble des contenus présents sur ce site, notamment les
+              textes, visuels, logos, schémas, éléments graphiques et contenus
+              techniques, est protégé par les lois relatives à la propriété
+              intellectuelle.
+              <br />
+              <br />
+              La marque Altileo et les éléments associés sont exploités par
+              VALTRYS.
+              <br />
+              <br />
+              Toute reproduction, représentation, adaptation ou exploitation,
+              totale ou partielle, sans autorisation préalable est interdite.
             </p>
           </section>
 
