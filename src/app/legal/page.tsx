@@ -68,11 +68,11 @@ export default function LegalPage() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-ink mt-8 mb-4">Données personnelles (RGPD)</h2>
+            <h2 className="text-2xl font-bold text-ink mt-8 mb-4">Politique de confidentialité</h2>
             <p className="text-muted leading-relaxed">
-              Les données collectées via les formulaires de contact sont utilisées uniquement pour répondre à vos demandes commerciales et techniques. Elles ne sont ni revendues, ni partagées avec des tiers à des fins marketing.
+              Les informations transmises via les formulaires du site sont utilisées uniquement afin de répondre aux demandes adressées à VALTRYS concernant Altileo. Les données ne sont pas vendues à des tiers.
               <br /><br />
-              Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d’un droit d’accès, de rectification, de suppression et d’opposition aux données vous concernant.
+              Conformément à la réglementation applicable, vous pouvez demander l’accès, la rectification ou la suppression de vos données personnelles.
               <br /><br />
               Pour exercer ces droits :{' '}
               <a href={`mailto:${site.email}`} className="text-brand-deep hover:underline">{site.email}</a>
@@ -82,7 +82,7 @@ export default function LegalPage() {
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-ink mt-8 mb-4">Cookies</h2>
             <p className="text-muted leading-relaxed">
-              Ce site n’utilise pas de cookies de suivi publicitaire ni d’outils d’analyse comportementale. Seuls des cookies strictement nécessaires au fonctionnement du site peuvent être déposés, conformément aux recommandations de la CNIL.
+              Le site peut utiliser des cookies ou technologies similaires strictement nécessaires à son fonctionnement.
             </p>
           </section>
 
