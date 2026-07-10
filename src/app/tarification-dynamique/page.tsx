@@ -177,9 +177,8 @@ export default function TarificationDynamiquePage() {
                 </ButtonLink>
                 <ButtonLink
                   href="/comment-ca-marche"
-                  variant="secondary"
+                  variant="secondaryDark"
                   size="lg"
-                  className="bg-transparent hover:bg-white/10 text-white border-white/30"
                 >
                   Comment ça marche
                 </ButtonLink>

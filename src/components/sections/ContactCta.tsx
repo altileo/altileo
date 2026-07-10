@@ -21,9 +21,8 @@ export function ContactCta() {
             </ButtonLink>
             <ButtonLink
               href="/competences"
-              variant="secondary"
+              variant="secondaryDark"
               size="lg"
-              className="bg-transparent hover:bg-white/10 text-white border-white/30"
             >
               Voir nos compétences
             </ButtonLink>

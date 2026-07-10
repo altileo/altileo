@@ -35,9 +35,8 @@ export function Hero() {
             </ButtonLink>
             <ButtonLink
               href="#produit"
-              variant="secondary"
+              variant="secondaryDark"
               size="lg"
-              className="bg-transparent hover:bg-white/10 text-white border-white/30"
             >
               {hero.secondaryCta}
             </ButtonLink>

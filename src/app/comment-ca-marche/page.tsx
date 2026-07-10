@@ -164,9 +164,8 @@ export default function CommentCaMarchePage() {
                 </ButtonLink>
                 <ButtonLink
                   href="/tarification-dynamique"
-                  variant="secondary"
+                  variant="secondaryDark"
                   size="lg"
-                  className="bg-transparent hover:bg-white/10 text-white border-white/30"
                 >
                   Découvrir la tarification dynamique
                 </ButtonLink>
