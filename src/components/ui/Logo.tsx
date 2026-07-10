@@ -8,7 +8,7 @@ interface LogoProps {
 
 export function Logo({ theme = 'light', className }: LogoProps) {
   const wordColor = theme === 'dark' ? 'text-white' : 'text-ink';
-  const asteriskColor = theme === 'dark' ? 'text-highlight' : 'text-brand';
+  const asteriskColor = 'text-brand';
 
   return (
     <Link

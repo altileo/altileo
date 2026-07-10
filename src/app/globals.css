@@ -8,7 +8,7 @@
   }
 
   body {
-    background-color: #F4FAFA;
+    background-color: #FFFFFF;
     color: #111111;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -30,7 +30,7 @@
   }
 
   .grid-dots {
-    background-image: radial-gradient(circle, #DCE7E7 1px, transparent 1px);
+    background-image: radial-gradient(circle, #E5E5E5 1px, transparent 1px);
     background-size: 24px 24px;
   }
 
@@ -40,7 +40,16 @@
     box-shadow:
       0 4px 24px rgba(17, 17, 17, 0.08),
       0 16px 48px rgba(17, 17, 17, 0.06);
-    border: 1px solid #DCE7E7;
+    border: 1px solid #E5E5E5;
     background: white;
+  }
+
+  /* Frost & Carbon : bandeau sombre de preuve */
+  .section-carbon {
+    background: #111111;
+    color: #FFFFFF;
+  }
+  .section-carbon .grid-dots {
+    background-image: radial-gradient(circle, #2A2A2A 1px, transparent 1px);
   }
 }

@@ -5,13 +5,13 @@ type Variant = 'primary' | 'secondary';
 type Size = 'md' | 'lg';
 
 const baseClasses =
-  'inline-flex items-center justify-center font-semibold rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2';
+  'inline-flex items-center justify-center font-medium rounded-md transition disabled:opacity-50 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2';
 
 const variants: Record<Variant, string> = {
   primary:
-    'bg-brand-deep hover:bg-brand-dark text-white shadow-cta focus-visible:outline-brand-deep',
+    'bg-brand hover:bg-brand-deep text-white shadow-cta focus-visible:outline-brand-deep',
   secondary:
-    'bg-white hover:bg-bg text-ink border border-line focus-visible:outline-brand-deep',
+    'bg-white hover:bg-surface text-ink border border-line focus-visible:outline-brand-deep',
 };
 
 const sizes: Record<Size, string> = {

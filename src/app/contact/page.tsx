@@ -56,7 +56,7 @@ export default function ContactPage() {
           <Container>
             <div className="max-w-3xl mx-auto">
               <div className="text-center mb-12">
-                <span className="text-5xl font-bold text-highlight" aria-hidden="true">*</span>
+                <span className="text-5xl font-bold text-brand" aria-hidden="true">*</span>
                 <h1 className="text-4xl lg:text-6xl font-bold tracking-tight text-ink mt-4">
                   Parlons de vos installations.
                 </h1>

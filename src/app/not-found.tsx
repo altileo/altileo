@@ -13,7 +13,7 @@ export default function NotFound() {
       <main className="flex-1 flex items-center justify-center py-16">
         <Container className="text-center max-w-lg">
           <span
-            className="text-6xl font-bold text-highlight"
+            className="text-6xl font-bold text-brand"
             aria-hidden="true"
           >
             *

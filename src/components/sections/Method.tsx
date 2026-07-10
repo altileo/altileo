@@ -48,7 +48,7 @@ export function Method() {
                     <div className="font-semibold text-ink text-lg flex items-center gap-2 flex-wrap">
                       {layer.title}
                       {layer.featured && layer.badge && (
-                        <span className="bg-highlight/40 text-ink text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded">
+                        <span className="bg-frost text-brand-deep text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded">
                           {layer.badge}
                         </span>
                       )}

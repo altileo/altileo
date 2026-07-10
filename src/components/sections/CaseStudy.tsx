@@ -3,23 +3,23 @@ import { caseStudy } from '@/lib/content';
 import { cn } from '@/lib/cn';
 
 const colorMap: Record<'navy' | 'success' | 'ink', string> = {
-  navy: 'text-navy',
+  navy: 'text-white',
   success: 'text-success',
-  ink: 'text-ink',
+  ink: 'text-brand',
 };
 
 export function CaseStudy() {
   const titleLines = caseStudy.title.split('\n');
 
   return (
-    <section id="cas-client" className="py-24">
+    <section id="cas-client" className="section-carbon py-24">
       <Container>
         <div className="grid lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-5">
-            <div className="text-sm font-semibold text-brand-deep tracking-wide uppercase mb-3">
+            <div className="text-sm font-medium text-brand tracking-wide uppercase mb-3">
               {caseStudy.label}
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-ink">
+            <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-white">
               {titleLines.map((line, i) => (
                 <span key={i}>
                   {line}
@@ -27,17 +27,17 @@ export function CaseStudy() {
                 </span>
               ))}
             </h2>
-            <p className="mt-5 text-lg text-muted leading-relaxed">
+            <p className="mt-5 text-lg text-muted-dark leading-relaxed">
               {caseStudy.body1}
             </p>
-            <p className="mt-4 text-muted leading-relaxed">
+            <p className="mt-4 text-muted-dark leading-relaxed">
               {caseStudy.body2}
             </p>
             <a
               href="/contact"
-              className="inline-flex items-center gap-2 mt-8 text-brand-deep font-semibold hover:gap-3 transition-all"
+              className="inline-flex items-center gap-2 mt-8 text-brand font-medium hover:gap-3 transition-all"
             >
-              {caseStudy.cta}
+              {caseStudy.cta} &rarr;
             </a>
           </div>
 
@@ -45,9 +45,9 @@ export function CaseStudy() {
             {caseStudy.kpis.map((kpi) => (
               <div
                 key={kpi.label}
-                className="bg-white rounded-2xl border border-line p-6"
+                className="bg-[#181818] rounded-2xl border border-[#333] p-6"
               >
-                <div className="text-xs font-medium text-muted uppercase tracking-wide">
+                <div className="text-xs font-medium text-muted-dark uppercase tracking-wide">
                   {kpi.label}
                 </div>
                 <div
@@ -58,26 +58,20 @@ export function CaseStudy() {
                 >
                   {kpi.value}
                 </div>
-                <div className="text-xs text-muted mt-1">{kpi.caption}</div>
+                <div className="text-xs text-muted-dark mt-1">{kpi.caption}</div>
               </div>
             ))}
 
-            <div className="col-span-2 bg-white rounded-2xl border-2 border-brand/20 p-6 lg:p-8 mt-2">
+            <div className="col-span-2 bg-[#181818] rounded-2xl border border-[#333] p-6 lg:p-8 mt-2">
               <span
-                className="text-3xl font-bold text-highlight"
+                className="text-3xl font-bold text-brand"
                 aria-hidden="true"
               >
                 *
               </span>
-              <blockquote className="mt-3 text-lg lg:text-xl text-ink leading-relaxed italic">
-                {caseStudy.quote}
-              </blockquote>
-              <div className="mt-4 text-sm not-italic">
-                <div className="font-semibold text-ink">
-                  {caseStudy.quoteAuthor}
-                </div>
-                <div className="text-muted">{caseStudy.quoteCompany}</div>
-              </div>
+              <p className="mt-3 text-sm text-muted-dark leading-relaxed">
+                {caseStudy.note}
+              </p>
             </div>
           </div>
         </div>

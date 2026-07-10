@@ -74,7 +74,7 @@ export function FinalCta() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center">
             <span
-              className="text-5xl font-bold text-highlight"
+              className="text-5xl font-bold text-brand"
               aria-hidden="true"
             >
               *

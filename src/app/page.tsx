@@ -4,6 +4,7 @@ import { Profiles } from '@/components/sections/Profiles';
 import { Stats } from '@/components/sections/Stats';
 import { Method } from '@/components/sections/Method';
 import { Product } from '@/components/sections/Product';
+import { CaseStudy } from '@/components/sections/CaseStudy';
 import { Pcm } from '@/components/sections/Pcm';
 import { Comparison } from '@/components/sections/Comparison';
 import { BacsDiagnostic } from '@/components/sections/BacsDiagnostic';
@@ -19,6 +20,7 @@ export default function HomePage() {
         <Profiles />
         <Stats />
         <Method />
+        <CaseStudy />
         <Product />
         <Pcm />
         <Comparison />

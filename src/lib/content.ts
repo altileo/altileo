@@ -82,20 +82,18 @@ export const method = {
 };
 
 export const caseStudy = {
-  label: 'Cas client',
-  title: 'Un grossiste a Rungis.\n12 mois de mesures.',
-  body1: '[A completer : nom du client] est un grossiste alimentaire installe au pavillon [A completer] de Rungis. 1500 m\u00b2 de chambres froides, multi-temperatures.',
-  body2: 'Nous avons deploye les couches 1 a 5 de notre methode sur 12 mois. Mesures avant et apres verifiees par compteurs energetiques independants.',
-  cta: 'Lire le cas complet',
+  label: 'Pilote terrain \u00b7 MIN de Rungis',
+  title: 'Une chambre négative.\nDes mesures, pas des promesses.',
+  body1: 'Sur une chambre froide négative de 30 m² au MIN de Rungis (consigne −21 °C, groupe triphasé ~6,5 kW), nous avons mené un test de délestage grandeur réelle le 30 mars 2026 : compresseur coupé, températures suivies par nos capteurs.',
+  body2: 'Résultat : après 3 h 52 de coupure, la température à cœur de la marchandise n’a dérivé que de +0,21 °C par heure — largement dans les limites HACCP. La chambre tolère jusqu’à 6 heures de délestage par jour ; nous paramétrons à 5 h pour garder une marge confortable.',
+  cta: 'Demander un diagnostic pour votre site',
   kpis: [
-    { label: 'Economies annualisees', value: '\u20ac31 440', caption: 'verifiees sur 12 mois', color: 'navy' as const },
-    { label: 'Reduction facture froid', value: '36,2%', caption: 'moyenne sur 12 mois', color: 'success' as const },
-    { label: 'ROI atteint', value: '14 mois', caption: 'retour sur investissement', color: 'ink' as const },
-    { label: 'Conformite BACS', value: 'OK', caption: 'livree cle en main', color: 'success' as const },
+    { label: 'Coupure test mesurée', value: '3h52', caption: 'compresseur totalement arrêté', color: 'navy' as const },
+    { label: 'Dérive thermique', value: '+0,21°C/h', caption: 'à cœur de la marchandise', color: 'success' as const },
+    { label: 'Économie HP/HC', value: '~20%', caption: 'sur facture réglementée actuelle', color: 'ink' as const },
+    { label: 'Économie en dynamique', value: '~30%', caption: 'sur abonnement indexé au marché', color: 'success' as const },
   ],
-  quote: '\u00ab [A completer : citation client a valider apres signature] On savait qu\u2019on consommait trop. Altileo nous a montre exactement ou, et deploye ce qui fait economiser - sans toucher a nos equipements. \u00bb',
-  quoteAuthor: '[A completer : nom, fonction]',
-  quoteCompany: '[A completer : societe], Rungis',
+  note: 'Ces chiffres correspondent à un site et une configuration précis. Un audit préalable est nécessaire pour quantifier l’économie potentielle de chaque nouveau site : volumes, isolation, consommation de base et contraintes d’activité varient d’un client à l’autre.',
 };
 
 export const profiles = {
@@ -141,6 +139,10 @@ export const pcm = {
     { strong: 'Maintenance quasi-nulle', body: 'pas de cycles de recharge a gerer' },
     { strong: 'Fabrication francaise', body: 'eligible CEE et bonus souverainete' },
   ],
+  synergy: {
+    label: 'Synergie solaire × PCM × pilotage',
+    body: 'Couplée à l’autoconsommation photovoltaïque, la solution atteint son plein potentiel : l’Altileo Box stocke le froid dans les plaques PCM pendant les pics d’ensoleillement (énergie gratuite) et coupe le compresseur lors des pointes tarifaires du matin et du soir. Stockage thermique, algorithme et solaire travaillent ensemble.',
+  },
 };
 
 export const team = {
@@ -404,3 +406,119 @@ export const faqHighlights = [
     a: 'Le matériel installé vous appartient et reste sur site. Vous perdez le dashboard cloud et le support à distance, mais l’installation continue de fonctionner. Pas de verrouillage.',
   },
 ];
+
+export const commentCaMarche = {
+  hero: {
+    pill: 'Comment ça marche',
+    title: 'Votre chambre froide est une réserve de froid. On l’exploite.',
+    body: 'Une fois en température, la masse des produits stockés garde le froid pendant plusieurs heures sans que le compresseur tourne. L’Altileo Box exploite cette inertie thermique pour concentrer le fonctionnement du compresseur sur les heures les moins chères — sans jamais rompre la chaîne du froid.',
+  },
+  principe: {
+    label: 'Le principe',
+    title: 'L’inertie thermique, votre volant d’énergie',
+    body: 'Thermodynamiquement, une chambre froide est un stock de froid. La marchandise à cœur agit comme un volant thermique naturel : coupez le compresseur, la température ne dérive que très lentement. Sur notre pilote au MIN de Rungis, après 3 h 52 de coupure totale, la dérive n’a été que de +0,21 °C par heure. C’est cette physique, mesurée sur site, qui rend le délestage possible sans risque.',
+  },
+  etapes: [
+    {
+      number: '01',
+      title: 'Mesurer',
+      body: 'La Box analyse en continu la température au cœur des produits (sonde PT100, précision ±0,15 °C) et la consommation réelle du groupe (pince ampèremétrique, Modbus RS485). Tout remonte au cloud via 4G intégrée.',
+    },
+    {
+      number: '02',
+      title: 'Décider',
+      body: 'Chaque jour, le moteur d’optimisation récupère les prix horaires du lendemain et calcule le profil de délestage optimal selon l’inertie modélisée de votre site. Il identifie les heures les plus chères et y programme les arrêts du groupe.',
+    },
+    {
+      number: '03',
+      title: 'Agir',
+      body: 'La Box coupe et redémarre le compresseur aux moments optimaux, en dehors de vos heures d’activité. L’inertie thermique de la marchandise garantit le maintien en température pendant les phases de délestage.',
+    },
+  ],
+  hardware: {
+    label: 'Le hardware embarqué',
+    title: 'Un boîtier industriel, posé sans toucher à votre installation',
+    items: [
+      { title: 'Automate industriel', body: 'ESP32 avec modem 4G intégré. Cerveau embarqué, connexion cellulaire autonome vers le cloud.' },
+      { title: 'Compteur d’énergie', body: 'Modbus RS485 avec pince ampèremétrique. Mesure de la consommation réelle du groupe frigorifique.' },
+      { title: 'Sonde température', body: 'PT100 filaire industrielle, placée au cœur des produits. Précision ±0,15 °C.' },
+      { title: 'Coffret IP65', body: 'Boîtier étanche pour pose en environnement industriel, à côté du tableau électrique.' },
+    ],
+    install: 'Installation en une demi-journée, coffret posé hors chambre froide, sans perçage sur les zones froides. Un simple fil basse tension relie la Box au régulateur du groupe (bornes standards, ex. Danfoss). Aucune modification du circuit haute tension, compatible avec la plupart des groupes et régulateurs du marché.',
+  },
+  cloud: {
+    label: 'Altileo Cloud',
+    title: 'Le cerveau prédictif, dans le cloud',
+    body: 'La Box exécute, mais c’est le cloud qui décide. Le moteur d’optimisation Altileo Cloud récupère chaque jour les prix horaires du lendemain, les croise avec l’inertie thermique modélisée de votre site et vos contraintes d’exploitation, puis calcule le profil de délestage optimal. Ce profil est injecté dans la Box, qui pilote l’installation. C’est ce qui sépare Altileo d’un simple programmateur : un algorithme qui anticipe, plutôt qu’une horloge qui répète.',
+  },
+  securite: {
+    label: 'Les garanties de sécurité',
+    title: 'La chaîne du froid, jamais compromise',
+    items: [
+      {
+        title: 'Surveillance HACCP permanente',
+        body: 'La sonde mesure la température au cœur des produits en continu. Si un seuil critique est atteint (ex. −16 °C pour un surgelé réglementé à −18 °C), la Box réveille immédiatement le compresseur — quelle que soit l’heure tarifaire — et envoie une alerte. La sécurité alimentaire prévaut toujours sur l’économie.',
+      },
+      {
+        title: 'Bypass matériel fail-safe',
+        body: 'La Box n’intercepte que le signal de commande basse tension, jamais le circuit d’alimentation. En cas de panne, de coupure ou de perte réseau, le groupe frigorifique reprend automatiquement son fonctionnement normal sous le contrôle de son régulateur d’origine. Le circuit de commande d’origine n’est jamais rompu.',
+      },
+    ],
+  },
+  cta: {
+    title: 'Envie de savoir ce que votre site peut délester ?',
+    body: 'Chaque installation est différente. Un diagnostic d’éligibilité mesure l’inertie de vos chambres froides et chiffre les économies réalisables — sans engagement.',
+  },
+};
+
+export const tarifDynamique = {
+  hero: {
+    pill: 'Marché de l’électricité',
+    title: 'La tarification dynamique : une nouvelle façon de payer votre électricité.',
+    body: 'Le marché de l’électricité s’ouvre. Depuis 2026, la tarification dynamique — un prix qui suit heure par heure le marché de gros — devient accessible aux professionnels français. Pour un site capable de décaler sa consommation, c’est un levier d’économies inédit. Vos chambres froides, elles, sont naturellement flexibles.',
+  },
+  contexte: {
+    label: 'Ce qui change',
+    title: 'Le cadre réglementaire s’ouvre en 2026',
+    body: 'Historiquement marginale en France, la tarification dynamique change de statut. Depuis juillet 2026, seules les offres indexées directement sur les prix de gros sont considérées comme dynamiques, et les grands fournisseurs (plus de 200 000 clients) ont désormais l’obligation d’en proposer. Résultat : un marché qui s’élargit, avec de plus en plus d’offres exposées au prix réel de l’électricité. Cette bascule est déjà la norme en Europe du Nord.',
+  },
+  mecanisme: {
+    label: 'Comment ça marche',
+    title: 'Le prix se fixe chaque jour, heure par heure',
+    body: 'Chaque jour avant midi, producteurs et fournisseurs soumettent offres et besoins pour le lendemain. La bourse européenne calcule un prix d’équilibre pour chacune des 24 heures : c’est le marché « day-ahead ». Les sources les moins chères (nucléaire, renouvelables) sont mobilisées en premier ; quand le vent souffle et que le soleil brille, les prix plongent, parfois jusqu’à devenir négatifs. Les pointes, elles, se concentrent le matin et le soir.',
+    stat1Value: '~159 €/MWh',
+    stat1Caption: 'écart typique entre l’heure la moins chère et la plus chère d’une même journée (données marché juillet 2026)',
+    stat2Value: 'chaque jour',
+    stat2Caption: 'cet écart se répète, ce qui rend le décalage de consommation économiquement intéressant',
+  },
+  scenarios: {
+    label: 'Deux scénarios pour vos chambres froides',
+    title: 'Vous choisissez le contrat. Altileo pilote la flexibilité.',
+    body: 'Altileo ne vend pas d’électricité et ne vous impose aucun fournisseur : vous restez libre de votre contrat. Notre rôle est technique — piloter vos groupes frigorifiques pour concentrer la consommation aux bonnes heures. Selon le contrat que vous choisissez, le gain diffère.',
+    items: [
+      {
+        tag: 'Scénario 1',
+        title: 'Vous gardez votre contrat HP/HC',
+        value: '~20%',
+        body: 'Vous conservez votre contrat réglementé actuel. L’Altileo Box concentre le délestage sur les heures pleines les plus chères. Économie mesurée sur notre pilote : environ 20 % sur la facture d’électricité du froid.',
+      },
+      {
+        tag: 'Scénario 2',
+        title: 'Vous passez à un contrat dynamique',
+        value: '~30%',
+        body: 'Vous souscrivez une offre indexée au marché (le choix du fournisseur vous appartient). L’algorithme exploite la volatilité horaire : délestage aux pointes, consommation aux creux. Économie estimée : jusqu’à ~30 % sur la facture.',
+        featured: true,
+      },
+    ],
+  },
+  flexibilite: {
+    label: 'Pourquoi le froid est idéal',
+    title: 'La tarification dynamique récompense la flexibilité. Le froid en a à revendre.',
+    body: 'Une offre dynamique sans flexibilité n’a que peu d’intérêt : un site qui consomme de façon constante 24 h/24 subit les pointes sans pouvoir les éviter. C’est justement là qu’Altileo intervient. Grâce à l’inertie thermique de vos chambres froides, on peut couper le compresseur pendant les heures chères et le relancer pendant les heures bon marché, sans jamais rompre la chaîne du froid. Votre flexibilité devient une source d’économies.',
+    caveat: 'La tarification dynamique expose au marché : sans pilotage, le risque existe autant que l’opportunité. C’est pourquoi un audit préalable de votre courbe de charge est indispensable avant de basculer — pour vérifier que le gain est réel sur votre site précis.',
+  },
+  cta: {
+    title: 'Votre site est-il éligible à la tarification dynamique ?',
+    body: 'Notre diagnostic étudie votre courbe de charge, l’inertie de vos chambres et vos contraintes d’exploitation, puis chiffre l’économie réalisable selon chaque scénario — avant tout engagement.',
+  },
+};

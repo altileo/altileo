@@ -4,8 +4,8 @@
   "description": "Optimisation énergétique du froid pour grossistes et logisticiens",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#F4FAFA",
-  "theme_color": "#0E7C8C",
+  "background_color": "#FFFFFF",
+  "theme_color": "#111111",
   "icons": [
     {
       "src": "/icon.svg",

@@ -3,7 +3,8 @@ import { Logo } from '@/components/ui/Logo';
 import { ButtonLink } from '@/components/ui/Button';
 
 const navItems = [
-  { label: 'Le produit', href: '/#produit' },
+  { label: 'Comment ça marche', href: '/comment-ca-marche' },
+  { label: 'Tarification dynamique', href: '/tarification-dynamique' },
   { label: 'Méthode', href: '/#methode' },
   { label: 'Compétences', href: '/competences' },
   { label: 'Entreprise', href: '/entreprise' },

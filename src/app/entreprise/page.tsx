@@ -221,7 +221,7 @@ export default function EntreprisePage() {
         <section className="py-24">
           <Container>
             <div className="max-w-3xl mx-auto text-center">
-              <span className="text-5xl font-bold text-highlight" aria-hidden="true">*</span>
+              <span className="text-5xl font-bold text-brand" aria-hidden="true">*</span>
               <h2 className="text-3xl lg:text-5xl font-bold tracking-tight text-ink mt-4">
                 {entreprise.cta.title}
               </h2>
