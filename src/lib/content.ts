@@ -12,37 +12,37 @@ export const site = {
 };
 
 export const hero = {
-  pill: 'Specialistes du froid pour grossistes et logisticiens',
-  savingsRange: '30 a 40%',
+  pill: 'Spécialistes du froid pour grossistes et logisticiens',
+  savingsRange: '30 à 40 %',
   body:
-    'On audite. On deploie capteurs et automatisation. On ajoute du stockage thermique PCM si le ROI le justifie. Economies verifiees sur sites reels.',
-  primaryCta: 'Demander un audit energetique',
+    'On audite. On déploie capteurs et automatisation. On ajoute du stockage thermique PCM si le ROI le justifie. Économies vérifiées sur sites réels.',
+  primaryCta: 'Demander un audit énergétique',
   secondaryCta: 'Voir le produit en action',
   trustSignals: [
-    'Economies verifiees',
-    'Conformite Decret BACS',
-    'Systeme operationnel',
+    'Économies vérifiées',
+    'Conformité Décret BACS',
+    'Système opérationnel',
     'ROI sous 18 mois',
   ],
   screenshotCaption:
-    'Capture du tableau de bord en production - donnees reelles d\u2019un site deploye',
+    'Capture du tableau de bord en production - données réelles d’un site déployé',
 };
 
 export const stats = [
-  { value: '60%', body: 'de la consommation electrique d\u2019un grossiste alimentaire vient du froid.' },
-  { value: '\u20ac80 000+', body: 'facture électricité froid d’un grossiste alimentaire de 1500 m\u00b2 (estimation marché sur prix réglementé 2024).' },
-  { value: '2026', body: 'deadline Decret BACS\u00a0: monitoring et automatisation obligatoires sur installations superieures a 70 kW.' },
+  { value: '60%', body: 'de la consommation électrique d’un grossiste alimentaire vient du froid.' },
+  { value: '€80 000+', body: 'facture électricité froid d’un grossiste alimentaire de 1500 m² (estimation marché sur prix réglementé 2024).' },
+  { value: '2026', body: 'échéance Décret BACS : monitoring et automatisation obligatoires sur installations supérieures à 70 kW.' },
 ];
 
 export const product = {
   label: 'Le produit',
-  title: 'Un systeme complet, deploye et operationnel.',
+  title: 'Un système complet, déployé et opérationnel.',
   body:
-    'Altileo n\u2019est pas un concept. C\u2019est un systeme materiel et logiciel integre, deploye sur sites clients, qui mesure, decide et agit en temps reel sur vos equipements frigorifiques.',
+    'Altileo n’est pas un concept. C’est un système matériel et logiciel intégré, déployé sur sites clients, qui mesure, decide et agit en temps réel sur vos équipements frigorifiques.',
   architecture: {
-    title: 'L\u2019architecture, sans boite noire.',
+    title: 'L’architecture, sans boîte noire.',
     body:
-      'De la chambre froide jusqu\u2019au tableau de bord, chaque brique est documentee. Capteurs (temperature, ouverture de portes, courant), boitier de controle avec commande VFD du compresseur, serveur local, base de donnees et couche de commande predictive.',
+      'De la chambre froide jusqu’au tableau de bord, chaque brique est documentee. Capteurs (température, ouverture de portes, courant), boîtier de contrôle avec commande VFD du compresseur, serveur local, base de données et couche de commande prédictive.',
     pillars: [
       { number: '01', title: 'Collecte', subtitle: 'Capteurs IoT' },
       { number: '02', title: 'Decision', subtitle: 'Pilotage adaptatif' },
@@ -50,39 +50,39 @@ export const product = {
     ],
   },
   dashboard: {
-    eyebrow: 'Tableau de bord temps reel',
-    title: 'Vos KPIs energetiques, accessibles 24/7.',
-    body: 'Consommation actuelle, taux de stockage, temperatures par chambre, economies realisees, alertes systeme. Web et mobile.',
+    eyebrow: 'Tableau de bord temps réel',
+    title: 'Vos KPIs énergétiques, accessibles 24/7.',
+    body: 'Consommation actuelle, taux de stockage, températures par chambre, économies réalisées, alertes système. Web et mobile.',
   },
   systemHealth: {
-    eyebrow: 'Etat du systeme',
+    eyebrow: 'Etat du système',
     title: 'Une vue claire de chaque organe.',
-    body: 'Alimentation, regulation, IoT, protection, conversion, stockage : chaque sous-systeme est monitore en continu, avec alertes automatiques en cas d\u2019anomalie.',
+    body: 'Alimentation, regulation, IoT, protection, conversion, stockage : chaque sous-système est monitore en continu, avec alertes automatiques en cas d’anomalie.',
   },
   stack:
-    'Stack technique : capteurs proprietaires + boitier de controle avec commande VFD, serveur local edge computing, base de donnees temps reel, couche de commande predictive, et dashboard accessible web et mobile. Souverainete francaise, hebergement europeen.',
+    'Stack technique : capteurs propriétaires + boîtier de contrôle avec commande VFD, serveur local edge computing, base de données temps réel, couche de commande prédictive, et dashboard accessible web et mobile. Souveraineté française, hébergement européen.',
 };
 
 export const method = {
-  label: 'La methode',
-  title: 'Cinq couches. Vous payez ce qui a un ROI prouve.',
+  label: 'La méthode',
+  title: 'Cinq couches. Vous payez ce qui a un ROI prouvé.',
   body:
-    'On ne vend pas un produit unique. On deploie une methode mesuree, par etapes. Chaque couche est independante, chiffree, et deployee seulement si elle est rentable sur votre site.',
+    'On ne vend pas un produit unique. On déploie une méthode mesuree, par étapes. Chaque couche est indépendante, chiffrée, et déployée seulement si elle est rentable sur votre site.',
   layers: [
-    { number: '01', title: 'Audit instrumente', duration: '4 a 6 semaines', body: 'Mesure precise de vos consommations, temperatures, taux d\u2019humidite, ouvertures de portes, cycles de degivrage et comportement des compresseurs. On vous remet un rapport chiffre identifiant exactement ou sont vos pertes.', savings: 'Diagnostic chiffre', savingsColor: 'ink' as const, featured: false },
-    { number: '02', title: 'Capteurs IoT', duration: 'Visibilite 24/7', body: 'Capteurs de temperature, humidite, ouverture de portes, mouvement et consommation deployes sur l\u2019ensemble de vos zones froides. Tableau de bord en temps reel accessible web et mobile.', savings: '5 a 10%', savingsColor: 'success' as const, featured: false },
-    { number: '03', title: 'Automatisation intelligente', duration: 'Pilotage adaptatif', body: 'Modulation adaptative des compresseurs (commande VFD), des points de consigne et des cycles, en fonction des conditions reelles plutot que de programmes fixes. Sans intervention manuelle. Sans modification de vos equipements.', savings: '10 a 15%', savingsColor: 'success' as const, featured: false },
-    { number: '04', title: 'Optimisation du degivrage', duration: 'A la demande', body: 'Detection en temps reel de l\u2019accumulation reelle de givre. Le degivrage se declenche uniquement quand il est necessaire - fini les cycles a intervalles fixes qui gaspillent l\u2019energie.', savings: '5 a 10%', savingsColor: 'success' as const, featured: false },
-    { number: '05', title: 'Stockage thermique PCM', duration: 'Partenariat fabricant francais', body: 'Materiaux a changement de phase (PCM/MCP) qui stockent le froid pendant les heures creuses et le restituent aux heures pleines. Decale votre consommation, lisse vos pics, allonge la vie de vos equipements.', savings: '15 a 20%', savingsColor: 'success' as const, featured: true, badge: 'Exclusif' },
+    { number: '01', title: 'Audit instrumente', duration: '4 à 6 semaines', body: 'Mesure précise de vos consommations, températures, taux d’humidité, ouvertures de portes, cycles de dégivrage et comportement des compresseurs. On vous remet un rapport chiffré identifiant exactement ou sont vos pertes.', savings: 'Diagnostic chiffré', savingsColor: 'ink' as const, featured: false },
+    { number: '02', title: 'Capteurs IoT', duration: 'Visibilité 24/7', body: 'Capteurs de température, humidité, ouverture de portes, mouvement et consommation déployés sur l’ensemble de vos zones froides. Tableau de bord en temps réel accessible web et mobile.', savings: '5 à 10 %', savingsColor: 'success' as const, featured: false },
+    { number: '03', title: 'Automatisation intelligente', duration: 'Pilotage adaptatif', body: 'Modulation adaptative des compresseurs (commande VFD), des points de consigne et des cycles, en fonction des conditions réelles plutôt que de programmes fixes. Sans intervention manuelle. Sans modification de vos équipements.', savings: '10 à 15 %', savingsColor: 'success' as const, featured: false },
+    { number: '04', title: 'Optimisation du dégivrage', duration: 'À la demande', body: 'Détection en temps réel de l’accumulation réelle de givre. Le dégivrage se déclenche uniquement quand il est nécessaire - fini les cycles à intervalles fixes qui gaspillent l’énergie.', savings: '5 à 10 %', savingsColor: 'success' as const, featured: false },
+    { number: '05', title: 'Stockage thermique PCM', duration: 'Partenariat fabricant français', body: 'Materiaux a changement de phase (PCM/MCP) qui stockent le froid pendant les heures creuses et le restituent aux heures pleines. Decale votre consommation, lisse vos pics, allonge la vie de vos équipements.', savings: '15 à 20 %', savingsColor: 'success' as const, featured: true, badge: 'Exclusif' },
   ],
   modularNote: {
     label: 'Approche modulaire',
-    body: 'on ne deploie que les couches qui ont un ROI sous 18 mois sur votre site specifique. Pas de sur-vente, pas de sur-equipement. Si l\u2019audit ne revele pas au moins 25% d\u2019economies realisables, on vous le dit - et vous ne payez que les frais d\u2019instrumentation.',
+    body: 'on ne déploie que les couches qui ont un ROI sous 18 mois sur votre site specifique. Pas de sur-vente, pas de sur-équipement. Si l’audit ne revele pas au moins 25 % d’économies réalisables, on vous le dit - et vous ne payez que les frais d’instrumentation.',
   },
 };
 
 export const caseStudy = {
-  label: 'Pilote terrain \u00b7 MIN de Rungis',
+  label: 'Pilote terrain · MIN de Rungis',
   title: 'Une chambre négative.\nDes mesures, pas des promesses.',
   body1: 'Sur une chambre froide négative de 30 m² au MIN de Rungis (consigne −21 °C, groupe triphasé ~6,5 kW), nous avons mené un test de délestage grandeur réelle le 30 mars 2026 : compresseur coupé, températures suivies par nos capteurs.',
   body2: 'Résultat : après 3 h 52 de coupure, la température à cœur de la marchandise n’a dérivé que de +0,21 °C par heure — largement dans les limites HACCP. La chambre tolère jusqu’à 6 heures de délestage par jour ; nous paramétrons à 5 h pour garder une marge confortable.',
@@ -93,41 +93,41 @@ export const caseStudy = {
     { label: 'Économie HP/HC', value: '~20%', caption: 'sur facture réglementée actuelle', color: 'ink' as const },
     { label: 'Économie en dynamique', value: '~30%', caption: 'sur abonnement indexé au marché', color: 'success' as const },
   ],
-  note: 'Ces chiffres correspondent à un site et une configuration précis. Un audit préalable est nécessaire pour quantifier l’économie potentielle de chaque nouveau site : volumes, isolation, consommation de base et contraintes d’activité varient d’un client à l’autre.',
+  note: 'Ces chiffrés correspondent à un site et une configuration précis. Un audit préalable est nécessaire pour quantifier l’économie potentielle de chaque nouveau site : volumes, isolation, consommation de base et contraintes d’activité varient d’un client à l’autre.',
 };
 
 export const profiles = {
   label: 'Pour qui',
-  title: 'Trois profils, un meme besoin\u00a0: un froid moins cher, plus fiable, conforme.',
+  title: 'Trois profils, un même besoin : un froid moins cher, plus fiable, conforme.',
   cards: [
-    { icon: 'P', title: 'Grossistes alimentaires', body: 'MIN de Rungis, marches de gros regionaux, distributeurs RHF, primeurs et negociants en produits frais.', tags: ['Multi-temperatures', 'Activite 4h-14h', 'Decret BACS applicable'] },
-    { icon: 'L', title: 'Logisticiens du froid', body: 'Entrepots multi-temperatures, prestataires logistiques alimentaires, plateformes 3PL specialisees.', tags: ['Forte volumetrie', 'Pression CSRD/RSE', 'F-Gas en transition'] },
-    { icon: 'I', title: 'Industriels agroalimentaires', body: 'Cuisines centrales, transformation, conditionnement, sites de production avec process froid.', tags: ['Process critique', 'Decret Tertiaire', 'CEE eligibles'] },
+    { icon: 'P', title: 'Grossistes alimentaires', body: 'MIN de Rungis, marchés de gros régionaux, distributeurs RHF, primeurs et négociants en produits frais.', tags: ['Multi-températures', 'Activité 4h-14h', 'Décret BACS applicable'] },
+    { icon: 'L', title: 'Logisticiens du froid', body: 'Entrepots multi-températures, prestataires logistiques alimentaires, plateformes 3PL spécialisées.', tags: ['Forte volumétrie', 'Pression CSRD/RSE', 'F-Gas en transition'] },
+    { icon: 'I', title: 'Industriels agroalimentaires', body: 'Cuisines centrales, transformation, conditionnement, sites de production avec process froid.', tags: ['Process critique', 'Décret Tertiaire', 'CEE éligibles'] },
   ],
 };
 
 export const comparison = {
-  label: 'La difference',
-  title: 'Pourquoi Altileo plutot qu\u2019un integrateur generaliste\u00a0?',
+  label: 'La différence',
+  title: 'Pourquoi Altileo plutôt qu’un intégrateur généraliste ?',
   columns: [
-    { name: 'Altileo', subtitle: 'Specialiste froid', highlighted: true },
-    { name: 'Integrateurs generalistes', subtitle: 'Acteurs historiques du CVC', highlighted: false },
+    { name: 'Altileo', subtitle: 'Spécialiste froid', highlighted: true },
+    { name: 'Integrateurs généralistes', subtitle: 'Acteurs historiques du CVC', highlighted: false },
     { name: 'Plateformes IA tertiaires', subtitle: 'Plateformes logicielles tertiaires', highlighted: false },
   ],
   rows: [
-    { criterion: 'Specialisation froid', values: ['Exclusivement', 'Multi-domaines', 'CVC tertiaire'] },
-    { criterion: 'Audit instrumente avant deploiement', values: ['Inclus', 'Devis sur cahier des charges', 'Module additionnel'] },
-    { criterion: 'Stockage PCM integre', values: ['Partenariat fabricant français', 'Non', 'Non'] },
-    { criterion: 'Modularite par couche', values: ['Vous payez ce qui marche', 'Solution complete obligatoire', 'Logiciel uniquement'] },
-    { criterion: 'Conformite Decret BACS', values: ['Clé en main', 'Avec configuration', 'Perimetre logiciel'] },
+    { criterion: 'Spécialisation froid', values: ['Exclusivement', 'Multi-domaines', 'CVC tertiaire'] },
+    { criterion: 'Audit instrumente avant déploiement', values: ['Inclus', 'Devis sur cahier des charges', 'Module additionnel'] },
+    { criterion: 'Stockage PCM intégré', values: ['Partenariat fabricant français', 'Non', 'Non'] },
+    { criterion: 'Modularite par couche', values: ['Vous payez ce qui marché', 'Solution complète obligatoire', 'Logiciel uniquement'] },
+    { criterion: 'Conformité Décret BACS', values: ['Clé en main', 'Avec configuration', 'Périmètre logiciel'] },
   ],
 };
 
 export const bacs = {
-  pill: 'Decret BACS \u00b7 Echeance 2026',
-  title: 'Etes-vous concerne par le Decret BACS\u00a0?',
-  body: 'Si vos installations frigorifiques depassent 70 kW de puissance et sont dans un batiment tertiaire, le Decret BACS impose un systeme d\u2019automatisation et de controle. Diagnostic en 3 questions, gratuit, instantane.',
-  bullets: ['Resultat immediat', 'Aucune donnee commerciale demandee pour le diagnostic', 'Reponse personnalisee selon votre situation'],
+  pill: 'Décret BACS · Échéance 2026',
+  title: 'Etes-vous concerné par le Décret BACS ?',
+  body: 'Si vos installations frigorifiques dépassent 70 kW de puissance et sont dans un bâtiment tertiaire, le Décret BACS impose un système d’automatisation et de contrôle. Diagnostic en 3 questions, gratuit, instantané.',
+  bullets: ['Résultat immédiat', 'Aucune donnée commerciale demandée pour le diagnostic', 'Reponse personnalisée selon votre situation'],
 };
 
 export const pcm = {
@@ -135,9 +135,9 @@ export const pcm = {
   title: 'Le stockage thermique, fabriqué en France.',
   body: 'Altileo travaille en partenariat exclusif avec un fabricant français de matériaux à changement de phase (PCM/MCP). Cette collaboration nous permet de déployer du stockage thermique haute performance, fabriqué en France, à des conditions exclusives — là où la majorité du marché importe.',
   bullets: [
-    { strong: 'Duree de vie 15-20 ans', body: 'contre 7-10 ans pour les batteries lithium' },
-    { strong: 'Maintenance quasi-nulle', body: 'pas de cycles de recharge a gerer' },
-    { strong: 'Fabrication francaise', body: 'eligible CEE et bonus souverainete' },
+    { strong: 'Durée de vie 15-20 ans', body: 'contre 7-10 ans pour les batteries lithium' },
+    { strong: 'Maintenance quasi-nulle', body: 'pas de cycles de recharge a gérer' },
+    { strong: 'Fabrication française', body: 'éligible CEE et bonus souveraineté' },
   ],
   synergy: {
     label: 'Synergie solaire × PCM × pilotage',
@@ -146,34 +146,34 @@ export const pcm = {
 };
 
 export const team = {
-  label: 'L\u2019equipe',
-  title: 'Quatre ingenieurs electriciens, passionnes de froid.',
-  body: 'Pas de couches manageriales. Pas de commerciaux qui ne connaissent pas la physique. Quand vous parlez a Altileo, vous parlez a l\u2019ingenieur qui auditera et deploiera sur votre site.',
+  label: 'L’équipe',
+  title: 'Quatre ingénieurs électriciens, passionnés de froid.',
+  body: 'Pas de couches managériales. Pas de commerciaux qui ne connaissent pas la physique. Quand vous parlez a Altileo, vous parlez a l’ingénieur qui auditera et déploiera sur votre site.',
   members: [
-    { name: '[Prenom Nom]', role: 'Co-fondateur \u00b7 Audit et instrumentation', bio: '[Bref bio]', photo: null as string | null },
-    { name: '[Prenom Nom]', role: 'Co-fondateur \u00b7 Automatisation', bio: '[Bref bio]', photo: null as string | null },
-    { name: '[Prenom Nom]', role: 'Co-fondateur \u00b7 Stockage thermique', bio: '[Bref bio]', photo: null as string | null },
-    { name: '[Prenom Nom]', role: 'Co-fondateur \u00b7 Deploiement et SAV', bio: '[Bref bio]', photo: null as string | null },
+    { name: '[Prénom Nom]', role: 'Co-fondateur · Audit et instrumentation', bio: '[Bref bio]', photo: null as string | null },
+    { name: '[Prénom Nom]', role: 'Co-fondateur · Automatisation', bio: '[Bref bio]', photo: null as string | null },
+    { name: '[Prénom Nom]', role: 'Co-fondateur · Stockage thermique', bio: '[Bref bio]', photo: null as string | null },
+    { name: '[Prénom Nom]', role: 'Co-fondateur · Deploiement et SAV', bio: '[Bref bio]', photo: null as string | null },
   ],
 };
 
 export const finalCta = {
   title: 'On commence toujours\npar mesurer.',
-  body: 'Audit instrumente de vos installations frigorifiques. Quatre semaines. Rapport chiffre complet. Si on n\u2019identifie pas au moins 25% d\u2019economies realisables, vous ne payez que les frais d\u2019instrumentation.',
-  primaryCta: 'Demander un audit energetique',
-  secondaryCta: 'Parler a un ingenieur',
+  body: 'Audit instrumente de vos installations frigorifiques. Quatre semaines. Rapport chiffré complet. Si on n’identifie pas au moins 25 % d’économies réalisables, vous ne payez que les frais d’instrumentation.',
+  primaryCta: 'Demander un audit énergétique',
+  secondaryCta: 'Parler a un ingénieur',
   signals: ['Reponse sous 48h', 'Audit en 4 semaines', 'Sans engagement'],
 };
 
 export const competences = {
   hero: {
-    pill: 'L\u2019ingenierie derriere Altileo',
-    title: 'Quand vous nous confiez vos installations, vous parlez a des ingenieurs.',
-    body: 'Altileo n\u2019est pas une coquille logicielle posee sur du materiel achete. Notre equipe concoit les armoires, calcule les sections de cables, dessine les schemas, integre l\u2019automatisme et garantit la conformite. C\u2019est cette profondeur technique qui rend nos deploiements cold-chain fiables et durables.',
+    pill: 'L’ingénierie derrière Altileo',
+    title: 'Quand vous nous confiez vos installations, vous parlez a des ingénieurs.',
+    body: 'Altileo n’est pas une coquille logicielle posée sur du matériel acheté. Notre équipe conçoit les armoires, calcule les sections de câbles, dessine les schémas, intégré l’automatisme et garantit la conformité. C’est cette profondeur technique qui rend nos déploiements cold-chain fiables et durables.',
   },
   why: {
     title: 'Pourquoi cette profondeur compte pour vous.',
-    body: 'Une optimisation energetique mal cablee detruit son propre ROI. Une armoire mal dimensionnee cree des pannes en pleine campagne. Un degivrage mal pilote peut compromettre votre stock. Avoir des ingenieurs qui maitrisent la chaine complete - de la mise a la terre au pilotage predictif - c\u2019est ce qui separe un deploiement qui dure de celui qui revient en SAV tous les six mois.',
+    body: 'Une optimisation énergétique mal câblée detruit son propre ROI. Une armoire mal dimensionnee cree des pannes en pleine campagne. Un dégivrage mal pilote peut compromettre votre stock. Avoir des ingénieurs qui maîtrisent la chaîne complète - de la mise a la terre au pilotage prédictif - c’est ce qui separe un déploiement qui dure de celui qui revient en SAV tous les six mois.',
   },
   capabilities: [
     { icon: 'A', title: 'Audit énergétique instrumenté', body: 'Mesure précise sur site (consommation, températures, humidité, ouvertures de portes, cycles de dégivrage). Analyse des données, identification chiffrée des pertes, plan d’action priorisable par ROI.', example: 'Audit instrumenté d’un site grossiste — identification des sources principales de surconsommation et chiffrage des économies réalisables couche par couche.' },
@@ -187,65 +187,65 @@ export const competences = {
     { icon: 'V', title: 'Suivi de performance et SAV logiciel', body: 'Monitoring continu après déploiement, alertes sur dérive de performance, reporting mensuel, ajustements à distance, support téléphonique.', example: 'Monitoring 24/7 du site pilote depuis sa mise en service, ajustements distants des consignes selon les saisons et les volumes stockés.' },
   ],
   process: {
-    title: 'Quatre etapes, du brief a l\u2019exploitation.',
-    body: 'Chaque mission suit le meme processus rigoureux. Vous savez a chaque etape ce qui est livre, qui est responsable, et quand.',
+    title: 'Quatre étapes, du brief a l’exploitation.',
+    body: 'Chaque mission suit le même processus rigoureux. Vous savez a chaque étape ce qui est livre, qui est responsable, et quand.',
     steps: [
-      { number: '01', title: 'Audit & cadrage', body: 'Visite sur site, mesures, lecture des installations existantes. Note de cadrage chiffree avec perimetre, livrables et planning.' },
-      { number: '02', title: 'Etude & conception', body: 'Schemas, calculs, dimensionnement, choix materiel. Validation technique avant tout achat ou fabrication.' },
-      { number: '03', title: 'Fabrication & deploiement', body: 'Armoires en interne, integration sur site, cablage, parametrage. Tests fonctionnels avant mise en service.' },
-      { number: '04', title: 'Mise en service & suivi', body: 'Mise en route, formation utilisateurs, dossier d\u2019exploitation. Support technique et SAV sous contrat.' },
+      { number: '01', title: 'Audit & cadrage', body: 'Visite sur site, mesures, lecture des installations existantes. Note de cadrage chiffrée avec périmètre, livrables et planning.' },
+      { number: '02', title: 'Etude & conception', body: 'Schemas, calculs, dimensionnement, choix matériel. Validation technique avant tout achat ou fabrication.' },
+      { number: '03', title: 'Fabrication & déploiement', body: 'Armoires en interne, intégration sur site, câblage, parametrage. Tests fonctionnels avant mise en service.' },
+      { number: '04', title: 'Mise en service & suivi', body: 'Mise en route, formation utilisateurs, dossier d’exploitation. Support technique et SAV sous contrat.' },
     ],
   },
   guarantees: {
     title: 'Ce sur quoi nous nous engageons.',
     body: 'On ne fait pas tout. Ce qu’on livre, on le garantit. Ce qu’on ne fait pas, on le coordonne avec des intervenants compétents et on en pilote la qualité.',
     items: [
-      { label: 'Engagement sur le résultat', body: 'Si l’audit ne révèle pas au moins 25% d’économies réalisables, vous payez uniquement les frais d’instrumentation. Si le déploiement réel dévie de plus de 20% de la trajectoire visée sur 12 mois, on intervient gratuitement pour comprendre et corriger.' },
-      { label: 'Méthode trans-parente', body: 'Mesure avant et après, données accessibles 24/7, exports possibles à tout moment. Pas de boîte noire, pas de chiffres marketing.' },
+      { label: 'Engagement sur le résultat', body: 'Si l’audit ne révèle pas au moins 25 % d’économies réalisables, vous payez uniquement les frais d’instrumentation. Si le déploiement réel dévie de plus de 20% de la trajectoire visée sur 12 mois, on intervient gratuitement pour comprendre et corriger.' },
+      { label: 'Méthode transparente', body: 'Mesure avant et après, données accessibles 24/7, exports possibles à tout moment. Pas de boîte noire, pas de chiffres marketing.' },
       { label: 'Documentation complète', body: 'Rapport d’audit, spécifications, schémas, notices, DOE — tout est documenté et vous appartient. Si demain vous changez de prestataire, votre site reste pleinement exploitable.' },
-      { label: 'Un seul interlocuteur', body: 'Du cadrage au SAV, vous parlez aux mêmes ingénieurs. Pas de chaine diluée, pas de renvoi de balle entre prestataires.' },
+      { label: 'Un seul interlocuteur', body: 'Du cadrage au SAV, vous parlez aux mêmes ingénieurs. Pas de chaîne diluée, pas de renvoi de balle entre prestataires.' },
     ],
   },
   cta: {
-    title: 'Une question technique precise\u00a0?',
-    body: 'Decrivez votre besoin en quelques lignes. Un de nos ingenieurs vous repond sous 48 heures avec une premiere analyse - gratuite, sans engagement.',
+    title: 'Une question technique précise ?',
+    body: 'Decrivez votre besoin en quelques lignes. Un de nos ingénieurs vous repond sous 48 heures avec une premiere analyse - gratuite, sans engagement.',
   },
 };
 
 export const entreprise = {
   hero: {
-    pill: 'Bases a Paris \u00b7 Specialistes du froid',
-    title: 'Une equipe d\u2019ingenieurs specialistes du froid.',
-    body: 'Altileo est porte par quatre ingenieurs electriciens et thermiciens. Nous concevons, calculons, deployons et garantissons des systemes d\u2019optimisation energetique pour la chaine du froid - sur des sites reels, avec des economies verifiees. Pas de promesses marketing. Pas de boites noires. Du travail d\u2019ingenieur, livre proprement.',
+    pill: 'Basés à Paris · Spécialistes du froid',
+    title: 'Une équipe d’ingénieurs spécialistes du froid.',
+    body: 'Altileo est porte par quatre ingénieurs électriciens et thermiciens. Nous concevons, calculons, déployons et garantissons des systèmes d’optimisation énergétique pour la chaîne du froid - sur des sites réels, avec des économies vérifiées. Pas de promesses marketing. Pas de boîtes noires. Du travail d’ingénieur, livre proprement.',
   },
   mission: {
-    title: 'Reduire definitivement le cout energetique du froid en France.',
-    body1: 'Le froid alimentaire et logistique consomme entre 7% et 10% de l\u2019electricite francaise. Sur les sites que nous auditons, 30 a 40% de cette consommation est tout simplement gaspillee - dans des cycles mal calibres, des equipements sur-dimensionnes, des pertes par mauvais reglages, des degivrages aux mauvais moments.',
-    body2: 'Notre mission n\u2019est pas \u00ab sauver la planete \u00bb - c\u2019est rendre l\u2019efficacite energetique du froid accessible, mesurable, et bancable. Un site a la fois. Avec des chiffres verifies par compteur, pas par marketing.',
+    title: 'Réduire définitivement le coût énergétique du froid en France.',
+    body1: 'Le froid alimentaire et logistique consomme entre 7% et 10% de l’électricité française. Sur les sites que nous auditons, 30 à 40 % de cette consommation est tout simplement gaspillée - dans des cycles mal calibrés, des équipements sur-dimensionnes, des pertes par mauvais réglages, des dégivrages aux mauvais moments.',
+    body2: 'Notre mission n’est pas « sauver la planete » - c’est rendre l’efficacite énergétique du froid accessible, mesurable, et bancable. Un site a la fois. Avec des chiffrés vérifiés par compteur, pas par marketing.',
     kpis: [
-      { value: '30-40%', label: 'economies verifiees sur les sites deployes' },
-      { value: '< 18 mois', label: 'ROI cible avant tout deploiement' },
+      { value: '30-40%', label: 'économies vérifiées sur les sites déployés' },
+      { value: '< 18 mois', label: 'ROI cible avant tout déploiement' },
       { value: '100%', label: 'des couches livrees evaluees par mesure' },
-      { value: 'FR', label: 'ingenierie, fabrication, hebergement' },
+      { value: 'FR', label: 'ingénierie, fabrication, hébergement' },
     ],
   },
   context: {
-    title: 'Le bon marche, le bon moment.',
-    body: 'Trois forces convergent en 2025-2027. Les grossistes et logisticiens du froid ont 18 mois pour s\u2019adapter - ou subir.',
+    title: 'Le bon marché, le bon moment.',
+    body: 'Trois forces convergent en 2025-2027. Les grossistes et logisticiens du froid ont 18 mois pour s’adapter - ou subir.',
     drivers: [
-      { eyebrow: 'Reglementation', title: 'Decret BACS \u00b7 Decret Tertiaire', body: 'Toute installation frigorifique superieure a 70 kW dans un batiment tertiaire doit etre equipee d\u2019un systeme d\u2019automatisation et de controle. Echeance retrofit\u00a0: 2027. Reporting OPERAT obligatoire des maintenant.' },
-      { eyebrow: 'Prix de l\u2019energie', title: 'Une facture qui ne baisse plus', body: 'Le tarif reglemente a double entre 2021 et 2024. Pour un grossiste de 1500 m\u00b2, la facture froid passe de 40 a 80 k\u20ac par an. L\u2019efficacite n\u2019est plus une option, c\u2019est une condition de survie.' },
-      { eyebrow: 'Gaz frigorigenes', title: 'Sortie progressive des HFC', body: 'Le reglement F-Gas impose la reduction puis l\u2019interdiction de nombreux fluides actuels d\u2019ici 2030. Chaque renovation d\u2019installation est l\u2019occasion d\u2019optimiser - ou de payer deux fois.' },
+      { eyebrow: 'Reglementation', title: 'Décret BACS · Décret Tertiaire', body: 'Toute installation frigorifique supérieure à 70 kW dans un bâtiment tertiaire doit être équipée d’un système d’automatisation et de contrôle. Échéance retrofit : 2027. Reporting OPERAT obligatoire dès maintenant.' },
+      { eyebrow: 'Prix de l’énergie', title: 'Une facture qui ne baisse plus', body: 'Le tarif réglementé a double entre 2021 et 2024. Pour un grossiste de 1500 m², la facture froid passe de 40 a 80 k€ par an. L’efficacite n’est plus une option, c’est une condition de survie.' },
+      { eyebrow: 'Gaz frigorigènes', title: 'Sortie progressive des HFC', body: 'Le règlement F-Gas impose la réduction puis l’interdiction de nombreux fluides actuels d’ici 2030. Chaque rénovation d’installation est l’occasion d’optimiser - ou de payer deux fois.' },
     ],
   },
   principles: {
     title: 'Quatre principes, simples et tenus.',
-    body: 'Pas de \u00ab valeurs d\u2019entreprise \u00bb declamatoires. Quatre regles operationnelles que nous appliquons a chaque mission.',
+    body: 'Pas de « valeurs d’entreprise » déclamatoires. Quatre règles opérationnelles que nous appliquons a chaque mission.',
     items: [
-      { title: 'On mesure avant de promettre.', body: 'Aucun engagement chiffre ne sort de notre bouche sans audit instrumente prealable. Si vos installations ne permettent pas au moins 25% d\u2019economies realistes, on vous le dit - et vous ne payez que les frais d\u2019instrumentation.' },
-      { title: 'On concoit en interne, on engage notre responsabilite.', body: 'Chaque schema, chaque calcul, chaque armoire est concu, dimensionne et valide par nos ingenieurs. Nos sous-traitants executent sous nos plans. Vous parlez a un seul interlocuteur, du cadrage au SAV.' },
-      { title: 'On vend ce qui a un ROI.', body: 'Notre methode est modulaire. On deploie uniquement les couches qui s\u2019amortissent en moins de 18 mois sur votre site specifique. Pas de sur-vente, pas de sur-equipement.' },
-      { title: 'On documente tout, en clair.', body: 'Schemas, calculs, notices d\u2019exploitation, DOE - chaque livrable est complet et comprehensible. Si demain vous changez de prestataire, votre site reste exploitable. Pas de dependance artificielle.' },
+      { title: 'On mesure avant de promettre.', body: 'Aucun engagement chiffré ne sort de notre bouche sans audit instrumente préalable. Si vos installations ne permettent pas au moins 25 % d’économies réalistes, on vous le dit - et vous ne payez que les frais d’instrumentation.' },
+      { title: 'On conçoit en interne, on engage notre responsabilite.', body: 'Chaque schéma, chaque calcul, chaque armoire est conçu, dimensionne et valide par nos ingénieurs. Nos sous-traitants executent sous nos plans. Vous parlez a un seul interlocuteur, du cadrage au SAV.' },
+      { title: 'On vend ce qui a un ROI.', body: 'Notre méthode est modulaire. On déploie uniquement les couches qui s’amortissent en moins de 18 mois sur votre site specifique. Pas de sur-vente, pas de sur-équipement.' },
+      { title: 'On documente tout, en clair.', body: 'Schemas, calculs, notices d’exploitation, DOE - chaque livrable est complet et compréhensible. Si demain vous changez de prestataire, votre site reste exploitable. Pas de dépendance artificielle.' },
     ],
   },
   team: {
@@ -261,18 +261,18 @@ export const entreprise = {
     ],
   },
   location: {
-    title: 'Bases a Paris, intervenons partout en France.',
-    body: 'Notre ancrage parisien nous met a quelques kilometres du MIN de Rungis - le plus grand marche de gros d\u2019Europe - et au coeur de l\u2019ecosysteme logistique francilien. Nous nous deplacons sur tout le territoire pour les missions qui le justifient.',
+    title: 'Basés à Paris, intervenons partout en France.',
+    body: 'Notre ancrage parisien nous met a quelques kilometres du MIN de Rungis - le plus grand marché de gros d’Europe - et au cœur de l’écosystème logistique francilien. Nous nous déplaçons sur tout le territoire pour les missions qui le justifient.',
     zones: [
-      'Ile-de-France - intervention sous 48h',
-      'Lyon, Marseille, Lille, Bordeaux - deplacement programme',
+      'Île-de-France - intervention sous 48h',
+      'Lyon, Marseille, Lille, Bordeaux - déplacement programme',
       'France entiere - audit instrumente sur devis',
       'Suivi a distance - dashboard accessible 24/7',
     ],
   },
   cta: {
     title: 'On commence par un audit.',
-    body: 'Le meilleur moyen de savoir si Altileo a sa place chez vous, c\u2019est de mesurer. Audit instrumente en 4 semaines, rapport chiffre complet, sans engagement.',
+    body: 'Le meilleur moyen de savoir si Altileo a sa place chez vous, c’est de mesurer. Audit instrumente en 4 semaines, rapport chiffré complet, sans engagement.',
   },
 };
 
@@ -282,11 +282,11 @@ export const faqGroups = [
     items: [
       {
         q: 'Combien coûte un audit énergétique ?',
-        a: 'L’audit instrumenté coûte entre 5 000 € et 7 000 € selon la taille du site et le nombre de zones froides. Cela inclut : visite sur site, pose des capteurs de mesure pendant 4 à 6 semaines, analyse des données, et un rapport écrit chiffré avec les pertes identifiées et les économies réalisables.\n\nSi nous ne trouvons pas au moins 25 % d’économies réalisables sur votre site, vous ne payez que les frais d’instrumentation (environ 1 500 €). Si nous dépliquons ensuite la méthode complète chez vous, le coût de l’audit est déduit du déploiement.',
+        a: 'L’audit instrumenté coûte entre 5 000 € et 7 000 € selon la taille du site et le nombre de zones froides. Cela inclut : visite sur site, pose des capteurs de mesure pendant 4 à 6 semaines, analyse des données, et un rapport écrit chiffré avec les pertes identifiées et les économies réalisables.\n\nSi nous ne trouvons pas au moins 25 % d’économies réalisables sur votre site, vous ne payez que les frais d’instrumentation (environ 1 500 €). Si nous déployons ensuite la méthode complète chez vous, le coût de l’audit est déduit du déploiement.',
       },
       {
         q: 'Combien de temps prend un audit ?',
-        a: 'Quatre à six semaines au total. Une journée sur site pour la pose des capteurs, 4 semaines de mesures continues sans intervention de votre part, puis 1 à 2 semaines d’analyse et de rédaction du rapport. Vous recevez le rapport final en main propre lors d’un rendez-vous de restitution.',
+        a: 'Quatre à six semaines au total. Une journée sur site pour la posé des capteurs, 4 semaines de mesures continues sans intervention de votre part, puis 1 à 2 semaines d’analyse et de rédaction du rapport. Vous recevez le rapport final en main propre lors d’un rendez-vous de restitution.',
       },
       {
         q: 'Qu’est-ce que je reçois à la fin de l’audit ?',
@@ -315,11 +315,11 @@ export const faqGroups = [
       },
       {
         q: 'Quels sont les risques pour mes stocks pendant l’installation ?',
-        a: 'Sur notre déploiement pilote, aucune perte de chaîne du froid pendant les phases de travaux. Notre processus inclut : une analyse de risque préalable, un plan de coupure validé par votre frigoriste, des températures monitorées en continu pendant les travaux, et un protocole de secours si un équipement critique pose problème. La sécurité alimentaire reste votre responsabilité, mais nous travaillons en respectant strictement vos plans HACCP.',
+        a: 'Sur notre déploiement pilote, aucune perte de chaîne du froid pendant les phases de travaux. Notre processus inclut : une analyse de risque préalable, un plan de coupure validé par votre frigoriste, des températures monitorées en continu pendant les travaux, et un protocole de secours si un équipement critique posé problème. La sécurité alimentaire reste votre responsabilité, mais nous travaillons en respectant strictement vos plans HACCP.',
       },
       {
         q: 'Comment se déroule l’installation ?',
-        a: 'Quatre phases : (1) cadrage technique avec votre équipe et votre frigoriste, (2) fabrication de l’armoire en interne dans nos locaux (3 à 5 semaines), (3) intervention sur site pour pose, câblage et mise en service (3 à 5 jours), (4) période de réglage et de tuning (2 à 4 semaines avec ajustements à distance). Vous avez un seul interlocuteur pendant toute la durée du projet.',
+        a: 'Quatre phases : (1) cadrage technique avec votre équipe et votre frigoriste, (2) fabrication de l’armoire en interne dans nos locaux (3 à 5 semaines), (3) intervention sur site pour posé, câblage et mise en service (3 à 5 jours), (4) période de réglage et de tuning (2 à 4 semaines avec ajustements à distance). Vous avez un seul interlocuteur pendant toute la durée du projet.',
       },
     ],
   },
@@ -328,7 +328,7 @@ export const faqGroups = [
     items: [
       {
         q: 'Comment vérifiez-vous les économies promises ?',
-        a: 'Mesure avant et après par compteurs énergétiques dédiés, installés sur les arrivées électriques de vos installations frigorifiques. Les valeurs sont enregistrées 24/7 et accessibles dans votre dashboard. La période de référence (avant) est mesurée sur 4 semaines minimum. Après déploiement, les économies sont comparées à cette baseline avec ajustement pour les conditions extérieures (température, saisonnalité, volumes). Tout est trans-parent.',
+        a: 'Mesure avant et après par compteurs énergétiques dédiés, installés sur les arrivées électriques de vos installations frigorifiques. Les valeurs sont enregistrées 24/7 et accessibles dans votre dashboard. La période de référence (avant) est mesurée sur 4 semaines minimum. Après déploiement, les économies sont comparées à cette baseline avec ajustement pour les conditions extérieures (température, saisonnalité, volumes). Tout est transparent.',
       },
       {
         q: 'Que se passe-t-il si les économies promises ne se réalisent pas ?',
@@ -366,7 +366,7 @@ export const faqGroups = [
     items: [
       {
         q: 'Quelle est la durée d’engagement ?',
-        a: 'Le déploiement initial (matériel + armoire + mise en service) est un achat ferme, sans engagement de durée côté matériel. L’abonnement au pilotage et au dashboard est mensuel, résiliable avec un préavis de 3 mois. Pas de contrat verrouillé sur 5 ans, pas de pénalité cachée. Notre objectif est que vous restiez parce que ça marche, pas parce que vous êtes piégé.',
+        a: 'Le déploiement initial (matériel + armoire + mise en service) est un achat ferme, sans engagement de durée côté matériel. L’abonnement au pilotage et au dashboard est mensuel, résiliable avec un préavis de 3 mois. Pas de contrat verrouillé sur 5 ans, pas de pénalité cachée. Notre objectif est que vous restiez parce que ça marché, pas parce que vous êtes piégé.',
       },
       {
         q: 'Que devient le système si je ne renouvelle pas l’abonnement ?',
@@ -409,7 +409,7 @@ export const faqHighlights = [
 
 export const commentCaMarche = {
   hero: {
-    pill: 'Comment ça marche',
+    pill: 'Comment ça marché',
     title: 'Votre chambre froide est une réserve de froid. On l’exploite.',
     body: 'Une fois en température, la masse des produits stockés garde le froid pendant plusieurs heures sans que le compresseur tourne. L’Altileo Box exploite cette inertie thermique pour concentrer le fonctionnement du compresseur sur les heures les moins chères — sans jamais rompre la chaîne du froid.',
   },
@@ -442,7 +442,7 @@ export const commentCaMarche = {
       { title: 'Automate industriel', body: 'ESP32 avec modem 4G intégré. Cerveau embarqué, connexion cellulaire autonome vers le cloud.' },
       { title: 'Compteur d’énergie', body: 'Modbus RS485 avec pince ampèremétrique. Mesure de la consommation réelle du groupe frigorifique.' },
       { title: 'Sonde température', body: 'PT100 filaire industrielle, placée au cœur des produits. Précision ±0,15 °C.' },
-      { title: 'Coffret IP65', body: 'Boîtier étanche pour pose en environnement industriel, à côté du tableau électrique.' },
+      { title: 'Coffret IP65', body: 'Boîtier étanche pour posé en environnement industriel, à côté du tableau électrique.' },
     ],
     install: 'Installation en une demi-journée, coffret posé hors chambre froide, sans perçage sur les zones froides. Un simple fil basse tension relie la Box au régulateur du groupe (bornes standards, ex. Danfoss). Aucune modification du circuit haute tension, compatible avec la plupart des groupes et régulateurs du marché.',
   },
@@ -467,7 +467,7 @@ export const commentCaMarche = {
   },
   cta: {
     title: 'Envie de savoir ce que votre site peut délester ?',
-    body: 'Chaque installation est différente. Un diagnostic d’éligibilité mesure l’inertie de vos chambres froides et chiffre les économies réalisables — sans engagement.',
+    body: 'Chaque installation est différente. Un diagnostic d’éligibilité mesure l’inertie de vos chambres froides et chiffré les économies réalisables — sans engagement.',
   },
 };
 
@@ -483,7 +483,7 @@ export const tarifDynamique = {
     body: 'Historiquement marginale en France, la tarification dynamique change de statut. Depuis juillet 2026, seules les offres indexées directement sur les prix de gros sont considérées comme dynamiques, et les grands fournisseurs (plus de 200 000 clients) ont désormais l’obligation d’en proposer. Résultat : un marché qui s’élargit, avec de plus en plus d’offres exposées au prix réel de l’électricité. Cette bascule est déjà la norme en Europe du Nord.',
   },
   mecanisme: {
-    label: 'Comment ça marche',
+    label: 'Comment ça marché',
     title: 'Le prix se fixe chaque jour, heure par heure',
     body: 'Chaque jour avant midi, producteurs et fournisseurs soumettent offres et besoins pour le lendemain. La bourse européenne calcule un prix d’équilibre pour chacune des 24 heures : c’est le marché « day-ahead ». Les sources les moins chères (nucléaire, renouvelables) sont mobilisées en premier ; quand le vent souffle et que le soleil brille, les prix plongent, parfois jusqu’à devenir négatifs. Les pointes, elles, se concentrent le matin et le soir.',
     stat1Value: '~159 €/MWh',
@@ -519,6 +519,6 @@ export const tarifDynamique = {
   },
   cta: {
     title: 'Votre site est-il éligible à la tarification dynamique ?',
-    body: 'Notre diagnostic étudie votre courbe de charge, l’inertie de vos chambres et vos contraintes d’exploitation, puis chiffre l’économie réalisable selon chaque scénario — avant tout engagement.',
+    body: 'Notre diagnostic étudie votre courbe de charge, l’inertie de vos chambres et vos contraintes d’exploitation, puis chiffré l’économie réalisable selon chaque scénario — avant tout engagement.',
   },
 };

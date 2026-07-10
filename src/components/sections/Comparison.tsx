@@ -8,7 +8,7 @@ const positiveValues = new Set([
   'Inclus',
   'Partenariat exclusif FR',
   'Vous payez ce qui marche',
-  'Cl\u00e9 en main',
+  'Clé en main',
   'Avec configuration',
 ]);
 
@@ -85,7 +85,7 @@ export function Comparison() {
             <thead>
               <tr className="border-b border-line">
                 <th className="text-left px-4 py-4 text-sm font-medium text-muted">
-                  <span className="sr-only">Crit\u00e8re</span>
+                  <span className="sr-only">Critère</span>
                 </th>
                 {comparison.columns.map((col) => (
                   <th

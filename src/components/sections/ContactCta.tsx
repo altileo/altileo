@@ -12,7 +12,7 @@ export function ContactCta() {
           </h2>
           <p className="mt-6 text-lg lg:text-xl text-muted-dark leading-relaxed">
             Audit instrumenté de vos installations frigorifiques. Quatre semaines.
-            Rapport chiffré complet. Si on n’identifie pas au moins 25% d’économies
+            Rapport chiffré complet. Si on n’identifie pas au moins 25 % d’économies
             réalisables, vous ne payez que les frais d’instrumentation.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">

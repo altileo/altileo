@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { cn } from '@/lib/cn';
 
-type Variant = 'primary' | 'secondary';
+type Variant = 'primary' | 'secondary' | 'secondaryDark';
 type Size = 'md' | 'lg';
 
 const baseClasses =
@@ -12,6 +12,8 @@ const variants: Record<Variant, string> = {
     'bg-brand hover:bg-brand-deep text-white shadow-cta focus-visible:outline-brand-deep',
   secondary:
     'bg-white hover:bg-surface text-ink border border-line focus-visible:outline-brand-deep',
+  secondaryDark:
+    'bg-transparent hover:bg-white/10 text-white border border-white/30 focus-visible:outline-white',
 };
 
 const sizes: Record<Size, string> = {

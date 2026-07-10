@@ -16,7 +16,7 @@ interface Question {
 const questions: Question[] = [
   {
     id: 'power',
-    text: 'Quelle est la puissance totale de vos installations frigorifiques\u00a0?',
+    text: 'Quelle est la puissance totale de vos installations frigorifiques ?',
     options: [
       { value: 'lt70', label: 'Moins de 70 kW' },
       { value: '70-290', label: 'Entre 70 et 290 kW' },
@@ -26,21 +26,21 @@ const questions: Question[] = [
   },
   {
     id: 'building',
-    text: 'Vos installations sont-elles dans un b\u00e2timent tertiaire\u00a0?',
+    text: 'Vos installations sont-elles dans un bâtiment tertiaire ?',
     options: [
-      { value: 'yes', label: 'Oui \u2014 entrep\u00f4t, bureaux, locaux commerciaux' },
-      { value: 'industrial', label: 'Non \u2014 b\u00e2timent industriel uniquement' },
+      { value: 'yes', label: 'Oui — entrepôt, bureaux, locaux commerciaux' },
+      { value: 'industrial', label: 'Non — bâtiment industriel uniquement' },
       { value: 'mixed', label: 'Mixte (tertiaire + industriel)' },
       { value: 'unknown', label: 'Je ne sais pas', subtle: true },
     ],
   },
   {
     id: 'existing',
-    text: 'Avez-vous d\u00e9j\u00e0 un syst\u00e8me de monitoring ou de GTB\u00a0?',
+    text: 'Avez-vous déjà un système de monitoring ou de GTB ?',
     options: [
-      { value: 'none', label: 'Aucun syst\u00e8me en place' },
-      { value: 'partial', label: 'Syst\u00e8me partiel ou ancien' },
-      { value: 'full', label: 'GTB compl\u00e8te et r\u00e9cente' },
+      { value: 'none', label: 'Aucun système en place' },
+      { value: 'partial', label: 'Système partiel ou ancien' },
+      { value: 'full', label: 'GTB complète et récente' },
     ],
   },
 ];
@@ -61,9 +61,9 @@ function computeVerdict(answers: Record<string, string>): Verdict {
   if (power === 'unknown' || building === 'unknown') {
     return {
       status: 'unclear',
-      title: 'Diagnostic \u00e0 approfondir',
+      title: 'Diagnostic à approfondir',
       message:
-        'Sans informations pr\u00e9cises sur la puissance et le type de b\u00e2timent, on ne peut pas conclure. Notre audit instrument\u00e9 commence justement par ces mesures \u2014 gratuit en cas de non-conformit\u00e9 av\u00e9r\u00e9e.',
+        'Sans informations précises sur la puissance et le type de bâtiment, on ne peut pas conclure. Notre audit instrumenté commence justement par ces mesures — gratuit en cas de non-conformité avérée.',
       cta: 'Demander un audit',
     };
   }
@@ -71,9 +71,9 @@ function computeVerdict(answers: Record<string, string>): Verdict {
   if (power === 'lt70') {
     return {
       status: 'not-subject',
-      title: 'Probablement non concern\u00e9',
+      title: 'Probablement non concerné',
       message:
-        'Avec une puissance inf\u00e9rieure \u00e0 70 kW, vos installations ne sont pas assujetties au D\u00e9cret BACS. Vous pouvez n\u00e9anmoins r\u00e9aliser des \u00e9conomies importantes \u2014 un audit reste pertinent.',
+        'Avec une puissance inférieure à 70 kW, vos installations ne sont pas assujetties au Décret BACS. Vous pouvez néanmoins réaliser des économies importantes — un audit reste pertinent.',
       cta: 'Discuter de votre situation',
     };
   }
@@ -83,16 +83,16 @@ function computeVerdict(answers: Record<string, string>): Verdict {
       status: 'borderline',
       title: 'Cas particulier',
       message:
-        'Les b\u00e2timents purement industriels ne sont pas concern\u00e9s par le D\u00e9cret BACS, mais d\u2019autres r\u00e9glementations peuvent s\u2019appliquer (D\u00e9cret Tertiaire, F-Gas). Nos ing\u00e9nieurs peuvent clarifier votre situation.',
-      cta: 'Clarifier avec un ing\u00e9nieur',
+        'Les bâtiments purement industriels ne sont pas concernés par le Décret BACS, mais d’autres réglementations peuvent s’appliquer (Décret Tertiaire, F-Gas). Nos ingénieurs peuvent clarifier votre situation.',
+      cta: 'Clarifier avec un ingénieur',
     };
   }
 
   return {
     status: 'subject',
-    title: 'Vous \u00eates assujetti au D\u00e9cret BACS',
+    title: 'Vous êtes assujetti au Décret BACS',
     message:
-      'Avec une puissance sup\u00e9rieure \u00e0 70 kW dans un b\u00e2timent tertiaire, vos installations doivent \u00eatre \u00e9quip\u00e9es d\u2019un syst\u00e8me d\u2019automatisation et de contr\u00f4le. \u00c9ch\u00e9ance pour le retrofit\u00a0: 2027. Notre m\u00e9thode couvre l\u2019ensemble des exigences en cl\u00e9 en main.',
+      'Avec une puissance supérieure à 70 kW dans un bâtiment tertiaire, vos installations doivent être équipées d’un système d’automatisation et de contrôle. Échéance pour le retrofit : 2027. Notre méthode couvre l’ensemble des exigences en clé en main.',
     cta: 'Demander un audit BACS',
   };
 }
@@ -131,7 +131,7 @@ export function BacsDiagnostic() {
               <ul className="mt-6 space-y-2 text-sm text-white/80">
                 {bacs.bullets.map((b) => (
                   <li key={b} className="flex items-center gap-2">
-                    <span className="text-highlight" aria-hidden="true">\u2713</span>
+                    <span className="text-highlight" aria-hidden="true">✓</span>
                     {b}
                   </li>
                 ))}
@@ -173,7 +173,7 @@ export function BacsDiagnostic() {
                       verdict.status === 'unclear' && 'bg-bg text-muted',
                     )}
                   >
-                    R\u00e9sultat du diagnostic
+                    Résultat du diagnostic
                   </div>
                   <h3 className="text-xl font-bold text-ink">{verdict.title}</h3>
                   <p className="mt-3 text-sm text-muted leading-relaxed">{verdict.message}</p>
