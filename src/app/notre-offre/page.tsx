@@ -8,7 +8,7 @@ import { notreOffre as o } from '@/lib/content';
 export const metadata: Metadata = {
   title: 'Notre offre',
   description:
-    'Un modèle simple : le matériel se rembourse en 3 à 5 ans grâce à vos économies, puis un abonnement mensuel toujours plus petit que ce que vous économisez. Diagnostic gratuit, audit chiffré, deux façons de payer. Moins de 25 % d’économies identifiées ? Vous ne payez que l’instrumentation.',
+    'Un modèle simple : le matériel se rembourse en 3 à 5 ans grâce à vos économies, puis un abonnement mensuel toujours plus petit que ce que vous économisez. Diagnostic gratuit, audit chiffré, deux façons de payer. On avance par étapes sûres et on ne déploie que lorsque le gain est clair et prouvé.',
   keywords: ['offre', 'tarifs', 'abonnement', 'froid', 'audit', 'économies', 'financement'],
   alternates: { canonical: '/notre-offre' },
   openGraph: {

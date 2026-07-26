@@ -77,7 +77,7 @@ export const method = {
   ],
   modularNote: {
     label: 'Approche modulaire',
-    body: 'on ne déploie que les couches qui ont un ROI sous 18 mois sur votre site specifique. Pas de sur-vente, pas de sur-équipement. Si l’audit ne revele pas au moins 25 % d’économies réalisables, on vous le dit - et vous ne payez que les frais d’instrumentation.',
+    body: 'on ne déploie que les couches qui ont un ROI sous 18 mois sur votre site specifique. Pas de sur-vente, pas de sur-équipement. On avance par étapes sûres : on ne déploie que lorsque le gain est clair, mesuré et prouvé.',
   },
 };
 
@@ -160,7 +160,7 @@ export const team = {
 
 export const finalCta = {
   title: 'On commence toujours\npar mesurer.',
-  body: 'Audit instrumente de vos installations frigorifiques. Quatre semaines. Rapport chiffré complet. Si on n’identifie pas au moins 25 % d’économies réalisables, vous ne payez que les frais d’instrumentation.',
+  body: 'Audit instrumente de vos installations frigorifiques. Quatre semaines. Rapport chiffré complet. On avance par étapes sûres : on ne déploie que lorsque le gain est clair, mesuré et prouvé sur votre site.',
   primaryCta: 'Demander un audit énergétique',
   secondaryCta: 'Parler a un ingénieur',
   signals: ['Reponse sous 48h', 'Audit en 4 semaines', 'Sans engagement'],
@@ -201,7 +201,7 @@ export const competences = {
     title: 'Ce sur quoi nous nous engageons.',
     body: 'On ne fait pas tout. Ce qu’on livre, on le garantit. Ce qu’on ne fait pas, on le coordonne avec des intervenants compétents et on en pilote la qualité.',
     items: [
-      { label: 'Engagement sur le résultat', body: 'Si l’audit ne révèle pas au moins 25 % d’économies réalisables, vous payez uniquement les frais d’instrumentation. Si le déploiement réel dévie de plus de 20% de la trajectoire visée sur 12 mois, on intervient gratuitement pour comprendre et corriger.' },
+      { label: 'On avance par étapes sûres', body: 'Le diagnostic est gratuit et l’audit chiffre précisément le potentiel de votre site. On ne déploie que lorsque le gain est clair, mesuré et prouvé — et on vous le dit franchement s’il ne l’est pas. Pas de sur-vente, pas de pari.' },
       { label: 'Méthode transparente', body: 'Mesure avant et après, données accessibles 24/7, exports possibles à tout moment. Pas de boîte noire, pas de chiffres marketing.' },
       { label: 'Documentation complète', body: 'Rapport d’audit, spécifications, schémas, notices, DOE — tout est documenté et vous appartient. Si demain vous changez de prestataire, votre site reste pleinement exploitable.' },
       { label: 'Un seul interlocuteur', body: 'Du cadrage au SAV, vous parlez aux mêmes ingénieurs. Pas de chaîne diluée, pas de renvoi de balle entre prestataires.' },
@@ -243,7 +243,7 @@ export const entreprise = {
     title: 'Quatre principes, simples et tenus.',
     body: 'Pas de « valeurs d’entreprise » déclamatoires. Quatre règles opérationnelles que nous appliquons a chaque mission.',
     items: [
-      { title: 'On mesure avant de promettre.', body: 'Aucun engagement chiffré ne sort de notre bouche sans audit instrumente préalable. Si vos installations ne permettent pas au moins 25 % d’économies réalistes, on vous le dit - et vous ne payez que les frais d’instrumentation.' },
+      { title: 'On mesure avant de promettre.', body: 'Aucun engagement chiffré ne sort de notre bouche sans audit instrumente préalable. On avance par étapes sûres : on ne déploie que lorsque le gain est clair, mesuré et prouvé sur votre site — et on vous le dit franchement s’il ne l’est pas.' },
       { title: 'On conçoit en interne, on engage notre responsabilite.', body: 'Chaque schéma, chaque calcul, chaque armoire est conçu, dimensionne et valide par nos ingénieurs. Nos sous-traitants executent sous nos plans. Vous parlez a un seul interlocuteur, du cadrage au SAV.' },
       { title: 'On vend ce qui a un ROI.', body: 'Notre méthode est modulaire. On déploie uniquement les couches qui s’amortissent en moins de 18 mois sur votre site specifique. Pas de sur-vente, pas de sur-équipement.' },
       { title: 'On documente tout, en clair.', body: 'Schemas, calculs, notices d’exploitation, DOE - chaque livrable est complet et compréhensible. Si demain vous changez de prestataire, votre site reste exploitable. Pas de dépendance artificielle.' },
@@ -283,7 +283,7 @@ export const faqGroups = [
     items: [
       {
         q: 'Combien coûte un audit énergétique ?',
-        a: 'L’audit instrumenté coûte entre 5 000 € et 7 000 € selon la taille du site et le nombre de zones froides. Cela inclut : visite sur site, pose des capteurs de mesure pendant 4 à 6 semaines, analyse des données, et un rapport écrit chiffré avec les pertes identifiées et les économies réalisables.\n\nSi nous ne trouvons pas au moins 25 % d’économies réalisables sur votre site, vous ne payez que les frais d’instrumentation (environ 1 500 €). Si nous déployons ensuite la méthode complète chez vous, le coût de l’audit est déduit du déploiement.',
+        a: 'L’audit instrumenté coûte entre 5 000 € et 7 000 € selon la taille du site et le nombre de zones froides. Cela inclut : visite sur site, pose des capteurs de mesure pendant 4 à 6 semaines, analyse des données, et un rapport écrit chiffré avec les pertes identifiées et les économies réalisables.\n\nSi vous déployez ensuite la méthode complète chez vous, le coût de l’audit est déduit du déploiement. Le diagnostic préalable, lui, est gratuit et sans engagement.',
       },
       {
         q: 'Combien de temps prend un audit ?',
@@ -295,7 +295,7 @@ export const faqGroups = [
       },
       {
         q: 'Que se passe-t-il si l’audit ne révèle pas d’économies suffisantes ?',
-        a: 'C’est rare — sur les sites froid alimentaire et logistique que nous auditons, les économies réalisables dépassent presque toujours 25 %. Si toutefois ce seuil n’est pas atteint, vous ne payez que les frais d’instrumentation. Vous gardez le rapport, qui peut servir d’état des lieux pour vos obligations réglementaires (Décret Tertiaire, reporting OPERAT).',
+        a: 'Le diagnostic est gratuit et sans engagement : il nous dit précisément ce que votre site peut économiser. Sur les sites froid alimentaire et logistique que nous auditons, le potentiel est presque toujours au rendez-vous. Si ce n’était pas le cas, on vous le dirait franchement et on n’irait pas plus loin — on avance par étapes sûres, on ne déploie que lorsque le gain est clair et prouvé. Vous gardez le rapport, qui peut servir d’état des lieux pour vos obligations réglementaires (Décret Tertiaire, reporting OPERAT).',
       },
     ],
   },
@@ -388,11 +388,11 @@ export const faqGroups = [
 export const faqHighlights = [
   {
     q: 'Combien coûte un audit énergétique ?',
-    a: 'Entre 5 000 € et 7 000 € selon la taille du site. Si nous ne trouvons pas 25 % d’économies réalisables, vous ne payez que les frais d’instrumentation (~1 500 €). Si vous dépliquez ensuite la méthode, le coût de l’audit est déduit.',
+    a: 'Entre 5 000 € et 7 000 € selon la taille du site. Si vous déployez ensuite la méthode, le coût de l’audit est déduit. Le diagnostic préalable, lui, est gratuit et sans engagement.',
   },
   {
     q: 'Que se passe-t-il si vous ne trouvez pas d’économies ?',
-    a: 'Vous ne payez que les frais d’instrumentation. Vous gardez le rapport, qui peut servir d’état des lieux pour vos obligations réglementaires.',
+    a: 'Vous gardez le rapport complet, qui peut servir d’état des lieux pour vos obligations réglementaires. On avance par étapes sûres : on ne déploie que lorsque le gain est clair et prouvé.',
   },
   {
     q: 'Combien de temps avant que je sois recontacté ?',
@@ -743,8 +743,8 @@ export const notreOffre = {
   },
   garantie: {
     label: 'Notre garantie',
-    title: 'Si le potentiel n’y est pas, vous ne payez presque rien',
-    body: 'On ne vous vend rien à l’aveugle. Si l’audit identifie moins de 25 % d’économies réalisables sur votre site, vous ne réglez que les frais d’instrumentation. Le risque, c’est nous qui le prenons.',
+    title: 'Si ça ne vaut pas le coup pour vous, on ne le fait pas',
+    body: 'On ne vous vend rien à l’aveugle. Le diagnostic est gratuit, et l’audit nous dit précisément ce que votre site peut économiser. Si le potentiel n’est pas au rendez-vous, on vous le dit franchement — et on ne va pas plus loin. On avance par étapes sûres, et on ne déploie que lorsque le gain est clair, mesuré, et largement supérieur à ce que vous paierez.',
   },
   cta: {
     title: 'Commençons par mesurer. Le reste suit.',
