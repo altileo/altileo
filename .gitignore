@@ -44,3 +44,6 @@ next-env.d.ts
 .idea/
 *.swp
 *.swo
+
+_incoming/
+altileo-updated.zip

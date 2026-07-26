@@ -86,14 +86,15 @@ export const caseStudy = {
   title: 'Une chambre négative.\nDes mesures, pas des promesses.',
   body1: 'Sur une chambre froide négative de 30 m² au MIN de Rungis (consigne −21 °C, groupe triphasé ~6,5 kW), nous avons mené un test de délestage grandeur réelle le 30 mars 2026 : compresseur coupé, températures suivies par nos capteurs.',
   body2: 'Résultat : après 3 h 52 de coupure, la température à cœur de la marchandise n’a dérivé que de +0,21 °C par heure — largement dans les limites HACCP. La chambre tolère jusqu’à 6 heures de délestage par jour ; nous paramétrons à 5 h pour garder une marge confortable.',
-  cta: 'Demander un diagnostic pour votre site',
+  cta: 'Voir l’étude de cas complète',
+  ctaHref: '/etude-de-cas',
   kpis: [
-    { label: 'Coupure test mesurée', value: '3h52', caption: 'compresseur totalement arrêté', color: 'navy' as const },
-    { label: 'Dérive thermique', value: '+0,21°C/h', caption: 'à cœur de la marchandise', color: 'success' as const },
-    { label: 'Économie HP/HC', value: '~20%', caption: 'sur facture réglementée actuelle', color: 'ink' as const },
-    { label: 'Économie en dynamique', value: '~30%', caption: 'sur abonnement indexé au marché', color: 'success' as const },
+    { label: 'Économie annuelle', value: '2 442 €', caption: '−35 % vs contrat HC/HP actuel', color: 'success' as const },
+    { label: 'Retour sur investissement', value: '~7,4 mois', caption: 'installation 1 500 €', color: 'navy' as const },
+    { label: 'Dérive thermique mesurée', value: '+0,21 °C/h', caption: 'à cœur de la marchandise (test sans MCP)', color: 'ink' as const },
+    { label: 'Conformité HACCP', value: '100 %', caption: '−16,97 °C max simulé', color: 'success' as const },
   ],
-  note: 'Ces chiffrés correspondent à un site et une configuration précis. Un audit préalable est nécessaire pour quantifier l’économie potentielle de chaque nouveau site : volumes, isolation, consommation de base et contraintes d’activité varient d’un client à l’autre.',
+  note: 'Ces chiffres correspondent à un site et une configuration précis, mesurés sur 12 mois. Un audit préalable est nécessaire pour quantifier l’économie potentielle de chaque nouveau site : volumes, isolation, consommation de base et contraintes d’activité varient d’un client à l’autre.',
 };
 
 export const profiles = {
@@ -520,5 +521,118 @@ export const tarifDynamique = {
   cta: {
     title: 'Votre site est-il éligible à la tarification dynamique ?',
     body: 'Notre diagnostic étudie votre courbe de charge, l’inertie de vos chambres et vos contraintes d’exploitation, puis chiffré l’économie réalisable selon chaque scénario — avant tout engagement.',
+  },
+};
+
+export const etudeDeCas = {
+  hero: {
+    pill: 'Étude de cas pilote · MIN de Rungis',
+    title: 'Un entrepôt frigorifique négatif, piloté pendant 12 mois.',
+    body: 'Un négociant grossiste en fruits et légumes au Marché International de Rungis a confié à Altileo le pilotage de sa chambre froide négative — le cas le plus exigeant en sécurité sanitaire et en consommation. Données mesurées sur site pendant 12 mois, simulation sur prix Spot réels 2025.',
+    kpis: [
+      { label: 'Économie annuelle', value: '2 442 €', caption: '−35 % vs contrat HC/HP actuel', color: 'success' as const },
+      { label: 'Retour sur investissement', value: '~7,4 mois', caption: 'installation 1 500 €', color: 'white' as const },
+      { label: 'Énergie économisée', value: '9 085 kWh', caption: '0,45 t CO₂/an évitée', color: 'brand' as const },
+      { label: 'Conformité HACCP', value: '100 %', caption: '−16,97 °C max simulé', color: 'success' as const },
+    ],
+  },
+  site: {
+    label: 'Le site',
+    title: 'La chambre la plus exigeante du site',
+    body: 'Le pilote a été déployé sur la chambre froide négative (−18 °C, 75 m³) : congélation de surgelés, le cas le plus critique en sécurité sanitaire comme en consommation électrique.',
+    specs: [
+      { param: 'Type', value: 'Congélation (négatif surgelés)' },
+      { param: 'Consigne', value: '−18 °C (plage −18 °C à −21 °C)' },
+      { param: 'Volume utile', value: '~75 m³ (30 m², hauteur 2,5 m)' },
+      { param: 'Groupe froid', value: 'Triphasé 400 V / 32 A, ~6,5 kW (cos φ = 0,92)' },
+      { param: 'Régulateur', value: 'Danfoss AK-CC 210 (coffret PEGO)' },
+      { param: 'Limite HACCP', value: '−15 °C (Règlement CE 853/2004)' },
+      { param: 'Limite contractuelle Altileo', value: '−16 °C (marge de sécurité de 1 °C)' },
+    ],
+    contrainte: 'Le site travaille de 02h à 12h (portes ouvertes). Le délestage Altileo ne s’active que de 12h à 02h — portes fermées, inertie thermique maximale.',
+  },
+  tests: {
+    label: 'Les deux tests de délestage',
+    title: 'Mesuré sur le terrain : Smart vs Shield',
+    body: 'Deux tests approfondis ont mesuré le comportement thermique de la chambre, avec et sans matériaux à changement de phase (MCP).',
+    rows: [
+      { test: 'Smart (sans MCP)', date: '30/03', duree: '6h 55m', coeur: '+0,21 °C/h', air: '+0,80 °C/h', autonomie: '9,5 h' },
+      { test: 'Shield (94 kg MCP)', date: '27/03', duree: '3h 21m', coeur: '−0,18 °C/h (fusion)', air: '+0,21 °C/h', autonomie: '13,0 h' },
+    ],
+    focus: 'Pour cette étude, nous retenons l’offre Altileo Shield (Smart + 94 kg de MCP Coolerbox) : la configuration la plus efficace et résiliente pour ce site. Elle garantit un refroidissement actif pendant les 4 premières heures de délestage (−0,18 °C/h) et débloque jusqu’à 10 h de délestage continu — une nuit complète.',
+  },
+  simulation: {
+    label: 'Paramètres de la simulation',
+    title: 'Une simulation sur l’année 2025 complète',
+    params: [
+      { param: 'Données de consommation', value: 'Mesures réelles IoT (12 mois, 82 992 points)' },
+      { param: 'Prix Spot', value: 'Historique réel 2025 (Nord Pool)' },
+      { param: 'Prix Spot moyen annuel', value: '61,1 €/MWh' },
+      { param: 'Délestage', value: '5 heures / jour' },
+      { param: 'Rattrapage thermique', value: '10 %' },
+      { param: 'Bonus COP nuit', value: '10 %' },
+      { param: 'Marge de sécurité', value: '10 %' },
+      { param: 'Abonnement SaaS Altileo', value: '240 € HT / an (20 €/mois)' },
+    ],
+    scenarios: [
+      { name: 'HC/HP classique (sans rien)', facture: '6 920 €', eco: '—', vs: '—', featured: false },
+      { name: 'HC/HP avec Altileo', facture: '5 548 €', eco: '~20 %', vs: '−1 372 €', featured: false },
+      { name: 'Spot sans Altileo', facture: '5 692 €', eco: '18 %', vs: '−1 228 €', featured: false },
+      { name: 'Spot + Altileo', facture: '4 478 €', eco: '35 %', vs: '−2 442 €', featured: true },
+    ],
+  },
+  monthly: [
+    { mois: 'Jan', hchp: 700, hchpAlt: 561, spot: 675, spotAlt: 517 },
+    { mois: 'Fév', hchp: 632, hchpAlt: 507, spot: 687, spotAlt: 533 },
+    { mois: 'Mar', hchp: 558, hchpAlt: 448, spot: 451, spotAlt: 340 },
+    { mois: 'Avr', hchp: 476, hchpAlt: 392, spot: 367, spotAlt: 271 },
+    { mois: 'Mai', hchp: 544, hchpAlt: 447, spot: 321, spotAlt: 233 },
+    { mois: 'Juin', hchp: 564, hchpAlt: 449, spot: 429, spotAlt: 296 },
+    { mois: 'Juil', hchp: 576, hchpAlt: 475, spot: 518, spotAlt: 388 },
+    { mois: 'Août', hchp: 564, hchpAlt: 436, spot: 487, spotAlt: 341 },
+    { mois: 'Sep', hchp: 494, hchpAlt: 386, spot: 349, spotAlt: 254 },
+    { mois: 'Oct', hchp: 561, hchpAlt: 462, spot: 500, spotAlt: 377 },
+    { mois: 'Nov', hchp: 651, hchpAlt: 517, spot: 457, spotAlt: 345 },
+    { mois: 'Déc', hchp: 599, hchpAlt: 468, spot: 451, spotAlt: 346 },
+  ],
+  analyse: {
+    label: 'Analyse de la performance',
+    title: 'Trois enseignements clés',
+    items: [
+      {
+        title: 'Une assurance anti-risque en période de tension',
+        body: 'En février 2025, le prix Spot moyen atteint 122,7 €/MWh. Le Spot seul (687 €) devient plus cher que le contrat réglementé (632 €). Grâce au délestage Altileo, la facture tombe à 533 € : le client reste gagnant même en période de crise.',
+      },
+      {
+        title: 'En été, le Spot est naturellement avantageux',
+        body: 'En mai (19,4 €/MWh en moyenne), le Spot seul fait déjà gagner 41 % vs HC/HP. Altileo ajoute encore 87 €/mois d’économies grâce au délestage ciblé sur les pics intra-journaliers.',
+      },
+      {
+        title: 'Rentable chaque mois de l’année',
+        body: 'Les gains mensuels vont de 87 € (mai) à 158 € (janvier), soit 121 €/mois par chambre en moyenne. Le délestage Altileo est positif tous les mois, sans exception.',
+      },
+    ],
+  },
+  securite: {
+    label: 'Sécurité & validation',
+    title: 'La chaîne du froid, garantie et validée',
+    items: [
+      {
+        title: 'Conformité HACCP 100 %',
+        body: 'Température maximale simulée : −16,97 °C, pour une limite réglementaire à −15 °C. La sécurité sanitaire est maintenue en permanence, avec une marge contractuelle d’un degré.',
+      },
+      {
+        title: 'Sécurité matérielle fail-safe',
+        body: 'En cas de coupure de courant ou de panne de la Box, le relais mécanique Normally Closed (NC) retombe instantanément : la chambre repasse à 100 % sous le contrôle de son régulateur d’origine. Garantie constructeur préservée intégralement.',
+      },
+      {
+        title: 'Validation bureau d’études',
+        body: 'Installation validée par le bureau d’études Rivacold France (Danfoss AK-CC 210, bornes 18-19, Main Switch DI1). Un montage conforme et documenté, prêt à répliquer.',
+      },
+    ],
+  },
+  cta: {
+    title: 'Ces résultats sont propres à ce site. Quels seraient les vôtres ?',
+    body: 'Chaque installation est différente. Notre diagnostic mesure l’inertie de vos chambres, votre courbe de charge et vos contraintes, puis chiffre l’économie réalisable — sans engagement.',
   },
 };

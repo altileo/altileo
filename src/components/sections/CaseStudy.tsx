@@ -34,7 +34,7 @@ export function CaseStudy() {
               {caseStudy.body2}
             </p>
             <a
-              href="/contact"
+              href={caseStudy.ctaHref}
               className="inline-flex items-center gap-2 mt-8 text-brand font-medium hover:gap-3 transition-all"
             >
               {caseStudy.cta} &rarr;

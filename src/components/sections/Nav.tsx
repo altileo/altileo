@@ -5,7 +5,7 @@ import { ButtonLink } from '@/components/ui/Button';
 const navItems = [
   { label: 'Comment ça marche', href: '/comment-ca-marche' },
   { label: 'Tarification dynamique', href: '/tarification-dynamique' },
-  { label: 'Méthode', href: '/#methode' },
+  { label: 'Étude de cas', href: '/etude-de-cas' },
   { label: 'Compétences', href: '/competences' },
   { label: 'Entreprise', href: '/entreprise' },
 ];
