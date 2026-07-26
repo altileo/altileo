@@ -28,7 +28,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <Logo theme="dark" />
             <p className="mt-4 text-sm leading-relaxed max-w-xs">
-              Spécialistes de l’optimisation énergétique du froid. Audit, capteurs, automatisation, stockage PCM.
+              Le froid, piloté par la donnée. Moins de coûts. Moins de pannes. Zéro rupture de la chaîne du froid.
             </p>
             <div className="mt-5 text-sm space-y-1">
               <div>{site.city}</div>
