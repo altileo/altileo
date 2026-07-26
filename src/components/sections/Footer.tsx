@@ -16,7 +16,7 @@ const preuvesLinks = [
 
 const entrepriseLinks = [
   { label: 'L’entreprise', href: '/entreprise' },
-  { label: 'FAQ', href: '/faq' },
+  { label: 'Questions fréquentes', href: '/faq' },
   { label: 'Contact', href: '/contact' },
 ];
 

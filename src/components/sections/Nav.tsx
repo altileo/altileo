@@ -28,7 +28,7 @@ const navGroups: NavGroup[] = [
     label: 'Entreprise',
     items: [
       { label: 'L’entreprise', href: '/entreprise' },
-      { label: 'FAQ', href: '/faq' },
+      { label: 'Questions fréquentes', href: '/faq' },
       { label: 'Méthode', href: '/#methode' },
     ],
   },
