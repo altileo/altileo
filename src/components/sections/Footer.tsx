@@ -2,17 +2,20 @@ import { Container } from '@/components/ui/Container';
 import { Logo } from '@/components/ui/Logo';
 import { site } from '@/lib/content';
 
-const methodLinks = [
+const solutionLinks = [
   { label: 'Comment ça marche', href: '/comment-ca-marche' },
   { label: 'Tarification dynamique', href: '/tarification-dynamique' },
   { label: 'Maintenance prédictive', href: '/maintenance-predictive' },
+];
+
+const preuvesLinks = [
+  { label: 'Étude de cas', href: '/etude-de-cas' },
+  { label: 'Compétences', href: '/competences' },
   { label: 'Méthode', href: '/#methode' },
 ];
 
-const altileoLinks = [
-  { label: 'Étude de cas', href: '/etude-de-cas' },
-  { label: 'Compétences', href: '/competences' },
-  { label: 'Entreprise', href: '/entreprise' },
+const entrepriseLinks = [
+  { label: 'L’entreprise', href: '/entreprise' },
   { label: 'FAQ', href: '/faq' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -21,19 +24,32 @@ export function Footer() {
   return (
     <footer className="bg-ink text-white/70 py-16">
       <Container>
-        <div className="grid md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
-          <div className="md:col-span-1">
+        <div className="grid md:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+          <div className="md:col-span-2">
             <Logo theme="dark" />
-            <p className="mt-4 text-sm leading-relaxed">
+            <p className="mt-4 text-sm leading-relaxed max-w-xs">
               Spécialistes de l’optimisation énergétique du froid. Audit, capteurs, automatisation, stockage PCM.
             </p>
+            <div className="mt-5 text-sm space-y-1">
+              <div>{site.city}</div>
+              <div>
+                <a href={`mailto:${site.email}`} className="hover:text-white transition">
+                  {site.email}
+                </a>
+              </div>
+              <div>
+                <a href={site.linkedinUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+                  LinkedIn
+                </a>
+              </div>
+            </div>
           </div>
           <div>
             <div className="text-xs font-semibold uppercase tracking-wide text-white/50 mb-4">
               Solution
             </div>
             <ul className="space-y-2 text-sm">
-              {methodLinks.map((l) => (
+              {solutionLinks.map((l) => (
                 <li key={l.label}>
                   <a href={l.href} className="hover:text-white transition">
                     {l.label}
@@ -44,10 +60,10 @@ export function Footer() {
           </div>
           <div>
             <div className="text-xs font-semibold uppercase tracking-wide text-white/50 mb-4">
-              Altileo
+              Preuves
             </div>
             <ul className="space-y-2 text-sm">
-              {altileoLinks.map((l) => (
+              {preuvesLinks.map((l) => (
                 <li key={l.label}>
                   <a href={l.href} className="hover:text-white transition">
                     {l.label}
@@ -58,20 +74,16 @@ export function Footer() {
           </div>
           <div>
             <div className="text-xs font-semibold uppercase tracking-wide text-white/50 mb-4">
-              Contact
+              Entreprise
             </div>
             <ul className="space-y-2 text-sm">
-              <li>{site.city}</li>
-              <li>
-                <a href={`mailto:${site.email}`} className="hover:text-white transition">
-                  {site.email}
-                </a>
-              </li>
-              <li>
-                <a href={site.linkedinUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
-                  LinkedIn
-                </a>
-              </li>
+              {entrepriseLinks.map((l) => (
+                <li key={l.label}>
+                  <a href={l.href} className="hover:text-white transition">
+                    {l.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

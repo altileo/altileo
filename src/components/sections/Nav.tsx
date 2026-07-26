@@ -155,7 +155,7 @@ export function Nav() {
 
       {/* Mobile menu panel */}
       {mobileOpen && (
-        <div className="md:hidden fixed inset-0 top-16 z-50 bg-white overflow-y-auto">
+        <div className="md:hidden fixed left-0 right-0 top-16 bottom-0 z-40 bg-white overflow-y-auto">
           <nav className="px-6 py-6" aria-label="Navigation mobile">
             {navGroups.map((group) => (
               <div key={group.label} className="mb-6">
