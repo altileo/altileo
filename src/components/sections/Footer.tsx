@@ -6,6 +6,7 @@ const solutionLinks = [
   { label: 'Comment ça marche', href: '/comment-ca-marche' },
   { label: 'Tarification dynamique', href: '/tarification-dynamique' },
   { label: 'Maintenance prédictive', href: '/maintenance-predictive' },
+  { label: 'Notre offre', href: '/notre-offre' },
 ];
 
 const preuvesLinks = [

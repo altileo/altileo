@@ -701,3 +701,53 @@ export const maintenancePredictive = {
     body: 'Notre diagnostic évalue l’état de vos installations et le potentiel de la maintenance prédictive sur votre site — sans engagement.',
   },
 };
+
+export const notreOffre = {
+  hero: {
+    pill: 'Notre offre',
+    title: 'Le matériel se rembourse tout seul. Le reste, c’est du gain.',
+    body: 'Vous payez l’installation une fois — elle se rembourse en 3 à 5 ans grâce à vos économies. Ensuite, un abonnement mensuel toujours bien plus petit que ce que vous économisez. C’est aussi simple que ça.',
+  },
+  parcours: {
+    label: 'Comment ça se passe',
+    title: 'Vous savez tout avant de vous engager',
+    steps: [
+      { number: '01', title: 'Diagnostic gratuit', body: 'On étudie vos installations et on vous dit si le froid chez vous a un vrai potentiel d’économies. Sans engagement, sans frais.' },
+      { number: '02', title: 'Audit chiffré', body: 'On mesure précisément. On vous annonce combien vous allez économiser, et combien vous allez payer — les deux chiffres, noir sur blanc, avant toute décision.' },
+      { number: '03', title: 'Installation', body: 'Pose du boîtier en une demi-journée, sans toucher à vos équipements, sans couper le froid. On calibre, on met en route.' },
+      { number: '04', title: 'Vous suivez vos économies', body: 'Le système travaille tout seul. Vous voyez vos euros économisés chaque mois sur votre tableau de bord. Rapport mensuel automatique.' },
+    ],
+  },
+  paiement: {
+    label: 'Deux façons de payer',
+    title: 'Vous achetez, ou vous étalez. À vous de choisir.',
+    body: 'Le résultat est le même : vous gagnez plus que vous ne payez. La différence, c’est simplement comment vous réglez le matériel.',
+    options: [
+      {
+        title: 'Vous achetez le matériel',
+        body: 'Un seul paiement au départ. Il se rembourse en 3 à 5 ans par vos économies. Ensuite, vous ne payez plus que l’abonnement mensuel.',
+        tag: 'Le plus rentable sur la durée',
+      },
+      {
+        title: 'Vous étalez tout',
+        body: 'Pas d’achat au départ. Le matériel est intégré dans votre mensualité, avec l’abonnement. Une seule facture par mois, et vous économisez dès le premier jour.',
+        tag: 'Zéro investissement initial',
+      },
+    ],
+  },
+  abonnement: {
+    label: 'L’abonnement mensuel',
+    title: 'Toujours une fraction de vos économies',
+    body: 'Votre abonnement dépend de la taille de votre installation — plus elle est grande, plus les économies sont importantes, et l’abonnement suit. Il est fixé lors de l’audit, une bonne fois pour toutes.',
+    body2: 'La règle est simple : vous gardez toujours la grande majorité de vos économies. Si vous ne gagniez pas nettement plus que ce que vous payez, le modèle n’aurait aucun sens — ni pour vous, ni pour nous.',
+  },
+  garantie: {
+    label: 'Notre garantie',
+    title: 'Si le potentiel n’y est pas, vous ne payez presque rien',
+    body: 'On ne vous vend rien à l’aveugle. Si l’audit identifie moins de 25 % d’économies réalisables sur votre site, vous ne réglez que les frais d’instrumentation. Le risque, c’est nous qui le prenons.',
+  },
+  cta: {
+    title: 'Commençons par mesurer. Le reste suit.',
+    body: 'Demandez votre diagnostic gratuit. On étudie vos installations, on chiffre vos économies, et vous décidez ensuite — en connaissance de cause.',
+  },
+};
