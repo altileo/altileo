@@ -3,18 +3,18 @@ import { Logo } from '@/components/ui/Logo';
 import { site } from '@/lib/content';
 
 const methodLinks = [
-  { label: 'Audit instrumenté', href: '/#methode' },
-  { label: 'Capteurs IoT', href: '/#methode' },
-  { label: 'Automatisation', href: '/#methode' },
-  { label: 'Dégivrage', href: '/#methode' },
-  { label: 'Stockage PCM', href: '/#methode' },
+  { label: 'Comment ça marche', href: '/comment-ca-marche' },
+  { label: 'Tarification dynamique', href: '/tarification-dynamique' },
+  { label: 'Maintenance prédictive', href: '/maintenance-predictive' },
+  { label: 'Méthode', href: '/#methode' },
 ];
 
 const altileoLinks = [
-  { label: 'Entreprise', href: '/entreprise' },
+  { label: 'Étude de cas', href: '/etude-de-cas' },
   { label: 'Compétences', href: '/competences' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'Entreprise', href: '/entreprise' },
   { label: 'FAQ', href: '/faq' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 export function Footer() {
@@ -30,7 +30,7 @@ export function Footer() {
           </div>
           <div>
             <div className="text-xs font-semibold uppercase tracking-wide text-white/50 mb-4">
-              Méthode
+              Solution
             </div>
             <ul className="space-y-2 text-sm">
               {methodLinks.map((l) => (
