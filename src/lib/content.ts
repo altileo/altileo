@@ -636,3 +636,68 @@ export const etudeDeCas = {
     body: 'Chaque installation est différente. Notre diagnostic mesure l’inertie de vos chambres, votre courbe de charge et vos contraintes, puis chiffre l’économie réalisable — sans engagement.',
   },
 };
+
+export const maintenancePredictive = {
+  hero: {
+    pill: 'Maintenance prédictive',
+    title: 'Vos données voient la panne venir. Avant qu’elle n’arrive.',
+    body: 'L’Altileo Box mesure en continu le comportement de votre installation frigorifique — pressions, surchauffe, sous-refroidissement, consommation, températures. Notre moteur d’analyse identifie le composant qui se dégrade avant qu’il ne lâche, et déclenche l’intervention au bon moment. Vous ne subissez plus la panne : vous la programmez.',
+    kpis: [
+      { label: 'Pannes évitées', value: '8–12 k€', caption: 'économies annuelles vs maintenance curative', color: 'success' as const },
+      { label: 'Capacité restaurée', value: '10–15 %', caption: 'de condensation récupérée par entretien ciblé', color: 'brand' as const },
+      { label: 'Conformité F-Gas', value: 'Simplifiée', caption: 'surveillance permanente, fréquence de contrôle réduite', color: 'white' as const },
+    ],
+  },
+  probleme: {
+    label: 'Le vrai coût de la panne',
+    title: 'La maintenance curative est la plus chère de toutes',
+    body: 'On intervient après la panne. Le compresseur s’arrête, la chambre monte en température, la marchandise est menacée. Intervention en urgence majorée de 50 à 100 %, perte de denrées, rupture HACCP. Le pire scénario, et pourtant le plus répandu.',
+    points: [
+      { strong: 'Surcoût d’urgence', body: 'une intervention non planifiée coûte 50 à 100 % de plus qu’une visite programmée.' },
+      { strong: 'Perte de marchandise', body: 'une chambre qui dérive de −18 °C à +8 °C en quelques heures, c’est un stock entier menacé.' },
+      { strong: 'Dégradation silencieuse', body: 'un condenseur encrassé fait grimper la consommation de 18 à 31 % et mène à la panne compresseur en 14 à 19 mois.' },
+    ],
+  },
+  detection: {
+    label: 'Ce que nous détectons',
+    title: 'Chaque panne laisse une signature. Nous la lisons.',
+    body: 'Les défaillances frigorifiques ne surgissent pas de nulle part : elles s’annoncent dans les données, des jours ou des semaines à l’avance. L’Altileo Box instrumente le circuit et l’ambiance, et l’algorithme croise ces signaux pour isoler la cause.',
+    items: [
+      { title: 'Condenseur encrassé', body: 'La haute pression monte tandis que le sous-refroidissement chute — la signature caractéristique de l’encrassement. Détecté tôt, un simple nettoyage restaure 10 à 15 % de capacité.' },
+      { title: 'Fuite de fluide frigorigène', body: 'Surchauffe élevée et sous-refroidissement dégradé trahissent un manque de charge. On alerte avant que la performance ne s’effondre — et avant la sanction F-Gas.' },
+      { title: 'Usure du compresseur', body: 'L’égalisation trop rapide des pressions révèle des clapets fuyards. On anticipe le remplacement au lieu de le subir en pleine nuit.' },
+      { title: 'Défaut de dégivrage', body: 'Un évaporateur givré force le compresseur en dépression et fait exploser la consommation. Le cycle de dégivrage est surveillé en continu.' },
+      { title: 'Dérive du COP', body: 'La consommation par degré de froid produit augmente : le signal le plus précoce d’une installation qui se fatigue, toutes causes confondues.' },
+      { title: 'Joints et portes', body: 'Une perte thermique anormale à portes fermées pointe un joint défaillant — une réparation à 50 € qui évite des mois de surconsommation.' },
+    ],
+  },
+  fgas: {
+    label: 'Le levier réglementaire',
+    title: 'La conformité F-Gas, transformée en avantage',
+    body: 'Le règlement F-Gas (UE 517/2014, actualisé par 2024/573) impose des contrôles d’étanchéité réguliers sur tout circuit contenant des fluides fluorés. Le non-respect expose l’exploitant à des amendes administratives pouvant atteindre 15 000 €, et toute fuite doit être réparée sous 30 jours.',
+    body2: 'La surveillance permanente de l’Altileo Box répond directement à cette exigence. Un système de détection continu permet de diviser par deux la fréquence des contrôles obligatoires, documente automatiquement l’historique, et alerte à la première anomalie. La conformité cesse d’être une corvée : elle devient un sous-produit du pilotage.',
+  },
+  positionnement: {
+    label: 'Notre positionnement',
+    title: 'Nous rendons votre maintenance intelligente. Vous gardez la main.',
+    body: 'Altileo est la couche d’intelligence : nous mesurons, nous analysons, nous alertons, nous diagnostiquons. Pour l’intervention, deux options — au choix du client.',
+    options: [
+      { title: 'Avec votre frigoriste', body: 'Nous transmettons le diagnostic précis à votre prestataire habituel : quel composant, quelle urgence, quelle action. Il intervient plus vite, mieux ciblé, sans diagnostic à l’aveugle.' },
+      { title: 'Avec nos équipes partenaires', body: 'Vous n’avez pas de prestataire, ou vous préférez déléguer ? Nous coordonnons l’intervention avec des frigoristes certifiés que nous connaissons et en qui nous avons confiance.' },
+    ],
+  },
+  commentCaMarche: {
+    label: 'Comment ça marche',
+    title: 'La même Box. Aucune installation supplémentaire.',
+    body: 'La maintenance prédictive n’exige pas de nouveau chantier : elle s’appuie sur l’instrumentation Altileo déjà en place, enrichie des capteurs de circuit (pressions, surchauffe, sous-refroidissement). Vous recevez alertes en temps réel et rapport mensuel de l’état de santé de vos installations.',
+    steps: [
+      { number: '01', title: 'Mesurer', body: 'Capteurs de circuit et d’ambiance : pressions HP/BP, surchauffe, sous-refroidissement, consommation, températures, ouverture de portes.' },
+      { number: '02', title: 'Analyser', body: 'L’algorithme croise les signaux, compare aux signatures de défaillance connues et isole la cause racine de toute dérive.' },
+      { number: '03', title: 'Alerter', body: 'Alerte immédiate en cas d’anomalie, avec diagnostic du composant concerné et niveau d’urgence. Rapport de santé mensuel.' },
+    ],
+  },
+  cta: {
+    title: 'Arrêtez de subir vos pannes. Programmez-les.',
+    body: 'Notre diagnostic évalue l’état de vos installations et le potentiel de la maintenance prédictive sur votre site — sans engagement.',
+  },
+};
