@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { Container } from '@/components/ui/Container';
 import { Logo } from '@/components/ui/Logo';
 import { ButtonLink } from '@/components/ui/Button';
@@ -59,17 +60,73 @@ function ChevronDown({ open }: { open: boolean }) {
   );
 }
 
-export function Nav() {
-  const [openGroup, setOpenGroup] = useState<string | null>(null);
-  const [mobileOpen, setMobileOpen] = useState(false);
+function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
-  // Lock body scroll when mobile menu open
   useEffect(() => {
-    document.body.style.overflow = mobileOpen ? 'hidden' : '';
+    document.body.style.overflow = open ? 'hidden' : '';
     return () => {
       document.body.style.overflow = '';
     };
-  }, [mobileOpen]);
+  }, [open]);
+
+  if (!mounted) return null;
+
+  return createPortal(
+    <div
+      className={`md:hidden fixed inset-0 z-[100] bg-white flex flex-col transition-opacity duration-150 ${
+        open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+      }`}
+      aria-hidden={!open}
+    >
+      {/* header row with close */}
+      <div className="h-16 flex items-center justify-between px-6 border-b border-line shrink-0">
+        <Logo />
+        <button
+          type="button"
+          onClick={onClose}
+          className="inline-flex items-center justify-center w-10 h-10 -mr-2 rounded-md text-ink"
+          aria-label="Fermer le menu"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+          </svg>
+        </button>
+      </div>
+      {/* scrollable links */}
+      <nav className="flex-1 overflow-y-auto px-6 py-6" aria-label="Navigation mobile">
+        {navGroups.map((group) => (
+          <div key={group.label} className="mb-6">
+            <div className="text-xs font-semibold uppercase tracking-wide text-muted mb-1">
+              {group.label}
+            </div>
+            <div className="flex flex-col">
+              {group.items.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="py-3 text-lg text-ink border-b border-line"
+                  onClick={onClose}
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        ))}
+        <ButtonLink href="/contact" size="lg" className="w-full mt-2">
+          Contact
+        </ButtonLink>
+      </nav>
+    </div>,
+    document.body,
+  );
+}
+
+export function Nav() {
+  const [openGroup, setOpenGroup] = useState<string | null>(null);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 bg-bg/90 backdrop-blur border-b border-line">
@@ -128,54 +185,16 @@ export function Nav() {
         <button
           type="button"
           className="md:hidden inline-flex items-center justify-center w-10 h-10 -mr-2 rounded-md text-ink hover:bg-surface transition"
-          onClick={() => setMobileOpen((v) => !v)}
-          aria-label={mobileOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
-          aria-expanded={mobileOpen}
+          onClick={() => setMobileOpen(true)}
+          aria-label="Ouvrir le menu"
         >
-          <span className="sr-only">Menu</span>
-          {mobileOpen ? (
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-            </svg>
-          ) : (
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M4 7H20M4 12H20M4 17H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-            </svg>
-          )}
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7H20M4 12H20M4 17H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+          </svg>
         </button>
       </Container>
 
-      {/* Mobile menu panel — simple, always works */}
-      <div
-        className={`md:hidden fixed inset-x-0 top-16 bottom-0 z-[60] bg-white overflow-y-auto transition-opacity duration-150 ${
-          mobileOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        }`}
-      >
-        <nav className="px-6 py-6" aria-label="Navigation mobile">
-          {navGroups.map((group) => (
-            <div key={group.label} className="mb-6">
-              <div className="text-xs font-semibold uppercase tracking-wide text-muted mb-1">
-                {group.label}
-              </div>
-              <div className="flex flex-col">
-                {group.items.map((item) => (
-                  <a
-                    key={item.href}
-                    href={item.href}
-                    className="py-3 text-lg text-ink border-b border-line"
-                    onClick={() => setMobileOpen(false)}
-                  >
-                    {item.label}
-                  </a>
-                ))}
-              </div>
-            </div>
-          ))}
-          <ButtonLink href="/contact" size="lg" className="w-full mt-2">
-            Contact
-          </ButtonLink>
-        </nav>
-      </div>
+      <MobileMenu open={mobileOpen} onClose={() => setMobileOpen(false)} />
     </header>
   );
 }
