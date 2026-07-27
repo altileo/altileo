@@ -751,3 +751,84 @@ export const notreOffre = {
     body: 'Demandez votre diagnostic gratuit. On étudie vos installations, on chiffre vos économies, et vous décidez ensuite — en connaissance de cause.',
   },
 };
+
+export const secteurs = {
+  grossistes: {
+    slug: 'grossistes',
+    nav: 'Grossistes alimentaires',
+    tag: 'Grossistes alimentaires',
+    title: 'Votre froid tourne 24h/24. Sans jamais choisir quand.',
+    intro: 'Chez un grossiste, le froid pèse jusqu’à 60 % de la facture d’électricité. Vos chambres gardent le froid des heures sans compresseur : on exploite cette inertie pour effacer les heures chères, sans jamais rompre la chaîne du froid.',
+    kpis: [
+      { v: '−35 %', l: 'sur la facture du froid', c: 'brand' as const },
+      { v: '3–5 ans', l: 'et le matériel est remboursé', c: 'white' as const },
+      { v: '100 %', l: 'conforme HACCP', c: 'success' as const },
+    ],
+    points: [
+      { t: 'Multi-chambres', b: 'Positif et négatif pilotés ensemble, chacun selon son inertie thermique propre.' },
+      { t: 'Respect de vos horaires', b: 'Le délestage ne s’active que portes fermées, en dehors de votre activité commerciale.' },
+      { t: 'Conforme Décret BACS', b: 'Monitoring et automatisation prêts pour l’échéance réglementaire 2026.' },
+    ],
+    proof: 'Mesuré sur un site pilote au MIN de Rungis : chambre négative −18 °C, 12 mois de données réelles, 2 442 € d’économie annuelle et un retour sur investissement en 7,4 mois.',
+    proofLink: { label: 'Voir l’étude de cas complète', href: '/etude-de-cas' },
+  },
+  logisticiens: {
+    slug: 'logisticiens',
+    nav: 'Logisticiens du froid',
+    tag: 'Logisticiens du froid',
+    title: 'De gros volumes. De gros kilowatts. De grosses économies.',
+    intro: 'Sur un entrepôt frigorifique, chaque kilowatt compte. Plus l’installation est grande, plus le gisement d’économies est important — et plus la flexibilité de votre froid a de la valeur sur le marché de l’électricité.',
+    kpis: [
+      { v: '30–40 %', l: 'de facture électrique en moins', c: 'brand' as const },
+      { v: '5 h/j', l: 'de délestage sans risque', c: 'white' as const },
+      { v: '0', l: 'coupure de courant à l’installation', c: 'success' as const },
+    ],
+    points: [
+      { t: 'Tarification dynamique', b: 'On exploite la volatilité des prix : consommer aux heures creuses, effacer aux pics.' },
+      { t: 'Stockage thermique MCP', b: 'Jusqu’à 10 h d’autonomie pour délester une nuit complète sans compresseur.' },
+      { t: 'Puissance souscrite réduite', b: 'Lissage des pics de démarrage des compresseurs, gain direct sur l’abonnement.' },
+    ],
+    proof: 'Le froid enfin piloté par la donnée : on mesure, on optimise, on sécurise — sans toucher à vos équipements existants, sans interrompre votre exploitation.',
+    proofLink: { label: 'Découvrir la tarification dynamique', href: '/tarification-dynamique' },
+  },
+  agroalimentaire: {
+    slug: 'agroalimentaire',
+    nav: 'Industriels agroalimentaires',
+    tag: 'Industriels agroalimentaires',
+    title: 'Le froid de process, sous surveillance permanente.',
+    intro: 'En agroalimentaire, une panne de froid, c’est un stock menacé et une chaîne à l’arrêt. On pilote la consommation pour la réduire, et on surveille l’installation en continu pour voir la panne venir avant qu’elle n’arrive.',
+    kpis: [
+      { v: '8–12 k€', l: 'de pannes évitées par an', c: 'brand' as const },
+      { v: '−30 %', l: 'sur la facture du froid', c: 'white' as const },
+      { v: 'F-Gas', l: 'conformité simplifiée', c: 'success' as const },
+    ],
+    points: [
+      { t: 'Maintenance prédictive', b: 'Pressions, surchauffe, sous-refroidissement : la panne se voit venir des jours à l’avance.' },
+      { t: 'Sécurité alimentaire', b: 'Surveillance HACCP en continu, alerte immédiate à la moindre dérive de température.' },
+      { t: 'Fail-safe intégral', b: 'En cas de panne de la Box, le froid reprend seul son fonctionnement d’origine.' },
+    ],
+    proof: 'On travaille avec votre frigoriste — ou avec nos équipes partenaires. On rend votre maintenance intelligente ; vous gardez la main sur vos interventions.',
+    proofLink: { label: 'Découvrir la maintenance prédictive', href: '/maintenance-predictive' },
+  },
+  gms: {
+    slug: 'gms',
+    nav: 'GMS & supermarchés',
+    tag: 'GMS & supermarchés',
+    title: 'Vos meubles froids ne dorment jamais. Votre facture non plus.',
+    intro: 'En grande distribution, le froid alimentaire représente une part majeure de la consommation du magasin. Meubles, chambres, laboratoires : autant de postes qui tournent en continu et qu’on peut piloter finement pour faire baisser la facture, sans jamais toucher à la qualité des produits.',
+    kpis: [
+      { v: '−30 %', l: 'sur la facture du froid', c: 'brand' as const },
+      { v: 'Décret BACS', l: 'conformité 2026 incluse', c: 'white' as const },
+      { v: '100 %', l: 'chaîne du froid préservée', c: 'success' as const },
+    ],
+    points: [
+      { t: 'Tous vos postes de froid', b: 'Chambres, meubles et laboratoires pilotés ensemble, chacun selon ses contraintes.' },
+      { t: 'Conformité réglementaire', b: 'Historique des températures et automatisation conformes au Décret BACS et au HACCP.' },
+      { t: 'Sérénité pour vos équipes', b: 'Alertes automatiques, aucune manipulation au quotidien, aucun risque sur les produits.' },
+    ],
+    proof: 'Le même principe éprouvé sur nos sites pilotes : on mesure d’abord, on chiffre vos économies, et on n’avance que lorsque le gain est clair et prouvé pour votre magasin.',
+    proofLink: { label: 'Comment nous travaillons', href: '/notre-offre' },
+  },
+};
+
+export const secteursList = ['grossistes', 'logisticiens', 'agroalimentaire', 'gms'] as const;

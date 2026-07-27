@@ -21,11 +21,18 @@ const entrepriseLinks = [
   { label: 'Contact', href: '/contact' },
 ];
 
+const secteursFooterLinks = [
+  { label: 'Grossistes', href: '/secteurs/grossistes' },
+  { label: 'Logisticiens', href: '/secteurs/logisticiens' },
+  { label: 'Agroalimentaire', href: '/secteurs/agroalimentaire' },
+  { label: 'GMS & supermarchés', href: '/secteurs/gms' },
+];
+
 export function Footer() {
   return (
     <footer className="bg-ink text-white/70 py-16">
       <Container>
-        <div className="grid md:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        <div className="grid md:grid-cols-6 gap-10 pb-12 border-b border-white/10">
           <div className="md:col-span-2">
             <Logo theme="dark" />
             <p className="mt-4 text-sm leading-relaxed max-w-xs">
@@ -65,6 +72,20 @@ export function Footer() {
             </div>
             <ul className="space-y-2 text-sm">
               {preuvesLinks.map((l) => (
+                <li key={l.label}>
+                  <a href={l.href} className="hover:text-white transition">
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <div className="text-xs font-semibold uppercase tracking-wide text-white/50 mb-4">
+              Secteurs
+            </div>
+            <ul className="space-y-2 text-sm">
+              {secteursFooterLinks.map((l) => (
                 <li key={l.label}>
                   <a href={l.href} className="hover:text-white transition">
                     {l.label}

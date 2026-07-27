@@ -19,6 +19,15 @@ const navGroups: NavGroup[] = [
     ],
   },
   {
+    label: 'Secteurs',
+    items: [
+      { label: 'Grossistes alimentaires', href: '/secteurs/grossistes' },
+      { label: 'Logisticiens du froid', href: '/secteurs/logisticiens' },
+      { label: 'Industriels agroalimentaires', href: '/secteurs/agroalimentaire' },
+      { label: 'GMS & supermarchés', href: '/secteurs/gms' },
+    ],
+  },
+  {
     label: 'Preuves',
     items: [
       { label: 'Étude de cas', href: '/etude-de-cas' },
