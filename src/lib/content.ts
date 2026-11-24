@@ -13,7 +13,7 @@ export const site = {
 
 export const hero = {
   pill: 'Spécialistes du froid pour grossistes et logisticiens',
-  savingsRange: '35 %',
+  savingsRange: '35\u00a0%',
   body:
     '15 à 20 % en gardant votre contrat actuel, jusqu’à 35 % en offre Bloc + Spot. Effacement thermique prédictif et pilotage autonome, sans travaux ni arrêt d’activité.',
   primaryCta: 'Demander un audit gratuit',
@@ -89,10 +89,10 @@ export const caseStudy = {
   cta: 'Voir l’étude de cas complète',
   ctaHref: '/etude-de-cas',
   kpis: [
-    { label: 'Économies simulées', value: 'jusqu’à 35 %', caption: 'en Bloc + Spot (15 à 20 % contrat actuel)', color: 'success' as const },
-    { label: 'Retour sur investissement', value: '12 à 18 mois', caption: 'ou 0 € avec les primes CEE', color: 'navy' as const },
-    { label: 'Dérive thermique mesurée', value: '+0,21 °C/h', caption: 'à cœur de la marchandise (test 6 h 55 sans MCP)', color: 'ink' as const },
-    { label: 'Conformité HACCP', value: '100 %', caption: '−17,17 °C max simulé (seuil −15 °C)', color: 'success' as const },
+    { label: 'Économies simulées', value: '−35\u00a0%', caption: 'jusqu’à 35 % en Bloc + Spot (15 à 20 % contrat actuel)', color: 'success' as const },
+    { label: 'Retour sur investissement', value: '12–18\u00a0mois', caption: 'ou 0 € avec les primes CEE', color: 'navy' as const },
+    { label: 'Dérive thermique mesurée', value: '+0,21\u00a0°C/h', caption: 'à cœur de la marchandise (test 6 h 55 sans MCP)', color: 'ink' as const },
+    { label: 'Conformité HACCP', value: '100\u00a0%', caption: '−17,17 °C max simulé (seuil −15 °C)', color: 'success' as const },
   ],
   note: 'Ces chiffres correspondent à 12 mois de mesures réelles sur un site pilote et à des simulations sur les prix Spot France 2025/2026 (rattrapage thermique compris). Un audit gratuit préalable permet de chiffrer l’économie exacte de chaque site selon ses volumes, son isolation et ses horaires d’activité.',
 };
@@ -508,13 +508,13 @@ export const tarifDynamique = {
       {
         tag: 'Formule 1',
         title: 'Vous gardez votre contrat actuel',
-        value: '15 à 20 %',
+        value: '15–20\u00a0%',
         body: 'Mise en place immédiate, sans renégocier votre contrat. L’Altileo Box efface les heures de pointe et limite les dépassements de puissance. Économie mesurée : 15 à 20 % sur la facture électrique du froid.',
       },
       {
         tag: 'Formule 2',
         title: 'Vous passez en offre Bloc + Spot',
-        value: 'jusqu’à 35 %',
+        value: '−35\u00a0%',
         body: 'Une part fixe (ruban) sécurise votre budget et le reste s’achète aux heures les moins chères sur le marché Spot France (2025/2026), avec le bonus de flexibilité de RTE. Économie simulée : jusqu’à 35 % sur la facture.',
         featured: true,
       },
@@ -539,7 +539,7 @@ export const etudeDeCas = {
     body: 'Un négociant grossiste en fruits et légumes au Marché International de Rungis a confié à Altileo le pilotage de sa chambre froide négative de 75 m³ — le cas le plus exigeant en sécurité sanitaire et en consommation. Données mesurées sur site pendant 12 mois (82 992 relevés IoT), simulations sur prix Spot France 2025/2026.',
     kpis: [
       { label: 'Économies simulées', value: '−35\u00a0%', caption: 'jusqu’à 35 % en Bloc + Spot (15 à 20 % contrat actuel)', color: 'success' as const },
-      { label: 'Retour sur investissement', value: '12 à 18 mois', caption: 'ou 0 € avec les primes CEE', color: 'white' as const },
+      { label: 'Retour sur investissement', value: '12–18\u00a0mois', caption: 'ou 0 € avec les primes CEE', color: 'white' as const },
       { label: 'Dérive à cœur', value: '+0,21 °C/h', caption: 'mesurée sur 6 h 55 sans relance', color: 'brand' as const },
       { label: 'Conformité HACCP', value: '100 %', caption: '−17,17 °C max simulé (seuil −15 °C)', color: 'success' as const },
     ],
@@ -768,9 +768,9 @@ export const secteurs = {
     title: 'Votre froid tourne 24h/24. Sans jamais choisir quand.',
     intro: 'Chez un grossiste, le froid pèse jusqu’à 60 % de la facture d’électricité. Vos chambres gardent le froid des heures sans compresseur : on exploite cette inertie pour effacer les heures chères, sans jamais rompre la chaîne du froid.',
     kpis: [
-      { v: 'jusqu’à 35 %', l: 'en Bloc + Spot (15 à 20 % contrat actuel)', c: 'brand' as const },
-      { v: '12–18 mois', l: 'de ROI (ou 0 € avec les primes CEE)', c: 'white' as const },
-      { v: '100 %', l: 'conforme HACCP (−17,17 °C max simulé)', c: 'success' as const },
+      { v: '−35\u00a0%', l: 'jusqu’à 35 % en Bloc + Spot (15 à 20 % contrat actuel)', c: 'brand' as const },
+      { v: '12–18\u00a0mois', l: 'de ROI (ou 0 € avec les primes CEE)', c: 'white' as const },
+      { v: '100\u00a0%', l: 'conforme HACCP (−17,17 °C max simulé)', c: 'success' as const },
     ],
     points: [
       { t: 'Multi-chambres', b: 'Positif et négatif pilotés ensemble, chacun selon son inertie thermique propre.' },
@@ -787,8 +787,8 @@ export const secteurs = {
     title: 'De gros volumes. De gros kilowatts. De grosses économies.',
     intro: 'Sur un entrepôt frigorifique, chaque kilowatt compte. Plus l’installation est grande, plus le gisement d’économies est important — et plus la flexibilité de votre froid a de la valeur sur le marché de l’électricité et auprès de RTE.',
     kpis: [
-      { v: 'jusqu’à 35 %', l: 'en Bloc + Spot (15 à 20 % contrat actuel)', c: 'brand' as const },
-      { v: '4 h/j', l: 'de délestage standard (blocs max 3 h)', c: 'white' as const },
+      { v: '−35\u00a0%', l: 'jusqu’à 35 % en Bloc + Spot (15 à 20 % contrat actuel)', c: 'brand' as const },
+      { v: '4\u00a0h/j', l: 'de délestage standard (blocs max 3 h)', c: 'white' as const },
       { v: '0', l: 'coupure de courant à l’installation', c: 'success' as const },
     ],
     points: [
@@ -806,8 +806,8 @@ export const secteurs = {
     title: 'Le froid de process, sous surveillance permanente.',
     intro: 'En agroalimentaire, une panne de froid, c’est un stock menacé et une chaîne à l’arrêt. On pilote la consommation pour la réduire, et on surveille l’installation en continu pour voir la panne venir avant qu’elle n’arrive.',
     kpis: [
-      { v: '8–12 k€', l: 'de pannes évitées par an', c: 'brand' as const },
-      { v: 'jusqu’à 35 %', l: 'en Bloc + Spot (15 à 20 % contrat actuel)', c: 'white' as const },
+      { v: '8–12\u00a0k€', l: 'de pannes évitées par an', c: 'brand' as const },
+      { v: '−35\u00a0%', l: 'jusqu’à 35 % en Bloc + Spot (15 à 20 % contrat actuel)', c: 'white' as const },
       { v: 'F-Gas', l: 'conformité simplifiée', c: 'success' as const },
     ],
     points: [
@@ -825,9 +825,9 @@ export const secteurs = {
     title: 'Vos meubles froids ne dorment jamais. Votre facture non plus.',
     intro: 'En grande distribution, le froid alimentaire représente une part majeure de la consommation du magasin. Meubles, chambres, laboratoires : autant de postes qui tournent en continu et qu’on peut piloter finement pour faire baisser la facture, sans jamais toucher à la qualité des produits.',
     kpis: [
-      { v: 'jusqu’à 35 %', l: 'en Bloc + Spot (15 à 20 % contrat actuel)', c: 'brand' as const },
-      { v: '12–18 mois', l: 'de ROI (ou 0 € avec les primes CEE)', c: 'white' as const },
-      { v: '100 %', l: 'chaîne du froid préservée', c: 'success' as const },
+      { v: '−35\u00a0%', l: 'jusqu’à 35 % en Bloc + Spot (15 à 20 % contrat actuel)', c: 'brand' as const },
+      { v: '12–18\u00a0mois', l: 'de ROI (ou 0 € avec les primes CEE)', c: 'white' as const },
+      { v: '100\u00a0%', l: 'chaîne du froid préservée', c: 'success' as const },
     ],
     points: [
       { t: 'Tous vos postes de froid', b: 'Chambres, meubles et laboratoires pilotés ensemble, chacun selon ses contraintes.' },
