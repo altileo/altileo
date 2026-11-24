@@ -67,7 +67,7 @@ export default function LegalPage() {
 
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-ink mb-4">
-              Hébergement
+              Hébergement du site vitrine
             </h2>
 
             <p className="text-muted leading-relaxed">
@@ -87,6 +87,11 @@ export default function LegalPage() {
               >
                 vercel.com
               </a>
+              <br />
+              <br />
+              Les données d’exploitation issues des installations clients
+              (télémétrie, températures, consommations) sont hébergées sur des
+              serveurs situés en France / Union européenne.
             </p>
           </section>
 
