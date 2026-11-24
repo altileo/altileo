@@ -530,7 +530,7 @@ export const etudeDeCas = {
     title: 'Un entrepôt frigorifique négatif, piloté pendant 12 mois.',
     body: 'Un négociant grossiste en fruits et légumes au Marché International de Rungis a confié à Altileo le pilotage de sa chambre froide négative de 75 m³ — le cas le plus exigeant en sécurité sanitaire et en consommation. Données mesurées sur site pendant 12 mois (82 992 relevés IoT), simulations sur prix Spot France 2025/2026.',
     kpis: [
-      { label: 'Économies simulées', value: 'jusqu’à 35 %', caption: 'en Bloc + Spot (15 à 20 % contrat actuel)', color: 'success' as const },
+      { label: 'Économies simulées', value: '−35\u00a0%', caption: 'jusqu’à 35 % en Bloc + Spot (15 à 20 % contrat actuel)', color: 'success' as const },
       { label: 'Retour sur investissement', value: '12 à 18 mois', caption: 'ou 0 € avec les primes CEE', color: 'white' as const },
       { label: 'Dérive à cœur', value: '+0,21 °C/h', caption: 'mesurée sur 6 h 55 sans relance', color: 'brand' as const },
       { label: 'Conformité HACCP', value: '100 %', caption: '−17,17 °C max simulé (seuil −15 °C)', color: 'success' as const },
