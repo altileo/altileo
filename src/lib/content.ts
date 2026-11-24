@@ -30,7 +30,7 @@ export const hero = {
 
 export const stats = [
   { value: '60%', body: 'de la consommation électrique d’un grossiste alimentaire vient du froid.' },
-  { value: '€80 000+', body: 'facture électricité froid d’un grossiste alimentaire de 1500 m² (estimation marché sur prix réglementé 2024).' },
+  { value: '€80 000+', body: 'facture électricité froid d’un grossiste alimentaire de 1500 m² (estimation marché sur prix électricité 2025/2026).' },
   { value: '2027', body: 'échéance Décret BACS (retrofit) : monitoring et automatisation obligatoires sur installations supérieures à 70 kW.' },
 ];
 
@@ -42,11 +42,11 @@ export const product = {
   architecture: {
     title: 'L’architecture, sans boîte noire.',
     body:
-      'De la chambre froide jusqu’au tableau de bord, chaque brique est documentée. Capteurs (température, ouverture de portes, courant), boîtier de contrôle avec commande VFD du compresseur, serveur local, base de données et couche de commande prédictive.',
+      'De la chambre froide jusqu’au tableau de bord, chaque brique est documentée : coffret industriel IP65 raccordé par contact sec non invasif sur vos régulateurs (Danfoss, Carel, Dixell, Eliwell), liaison 4G dédiée isolée de votre réseau IT/GTC, comptage certifié MID, triple sécurité matérielle fail-safe et option Haute Pression Flottante (CEE BAT-TH-134) / commande VFD.',
     pillars: [
-      { number: '01', title: 'Collecte', subtitle: 'Capteurs IoT' },
-      { number: '02', title: 'Décision', subtitle: 'Pilotage adaptatif' },
-      { number: '03', title: 'Action', subtitle: 'Commande VFD' },
+      { number: '01', title: 'Collecte', subtitle: 'Comptage MID & sondes' },
+      { number: '02', title: 'Décision', subtitle: 'Moteur prédictif 24 h' },
+      { number: '03', title: 'Action', subtitle: 'Fail-safe 4G & HPF' },
     ],
   },
   dashboard: {
@@ -60,7 +60,7 @@ export const product = {
     body: 'Alimentation, régulation, IoT, protection, conversion, stockage : chaque sous-système est monitoré en continu, avec alertes automatiques en cas d’anomalie.',
   },
   stack:
-    'Stack technique : capteurs propriétaires + boîtier de contrôle avec commande VFD, serveur local edge computing, base de données temps réel, couche de commande prédictive, et dashboard accessible web et mobile. Souveraineté française, hébergement des données en France / Union européenne.',
+    'Stack technique : coffret industriel IP65 (passerelle 4G dédiée isolée du réseau IT et GTC, comptage certifié MID, relais fail-safe NC < 10 ms, watchdog matériel 30 s et bypass manuel), option Haute Pression Flottante (CEE BAT-TH-134) et commande VFD, moteur prédictif cloud et supervision 24/7. Souveraineté française, hébergement des données en France / Union européenne.',
 };
 
 export const method = {
@@ -71,9 +71,9 @@ export const method = {
   layers: [
     { number: '01', title: 'Audit instrumenté', duration: '4 à 6 semaines', body: 'Mesure précise de vos consommations, températures, taux d’humidité, ouvertures de portes, cycles de dégivrage et comportement des compresseurs. On vous remet un rapport chiffré identifiant exactement où sont vos pertes.', savings: 'Diagnostic chiffré', savingsColor: 'ink' as const, featured: false },
     { number: '02', title: 'Capteurs IoT', duration: 'Visibilité 24/7', body: 'Capteurs de température, humidité, ouverture de portes, mouvement et consommation déployés sur l’ensemble de vos zones froides. Tableau de bord en temps réel accessible web et mobile.', savings: '5 à 10 %', savingsColor: 'success' as const, featured: false },
-    { number: '03', title: 'Automatisation intelligente', duration: 'Pilotage adaptatif', body: 'Modulation adaptative des compresseurs (commande VFD), des points de consigne et des cycles, en fonction des conditions réelles plutôt que de programmes fixes. Sans intervention manuelle. Sans modification de vos équipements.', savings: '10 à 15 %', savingsColor: 'success' as const, featured: false },
-    { number: '04', title: 'Optimisation du dégivrage', duration: 'À la demande', body: 'Détection en temps réel de l’accumulation réelle de givre. Le dégivrage se déclenche uniquement quand il est nécessaire - fini les cycles à intervalles fixes qui gaspillent l’énergie.', savings: '5 à 10 %', savingsColor: 'success' as const, featured: false },
-    { number: '05', title: 'Stockage thermique PCM', duration: 'Partenariat fabricant français', body: 'Matériaux à changement de phase (PCM/MCP) qui stockent le froid pendant les heures creuses et le restituent aux heures pleines. Décale votre consommation, lisse vos pics, allonge la vie de vos équipements.', savings: '15 à 20 %', savingsColor: 'success' as const, featured: true, badge: 'Exclusif' },
+    { number: '03', title: 'Pilotage prédictif & option HP flottante', duration: 'Éligible CEE BAT-TH-134', body: 'Effacement tarifaire non invasif sur vos régulateurs (Danfoss, Carel, Dixell, Eliwell) sans modification de vos équipements, et option Haute Pression Flottante (CEE BAT-TH-134) / commande variateur VFD pour abaisser la pression de condensation selon la météo.', savings: '15 à 35 %', savingsColor: 'success' as const, featured: false },
+    { number: '04', title: 'Maintenance prédictive & Smart Defrost', duration: 'Surveillance 24 h/24', body: 'Détection précoce des courts cycles (< 5 min), surcharges moteur, fuites de fluide et portes ouvertes, couplée au dégivrage optimisé Smart Defrost selon la résistance thermique réelle du givre.', savings: 'Pannes évitées', savingsColor: 'success' as const, featured: false },
+    { number: '05', title: 'Altileo Shield (stockage MCP)', duration: 'Option · Fabrication française', body: 'Plaques eutectiques (matériaux à changement de phase MCP) qui stockent le froid aux heures creuses et portent l’autonomie jusqu’à 13 h (jusqu’à 10 h de délestage continu). Durée de vie de 15 à 20 ans, sans usure chimique ni risque d’incendie.', savings: 'Jusqu’à 13 h', savingsColor: 'success' as const, featured: true, badge: 'Option Shield' },
   ],
   modularNote: {
     label: 'Approche modulaire',
@@ -132,17 +132,17 @@ export const bacs = {
 };
 
 export const pcm = {
-  pill: 'Partenariat exclusif',
-  title: 'Le stockage thermique, fabriqué en France.',
-  body: 'Altileo travaille en partenariat exclusif avec un fabricant français de matériaux à changement de phase (PCM/MCP). Cette collaboration nous permet de déployer du stockage thermique haute performance, fabriqué en France, à des conditions exclusives — là où la majorité du marché importe.',
+  pill: 'Option · Altileo Shield',
+  title: 'Altileo Shield : le stockage thermique MCP, fabriqué en France.',
+  body: 'Altileo Shield ajoute des plaques eutectiques (matériaux à changement de phase MCP) fabriquées en France directement dans votre chambre froide. Testé sur notre site pilote à Rungis (94 kg de plaques), ce stockage passif porte l’autonomie jusqu’à 13 h (soit jusqu’à 10 h de délestage continu, température max simulée −17,35 °C) et sert aussi de réserve de secours en cas de panne.',
   bullets: [
-    { strong: 'Durée de vie 15-20 ans', body: 'contre 7-10 ans pour les batteries lithium' },
-    { strong: 'Maintenance quasi-nulle', body: 'pas de cycles de recharge à gérer' },
-    { strong: 'Fabrication française', body: 'éligible CEE et bonus souveraineté' },
+    { strong: 'Jusqu’à 13 h d’autonomie', body: 'soit jusqu’à 10 h de délestage continu, sans usure chimique ni risque d’incendie' },
+    { strong: 'Durée de vie 15 à 20 ans', body: 'contre 7 à 10 ans pour des batteries lithium, avec une maintenance quasi nulle' },
+    { strong: 'Fabrication française', body: 'éligible aux dispositifs d’aides et réserve passive anti-panne' },
   ],
   synergy: {
-    label: 'Synergie solaire × PCM × pilotage',
-    body: 'Couplée à l’autoconsommation photovoltaïque, la solution atteint son plein potentiel : l’Altileo Box stocke le froid dans les plaques PCM pendant les pics d’ensoleillement (énergie gratuite) et coupe le compresseur lors des pointes tarifaires du matin et du soir. Stockage thermique, algorithme et solaire travaillent ensemble.',
+    label: 'Synergie Altileo Shield × pilotage × solaire',
+    body: 'Couplé au pilotage prédictif (et, si votre site en dispose, à l’autoconsommation photovoltaïque), Altileo Shield stocke le froid dans les plaques MCP aux heures les moins chères ou lors des pics d’ensoleillement, puis coupe le compresseur pendant les pointes tarifaires du matin et du soir.',
   },
 };
 
@@ -437,32 +437,32 @@ export const commentCaMarche = {
     },
   ],
   hardware: {
-    label: 'Le hardware embarqué',
-    title: 'Un boîtier industriel, posé sans toucher à votre installation',
+    label: 'Le coffret industriel',
+    title: 'Un coffret IP65 clé en main, posé en moins de 2 h sans toucher à votre réseau IT',
     items: [
-      { title: 'Automate industriel', body: 'ESP32 avec modem 4G intégré. Cerveau embarqué, connexion cellulaire autonome vers le cloud.' },
-      { title: 'Compteur d’énergie', body: 'Modbus RS485 avec pince ampèremétrique. Mesure de la consommation réelle du groupe frigorifique.' },
-      { title: 'Sonde température', body: 'PT100 filaire industrielle, placée au cœur des produits. Précision ±0,15 °C.' },
-      { title: 'Coffret IP65', body: 'Boîtier étanche pour pose en environnement industriel, à côté du tableau électrique.' },
+      { title: 'Passerelle Edge 4G isolée', body: 'Pilotage local autonome avec liaison 4G dédiée : aucune connexion et aucun accès à votre réseau informatique ou votre GTC.' },
+      { title: 'Compteur d’énergie certifié MID', body: 'Tores ouvrants clipsés sans coupure autour du câble compresseur pour le sous-comptage continu (prêt Décret Tertiaire).' },
+      { title: 'Sondes T° & garde-fou HACCP', body: 'Sondes étalonnées air ambiant et cœur marchandise (±0,15 °C) avec historique horodaté exportable.' },
+      { title: 'Option HP flottante (CEE BAT-TH-134)', body: 'Modulation dynamique de la haute pression condenseur selon la température extérieure (et commande variateur VFD), ouvrant droit aux primes CEE.' },
     ],
-    install: 'Installation en une demi-journée, coffret posé hors chambre froide, sans perçage sur les zones froides. Un simple fil basse tension relie la Box au régulateur du groupe (bornes standards, ex. Danfoss). Aucune modification du circuit haute tension, compatible avec la plupart des groupes et régulateurs du marché.',
+    install: 'Coffret IP65 compact (400 × 460 × 175 mm) posé en moins de 2 h par armoire, sans arrêt de production. Couplage non invasif par contact sec sur les régulateurs existants (Danfoss, Carel, Dixell, Eliwell — froid négatif et positif), validé par le bureau d’études Rivacold France : garanties constructeur et sécurité pump-down intégralement préservées.',
   },
   cloud: {
     label: 'Altileo Cloud',
     title: 'Le cerveau prédictif, dans le cloud',
-    body: 'La Box exécute, mais c’est le cloud qui décide. Le moteur d’optimisation Altileo Cloud récupère chaque jour les prix horaires du lendemain, les croise avec l’inertie thermique modélisée de votre site et vos contraintes d’exploitation, puis calcule le profil de délestage optimal. Ce profil est injecté dans la Box, qui pilote l’installation. C’est ce qui sépare Altileo d’un simple programmateur : un algorithme qui anticipe, plutôt qu’une horloge qui répète.',
+    body: 'Chaque jour, le moteur d’optimisation Altileo Cloud récupère les prix horaires EPEX Spot France du lendemain, les signaux réseau RTE et la météo, les croise avec l’inertie thermique modélisée de chaque chambre et vos horaires d’exploitation, puis transmet le plan sur 24 h au coffret sur site. En cas de perte de connexion, le coffret reste autonome et sécurisé.',
   },
   securite: {
     label: 'Les garanties de sécurité',
-    title: 'La chaîne du froid, jamais compromise',
+    title: 'Triple sécurité matérielle, HACCP et cybersécurité',
     items: [
       {
-        title: 'Surveillance HACCP permanente',
-        body: 'La sonde mesure la température au cœur des produits en continu. Si un seuil critique est atteint (ex. −16 °C pour un surgelé réglementé à −18 °C), la Box réveille immédiatement le compresseur — quelle que soit l’heure tarifaire — et envoie une alerte. La sécurité alimentaire prévaut toujours sur l’économie.',
+        title: 'Surveillance HACCP prioritaire 24 h/24',
+        body: 'Les sondes mesurent la température d’air et de cœur produit en continu. La chaîne du froid passe toujours avant l’économie : si une sonde approche du seuil critique, le froid reprend immédiatement, quel que soit le prix de l’électricité.',
       },
       {
-        title: 'Bypass matériel fail-safe',
-        body: 'La Box n’intercepte que le signal de commande basse tension, jamais le circuit d’alimentation. En cas de panne, de coupure ou de perte réseau, le groupe frigorifique reprend automatiquement son fonctionnement normal sous le contrôle de son régulateur d’origine. Le circuit de commande d’origine n’est jamais rompu.',
+        title: 'Triple sécurité fail-safe & cybersécurité 4G',
+        body: 'Relais mécanique Normally Closed (NC) à repli automatique en moins de 10 ms, chien de garde matériel indépendant (watchdog 30 s) anti-blocage logiciel et commutateur bypass manuel en façade (réversible en 1 s). Liaison 4G dédiée totalement isolée de votre informatique et de votre GTC.',
       },
     ],
   },
@@ -601,7 +601,7 @@ export const etudeDeCas = {
     items: [
       {
         title: 'Une assurance anti-risque en période de tension',
-        body: 'En février 2025, le prix Spot moyen atteint 122,7 €/MWh. Le Spot seul (687 €) devient plus cher que le contrat réglementé (632 €). Grâce au délestage Altileo, la facture tombe à 533 € : le client reste gagnant même en période de crise.',
+        body: 'Lors des mois de tension hivernale (prix Spot moyen jusqu’à 122,7 €/MWh), une exposition marché sans pilotage (687 €) devient plus chère que le contrat classique (632 €). Avec le délestage Altileo, la facture tombe à 533 € : le site reste gagnant même en pic de prix.',
       },
       {
         title: 'En été, le Spot est naturellement avantageux',
@@ -639,9 +639,9 @@ export const etudeDeCas = {
 
 export const maintenancePredictive = {
   hero: {
-    pill: 'Maintenance prédictive',
+    pill: 'Maintenance prédictive & surveillance 24 h/24',
     title: 'Vos données voient la panne venir. Avant qu’elle n’arrive.',
-    body: 'L’Altileo Box mesure en continu le comportement de votre installation frigorifique — pressions, surchauffe, sous-refroidissement, consommation, températures. Notre moteur d’analyse identifie le composant qui se dégrade avant qu’il ne lâche, et déclenche l’intervention au bon moment. Vous ne subissez plus la panne : vous la programmez.',
+    body: 'Le coffret Altileo surveille vos installations frigorifiques 24 h/24 : courts cycles compresseur (< 5 min), surcharge moteur, fuite de fluide, condenseur encrassé, porte ouverte, dégivrage optimisé Smart Defrost et historique HACCP exportable. Vous ne subissez plus la panne : vous la programmez.',
     kpis: [
       { label: 'Pannes évitées', value: '8–12 k€', caption: 'économies annuelles vs maintenance curative', color: 'success' as const },
       { label: 'Capacité restaurée', value: '10–15 %', caption: 'de condensation récupérée par entretien ciblé', color: 'brand' as const },
@@ -659,16 +659,16 @@ export const maintenancePredictive = {
     ],
   },
   detection: {
-    label: 'Ce que nous détectons',
+    label: 'Ce que nous détectons 24 h/24',
     title: 'Chaque panne laisse une signature. Nous la lisons.',
-    body: 'Les défaillances frigorifiques ne surgissent pas de nulle part : elles s’annoncent dans les données, des jours ou des semaines à l’avance. L’Altileo Box instrumente le circuit et l’ambiance, et l’algorithme croise ces signaux pour isoler la cause.',
+    body: 'Les défaillances frigorifiques ne surgissent pas de nulle part : elles s’annoncent dans les courbes de courant, de pression et de température, des jours ou des semaines à l’avance.',
     items: [
-      { title: 'Condenseur encrassé', body: 'La haute pression monte tandis que le sous-refroidissement chute — la signature caractéristique de l’encrassement. Détecté tôt, un simple nettoyage restaure 10 à 15 % de capacité.' },
-      { title: 'Fuite de fluide frigorigène', body: 'Surchauffe élevée et sous-refroidissement dégradé trahissent un manque de charge. On alerte avant que la performance ne s’effondre — et avant la sanction F-Gas.' },
-      { title: 'Usure du compresseur', body: 'L’égalisation trop rapide des pressions révèle des clapets fuyards. On anticipe le remplacement au lieu de le subir en pleine nuit.' },
-      { title: 'Défaut de dégivrage', body: 'Un évaporateur givré force le compresseur en dépression et fait exploser la consommation. Le cycle de dégivrage est surveillé en continu.' },
-      { title: 'Dérive du COP', body: 'La consommation par degré de froid produit augmente : le signal le plus précoce d’une installation qui se fatigue, toutes causes confondues.' },
-      { title: 'Joints et portes', body: 'Une perte thermique anormale à portes fermées pointe un joint défaillant — une réparation à 50 € qui évite des mois de surconsommation.' },
+      { title: 'Courts cycles compresseur', body: 'Comptage continu des démarrages de moins de 5 minutes. En limitant les courts cycles et en offrant 4 h de repos mécanique par jour, on prolonge la durée de vie des compresseurs.' },
+      { title: 'Surcharge moteur & usure', body: 'Détection des surintensités permanentes (hors pic de démarrage inrush) et de la fatigue mécanique des clapets avant la casse en pleine nuit.' },
+      { title: 'Fuite de fluide & dérive du COP', body: 'Une baisse de rendement et une dérive du sous-refroidissement trahissent un manque de charge : alerte précoce avant la panne et avant la sanction F-Gas.' },
+      { title: 'Condenseur encrassé & HP flottante', body: 'La haute pression monte anormalement : un simple nettoyage restaure 10 à 15 % de capacité. L’option HP flottante (CEE BAT-TH-134) optimise aussi la pression selon la météo.' },
+      { title: 'Dégivrage optimisé (Smart Defrost)', body: 'Suivi de la résistance thermique du givre sur l’évaporateur : le dégivrage se déclenche au bon moment au lieu de gaspiller de l’énergie à intervalles fixes.' },
+      { title: 'Porte ouverte, isolation & HACCP', body: 'Alerte immédiate en cas de porte mal fermée ou de défaut d’isolation, avec sondes étalonnées en continu et historique HACCP horodaté exportable.' },
     ],
   },
   fgas: {

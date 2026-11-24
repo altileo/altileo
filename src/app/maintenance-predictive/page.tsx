@@ -9,8 +9,8 @@ import { cn } from '@/lib/cn';
 export const metadata: Metadata = {
   title: 'Maintenance prédictive du froid',
   description:
-    'La maintenance prédictive Altileo : l’Altileo Box mesure en continu pressions, surchauffe, sous-refroidissement et consommation pour détecter la défaillance avant la panne. Condenseur encrassé, fuite de fluide, usure compresseur, dérive du COP — anticipés. Conformité F-Gas simplifiée.',
-  keywords: ['maintenance prédictive', 'froid', 'chambre froide', 'F-Gas', 'détection de fuite', 'panne compresseur', 'condenseur encrassé', 'COP'],
+    'Surveillance 24 h/24 et maintenance prédictive du froid : courts cycles compresseur, surcharge moteur, fuite de fluide, condenseur encrassé, porte ouverte, Smart Defrost et historique HACCP exportable. Conformité F-Gas simplifiée.',
+  keywords: ['maintenance prédictive', 'courts cycles compresseur', 'surcharge moteur', 'Smart Defrost', 'froid', 'chambre froide', 'F-Gas', 'HACCP', 'détection de fuite'],
   alternates: { canonical: '/maintenance-predictive' },
   openGraph: {
     title: 'Maintenance prédictive du froid · Altileo',
