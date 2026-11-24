@@ -8,7 +8,7 @@ import { entreprise } from '@/lib/content';
 export const metadata: Metadata = {
   title: 'Entreprise',
   description:
-    'Altileo est porté par quatre ingénieurs spécialistes du froid, basés à Paris. Notre mission, nos principes opérationnels, et notre couverture géographique sur la France.',
+    'Altileo réunit des ingénieurs spécialistes de l’énergie et du froid et une direction industrielle, basés à Paris. Notre mission, nos principes opérationnels et notre couverture sur la France.',
   keywords: ['Altileo entreprise', 'ingénieurs froid', 'spécialistes cold chain', 'efficacité énergétique France'],
   alternates: { canonical: '/entreprise' },
   openGraph: {

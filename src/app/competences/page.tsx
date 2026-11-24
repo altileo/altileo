@@ -213,7 +213,7 @@ export default function CompetencesPage() {
                 {competences.cta.body}
               </p>
               <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
-                <ButtonLink href="/#audit" size="lg">
+                <ButtonLink href="/contact" size="lg">
                   Parler à un ingénieur
                 </ButtonLink>
                 <ButtonLink href="/" variant="secondary" size="lg">

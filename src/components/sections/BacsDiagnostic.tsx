@@ -63,7 +63,7 @@ function computeVerdict(answers: Record<string, string>): Verdict {
       status: 'unclear',
       title: 'Diagnostic à approfondir',
       message:
-        'Sans informations précises sur la puissance et le type de bâtiment, on ne peut pas conclure. Notre audit instrumenté commence justement par ces mesures — gratuit en cas de non-conformité avérée.',
+        'Sans informations précises sur la puissance et le type de bâtiment, on ne peut pas conclure. Notre audit commence justement par ces vérifications, gratuitement et sans engagement.',
       cta: 'Demander un audit',
     };
   }
