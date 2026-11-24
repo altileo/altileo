@@ -50,9 +50,9 @@ export function Product() {
               <div className="bg-bg rounded-xl p-6 border border-line">
                 <Image
                   src="/screenshots/architecture.png"
-                  alt="Diagramme d’architecture Altileo : chambre froide avec capteurs, boîtier de contrôle, serveur local edge computing, base de données, couche de commande prédictive, dashboard"
-                  width={1200}
-                  height={1100}
+                  alt="Schéma d’architecture Altileo : signaux EPEX Spot, RTE et météo vers le Cloud Altileo, liaison 4G dédiée isolée du réseau IT/GTC, coffret industriel IP65 (compteur MID, HP flottante CEE BAT-TH-134, triple sécurité fail-safe) et raccordement non invasif sur votre installation frigorifique"
+                  width={1920}
+                  height={1452}
                   className="w-full block h-auto"
                   sizes="(max-width: 1024px) 100vw, 720px"
                 />

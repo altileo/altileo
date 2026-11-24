@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { Nav } from '@/components/sections/Nav';
 import { Footer } from '@/components/sections/Footer';
 import { Container } from '@/components/ui/Container';
@@ -98,7 +99,17 @@ export default function CommentCaMarchePage() {
                 {c.hardware.title}
               </h2>
             </div>
-            <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="mt-10 bg-white rounded-2xl p-4 lg:p-6">
+              <Image
+                src="/screenshots/coffret-schema.png"
+                alt="Plan d’organisation du coffret industriel IP65 Altileo (400 × 460 × 175 mm) et des 5 raccordements non invasifs sur site : tores de mesure, sondes HACCP, capteur haute pression, sonde extérieure et contact sec armoire froid"
+                width={1596}
+                height={1056}
+                className="w-full block h-auto rounded-lg"
+                sizes="(max-width: 1024px) 100vw, 1200px"
+              />
+            </div>
+            <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {c.hardware.items.map((item) => (
                 <div key={item.title} className="bg-[#181818] rounded-2xl border border-[#333] p-6">
                   <h3 className="text-base font-medium text-white">{item.title}</h3>
