@@ -8,8 +8,8 @@ import { commentCaMarche as c } from '@/lib/content';
 export const metadata: Metadata = {
   title: 'Comment ça marche',
   description:
-    'Le principe de l’Altileo Box : exploiter l’inertie thermique des chambres froides pour délester le compresseur aux heures les plus chères, sans jamais rompre la chaîne du froid. Hardware embarqué, moteur d’optimisation cloud et garanties de sécurité HACCP.',
-  keywords: ['inertie thermique', 'délestage chambre froide', 'pilotage frigorifique', 'HACCP', 'Altileo Box', 'optimisation énergétique froid'],
+    'Le coffret industriel Altileo : pilotage prédictif non invasif (Danfoss, Carel, Dixell, Eliwell), liaison 4G dédiée isolée du réseau IT, triple sécurité matérielle fail-safe et option Haute Pression Flottante éligible CEE BAT-TH-134.',
+  keywords: ['inertie thermique', 'délestage chambre froide', 'HP flottante', 'CEE BAT-TH-134', 'cybersécurité 4G', 'fail-safe', 'HACCP', 'Altileo Box'],
   alternates: { canonical: '/comment-ca-marche' },
   openGraph: {
     title: 'Comment ça marche · Altileo',
