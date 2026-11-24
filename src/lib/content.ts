@@ -340,6 +340,14 @@ export const faqGroups = [
         a: 'Le retour sur investissement se situe généralement entre 12 et 18 mois (net de l’abonnement Altileo), et peut être ramené à 0 € à investir grâce aux primes CEE (notamment avec l’option haute pression flottante, fiche BAT-TH-134). Le chiffrage exact est établi lors de votre audit gratuit, avant tout engagement.',
       },
       {
+        q: 'Comment fonctionne l’option Haute Pression Flottante et le financement CEE (BAT-TH-134) ?',
+        a: 'En fonctionnement classique, un condenseur maintient une pression élevée toute l’année, même la nuit ou en mi-saison quand l’air extérieur est frais. L’option Haute Pression Flottante (compatible commande variateur VFD) adapte dynamiquement la pression de condensation à la température extérieure : le compresseur force moins, consomme moins et s’use moins vite.\n\nCette régulation ouvre droit aux primes CEE (fiche BAT-TH-134), qui réduisent fortement l’investissement initial et peuvent le ramener jusqu’à 0 € selon votre installation. Le montant exact de la prime est chiffré lors de votre audit gratuit.',
+      },
+      {
+        q: 'Votre boîtier présente-t-il un risque de cybersécurité pour mon réseau ou mes stocks ?',
+        a: 'Non. Le coffret Altileo fonctionne sur une liaison 4G dédiée, totalement isolée physiquement de votre réseau informatique (IT) et de votre GTC : aucun câble réseau, aucun port ouvert sur votre site et des communications chiffrées.\n\nCôté froid (sécurité OT), le boîtier n’agit que par contact sec basse tension : il est physiquement impossible de forcer une chauffe ou de désactiver les sécurités de votre régulateur à distance. En cas d’anomalie, la triple sécurité matérielle reprend instantanément la main (relais fail-safe NC < 10 ms, watchdog matériel 30 s et commutateur bypass manuel réversible en 1 s).',
+      },
+      {
         q: 'Qui possède les données de mes installations ?',
         a: 'Vous. Toutes les données collectées sur votre site (consommations, températures, économies) vous appartiennent. Vous y avez accès 24/7 via votre dashboard. Vous pouvez les exporter à tout moment. Nous les utilisons uniquement pour piloter votre système et pour notre R&D agrégée — jamais partagées avec un tiers, jamais vendues. Données hébergées en France / Union européenne.',
       },
@@ -443,7 +451,7 @@ export const commentCaMarche = {
       { title: 'Passerelle Edge 4G isolée', body: 'Pilotage local autonome avec liaison 4G dédiée : aucune connexion et aucun accès à votre réseau informatique ou votre GTC.' },
       { title: 'Compteur d’énergie certifié MID', body: 'Tores ouvrants clipsés sans coupure autour du câble compresseur pour le sous-comptage continu (prêt Décret Tertiaire).' },
       { title: 'Sondes T° & garde-fou HACCP', body: 'Sondes étalonnées air ambiant et cœur marchandise (±0,15 °C) avec historique horodaté exportable.' },
-      { title: 'Option HP flottante (CEE BAT-TH-134)', body: 'Modulation dynamique de la haute pression condenseur selon la température extérieure (et commande variateur VFD), ouvrant droit aux primes CEE.' },
+      { title: 'Option HP flottante (CEE BAT-TH-134)', body: 'Abaisse dynamiquement la pression de condensation quand il fait frais dehors (commande variateur VFD possible) : le compresseur force moins et l’installation ouvre droit aux primes CEE.' },
     ],
     install: 'Coffret IP65 compact (400 × 460 × 175 mm) posé en moins de 2 h par armoire, sans arrêt de production. Couplage non invasif par contact sec sur les régulateurs existants (Danfoss, Carel, Dixell, Eliwell — froid négatif et positif), validé par le bureau d’études Rivacold France : garanties constructeur et sécurité pump-down intégralement préservées.',
   },
@@ -461,8 +469,8 @@ export const commentCaMarche = {
         body: 'Les sondes mesurent la température d’air et de cœur produit en continu. La chaîne du froid passe toujours avant l’économie : si une sonde approche du seuil critique, le froid reprend immédiatement, quel que soit le prix de l’électricité.',
       },
       {
-        title: 'Triple sécurité fail-safe & cybersécurité 4G',
-        body: 'Relais mécanique Normally Closed (NC) à repli automatique en moins de 10 ms, chien de garde matériel indépendant (watchdog 30 s) anti-blocage logiciel et commutateur bypass manuel en façade (réversible en 1 s). Liaison 4G dédiée totalement isolée de votre informatique et de votre GTC.',
+        title: 'Triple sécurité fail-safe & cybersécurité OT',
+        body: 'Relais mécanique Normally Closed (NC) à repli automatique en moins de 10 ms, watchdog matériel indépendant (30 s) et commutateur bypass manuel réversible en 1 s. Liaison 4G dédiée totalement isolée de votre réseau IT et GTC (aucun port ouvert sur site, communications chiffrées) : impossible physiquement de forcer une chauffe ou de modifier les sécurités du régulateur à distance.',
       },
     ],
   },
@@ -725,7 +733,7 @@ export const notreOffre = {
     options: [
       {
         title: 'Vous achetez le matériel (avec ou sans CEE)',
-        body: 'Un seul paiement au départ, amorti en 12 à 18 mois grâce à vos économies, et pouvant descendre jusqu’à 0 € à investir grâce aux primes CEE (option haute pression flottante BAT-TH-134). Ensuite, vous ne payez plus que l’abonnement mensuel.',
+        body: 'Un seul paiement au départ, amorti en 12 à 18 mois grâce à vos économies. Avec l’option Haute Pression Flottante (qui abaisse la pression condenseur dès qu’il fait frais dehors pour réduire l’effort compresseur), la prime CEE BAT-TH-134 réduit fortement le reste à charge, jusqu’à 0 € à investir. Ensuite, vous ne payez plus que l’abonnement mensuel.',
         tag: 'ROI 12 à 18 mois · ou 0 € avec CEE',
       },
       {
