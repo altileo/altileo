@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: '%s · Altileo',
   },
   description:
-    'Réduisez de 30 à 40% la facture électrique de vos installations frigorifiques. Audit instrumenté, capteurs IoT, automatisation et stockage thermique PCM. Conformité Décret BACS incluse.',
+    'Réduisez jusqu’à 35 % la facture électrique de vos installations frigorifiques (15 à 20 % en contrat actuel, jusqu’à 35 % en Bloc + Spot). Audit gratuit, pilotage prédictif, option HP flottante CEE BAT-TH-134 et stockage thermique Altileo Shield.',
   keywords: [
     'optimisation énergétique froid',
     'chambre froide économies',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Altileo — Le froid optimisé, simplement',
     description:
-      'Réduisez de 30 à 40% la facture électrique de vos installations frigorifiques. Audit, capteurs, automatisation, stockage PCM.',
+      'Réduisez jusqu’à 35 % la facture électrique de vos installations frigorifiques (15 à 20 % en contrat actuel, jusqu’à 35 % en Bloc + Spot). Audit gratuit.',
     url: SITE_URL,
     siteName: 'Altileo',
     locale: 'fr_FR',
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Altileo — Le froid optimisé, simplement',
     description:
-      'Réduisez de 30 à 40% la facture électrique de vos installations frigorifiques.',
+      'Réduisez jusqu’à 35 % la facture électrique de vos installations frigorifiques.',
     images: ['/og/altileo-og.svg'],
   },
   robots: {

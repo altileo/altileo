@@ -9,8 +9,8 @@ import { cn } from '@/lib/cn';
 export const metadata: Metadata = {
   title: 'Tarification dynamique de l’électricité',
   description:
-    'La tarification dynamique devient accessible aux professionnels en France. Un prix indexé heure par heure sur le marché de gros récompense la flexibilité — et vos chambres froides sont naturellement flexibles. Deux scénarios d’économies avec le pilotage Altileo.',
-  keywords: ['tarification dynamique', 'prix spot électricité', 'marché day-ahead', 'flexibilité électrique', 'délestage froid', 'offre indexée'],
+    'La tarification dynamique et les offres Bloc + Spot récompensent la flexibilité de vos chambres froides : 15 à 20 % en gardant votre contrat actuel, jusqu’à 35 % en Bloc + Spot avec bonus de flexibilité RTE.',
+  keywords: ['tarification dynamique', 'Bloc + Spot', 'prix spot électricité', 'marché day-ahead', 'flexibilité RTE', 'délestage froid', 'offre indexée'],
   alternates: { canonical: '/tarification-dynamique' },
   openGraph: {
     title: 'Tarification dynamique · Altileo',

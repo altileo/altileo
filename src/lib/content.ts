@@ -13,16 +13,16 @@ export const site = {
 
 export const hero = {
   pill: 'Spécialistes du froid pour grossistes et logisticiens',
-  savingsRange: '30 à 40 %',
+  savingsRange: '35 %',
   body:
-    'On audite. On déploie capteurs et automatisation. On ajoute du stockage thermique PCM si le ROI le justifie. Économies vérifiées sur sites réels.',
-  primaryCta: 'Demander un audit énergétique',
+    '15 à 20 % en gardant votre contrat actuel, jusqu’à 35 % en offre Bloc + Spot. Effacement thermique prédictif et pilotage autonome, sans travaux ni arrêt d’activité.',
+  primaryCta: 'Demander un audit gratuit',
   secondaryCta: 'Voir le produit en action',
   trustSignals: [
     'Économies vérifiées',
     'Conformité Décret BACS',
     'Système opérationnel',
-    'ROI sous 18 mois',
+    'ROI 12 à 18 mois (ou 0 € avec CEE)',
   ],
   screenshotCaption:
     'Capture du tableau de bord en production - données réelles d’un site déployé',
@@ -84,17 +84,17 @@ export const method = {
 export const caseStudy = {
   label: 'Pilote terrain · MIN de Rungis',
   title: 'Une chambre négative.\nDes mesures, pas des promesses.',
-  body1: 'Sur une chambre froide négative de 30 m² au MIN de Rungis (consigne −21 °C, groupe triphasé ~6,5 kW), nous avons mené un test de délestage grandeur réelle le 30 mars 2026 : compresseur coupé, températures suivies par nos capteurs.',
-  body2: 'Résultat : après 3 h 52 de coupure, la température à cœur de la marchandise n’a dérivé que de +0,21 °C par heure — largement dans les limites HACCP. La chambre tolère jusqu’à 6 heures de délestage par jour ; nous paramétrons à 5 h pour garder une marge confortable.',
+  body1: 'Sur une chambre froide négative de 75 m³ (30 m²) au MIN de Rungis (consigne −18 °C, plage −18 / −21 °C, groupe triphasé ~6,5 kW, régulateur Danfoss AK-CC 210), nous avons mesuré 12 mois d’exploitation (82 992 relevés IoT) et mené un test de coupure grandeur réelle : compresseur arrêté, températures suivies en continu.',
+  body2: 'Résultat : pendant 6 h 55 sans relance du froid, la température à cœur de la marchandise n’a dérivé que de +0,21 °C par heure, largement dans les limites HACCP. En exploitation standard, nous paramétrons 4 h de délestage par jour (blocs plafonnés à 3 h, hors heures d’activité) pour garder une marge confortable.',
   cta: 'Voir l’étude de cas complète',
   ctaHref: '/etude-de-cas',
   kpis: [
-    { label: 'Économie annuelle', value: '2 442 €', caption: '−35 % vs contrat HC/HP actuel', color: 'success' as const },
-    { label: 'Retour sur investissement', value: '~7,4 mois', caption: 'installation 1 500 €', color: 'navy' as const },
-    { label: 'Dérive thermique mesurée', value: '+0,21 °C/h', caption: 'à cœur de la marchandise (test sans MCP)', color: 'ink' as const },
-    { label: 'Conformité HACCP', value: '100 %', caption: '−16,97 °C max simulé', color: 'success' as const },
+    { label: 'Économies simulées', value: 'jusqu’à 35 %', caption: 'en Bloc + Spot (15 à 20 % contrat actuel)', color: 'success' as const },
+    { label: 'Retour sur investissement', value: '12 à 18 mois', caption: 'ou 0 € avec les primes CEE', color: 'navy' as const },
+    { label: 'Dérive thermique mesurée', value: '+0,21 °C/h', caption: 'à cœur de la marchandise (test 6 h 55 sans MCP)', color: 'ink' as const },
+    { label: 'Conformité HACCP', value: '100 %', caption: '−17,17 °C max simulé (seuil −15 °C)', color: 'success' as const },
   ],
-  note: 'Ces chiffres correspondent à un site et une configuration précis, mesurés sur 12 mois. Un audit préalable est nécessaire pour quantifier l’économie potentielle de chaque nouveau site : volumes, isolation, consommation de base et contraintes d’activité varient d’un client à l’autre.',
+  note: 'Ces chiffres correspondent à 12 mois de mesures réelles sur un site pilote et à des simulations sur les prix Spot France 2025/2026 (rattrapage thermique compris). Un audit gratuit préalable permet de chiffrer l’économie exacte de chaque site selon ses volumes, son isolation et ses horaires d’activité.',
 };
 
 export const profiles = {
@@ -221,12 +221,12 @@ export const entreprise = {
   },
   mission: {
     title: 'Réduire définitivement le coût énergétique du froid en France.',
-    body1: 'Le froid alimentaire et logistique consomme entre 7% et 10% de l’électricité française. Sur les sites que nous auditons, 30 à 40 % de cette consommation est tout simplement gaspillée - dans des cycles mal calibrés, des équipements sur-dimensionnes, des pertes par mauvais réglages, des dégivrages aux mauvais moments.',
-    body2: 'Notre mission n’est pas « sauver la planete » - c’est rendre l’efficacite énergétique du froid accessible, mesurable, et bancable. Un site a la fois. Avec des chiffrés vérifiés par compteur, pas par marketing.',
+    body1: 'Le froid alimentaire et logistique consomme entre 7 % et 10 % de l’électricité française. Sur les sites que nous auditons, jusqu’à 35 % de la facture électrique du froid peut être économisée grâce au pilotage prédictif, à l’effacement des heures de pointe et à l’optimisation thermodynamique.',
+    body2: 'Notre mission n’est pas « sauver la planète » : c’est rendre l’efficacité énergétique du froid accessible, mesurable et bancable. Un site à la fois. Avec des chiffres vérifiés par compteur, pas par marketing.',
     kpis: [
-      { value: '30-40%', label: 'économies vérifiées sur les sites déployés' },
-      { value: '< 18 mois', label: 'ROI cible avant tout déploiement' },
-      { value: '100%', label: 'des couches livrees evaluees par mesure' },
+      { value: '15–35 %', label: 'd’économies (15 à 20 % contrat actuel, jusqu’à 35 % en Bloc + Spot)' },
+      { value: '12–18 mois', label: 'ROI cible (ou 0 € avec les primes CEE)' },
+      { value: '100%', label: 'des couches livrées évaluées par mesure' },
       { value: 'FR', label: 'ingénierie, fabrication, hébergement' },
     ],
   },
@@ -283,7 +283,7 @@ export const faqGroups = [
     items: [
       {
         q: 'Combien coûte un audit énergétique ?',
-        a: 'L’audit instrumenté coûte entre 5 000 € et 7 000 € selon la taille du site et le nombre de zones froides. Cela inclut : visite sur site, pose des capteurs de mesure pendant 4 à 6 semaines, analyse des données, et un rapport écrit chiffré avec les pertes identifiées et les économies réalisables.\n\nSi vous déployez ensuite la méthode complète chez vous, le coût de l’audit est déduit du déploiement. Le diagnostic préalable, lui, est gratuit et sans engagement.',
+        a: 'L’audit énergétique et la simulation de votre parc (de 1 à 1 000 chambres) sont gratuits et sans engagement. Nous analysons 12 mois de courbes de charge et vos fiches centrales pour chiffrer vos économies chambre par chambre (contrat actuel vs offre Bloc + Spot), le retour sur investissement et les primes CEE mobilisables.\n\nSi une phase d’instrumentation temporaire sur site est nécessaire avant déploiement, ses modalités sont précisées noir sur blanc avant toute décision.',
       },
       {
         q: 'Combien de temps prend un audit ?',
@@ -337,7 +337,7 @@ export const faqGroups = [
       },
       {
         q: 'En combien de temps amortit-on l’investissement ?',
-        a: 'Notre cible est systématiquement un ROI sous 18 mois sur les couches retenues. Sur les sites où nous avons déployé la méthode complète (5 couches), le ROI moyen est entre 12 et 16 mois. Les couches à ROI rapide (capteurs + automatisation, 6 à 12 mois) sont déployées en priorité. Le stockage PCM a un ROI plus long (24 à 36 mois) mais une durée de vie de 15 à 20 ans.',
+        a: 'Le retour sur investissement se situe généralement entre 12 et 18 mois (net de l’abonnement Altileo), et peut être ramené à 0 € à investir grâce aux primes CEE (notamment avec l’option haute pression flottante, fiche BAT-TH-134). Le chiffrage exact est établi lors de votre audit gratuit, avant tout engagement.',
       },
       {
         q: 'Qui possède les données de mes installations ?',
@@ -388,7 +388,7 @@ export const faqGroups = [
 export const faqHighlights = [
   {
     q: 'Combien coûte un audit énergétique ?',
-    a: 'Entre 5 000 € et 7 000 € selon la taille du site. Si vous déployez ensuite la méthode, le coût de l’audit est déduit. Le diagnostic préalable, lui, est gratuit et sans engagement.',
+    a: 'L’audit énergétique et la simulation de votre parc multi-chambres sont gratuits et sans engagement. Vous connaissez votre gain chiffré chambre par chambre avant de vous engager.',
   },
   {
     q: 'Que se passe-t-il si vous ne trouvez pas d’économies ?',
@@ -417,7 +417,7 @@ export const commentCaMarche = {
   principe: {
     label: 'Le principe',
     title: 'L’inertie thermique, votre volant d’énergie',
-    body: 'Thermodynamiquement, une chambre froide est un stock de froid. La marchandise à cœur agit comme un volant thermique naturel : coupez le compresseur, la température ne dérive que très lentement. Sur notre pilote au MIN de Rungis, après 3 h 52 de coupure totale, la dérive n’a été que de +0,21 °C par heure. C’est cette physique, mesurée sur site, qui rend le délestage possible sans risque.',
+    body: 'Thermodynamiquement, une chambre froide est un stock de froid. La marchandise à cœur agit comme un volant thermique naturel : coupez le compresseur, la température ne dérive que très lentement. Sur notre pilote au MIN de Rungis, lors d’un test de 6 h 55 sans relance du froid, la dérive à cœur n’a été que de +0,21 °C par heure. En exploitation standard, nous programmons 4 h de délestage par jour (blocs plafonnés à 3 h, hors heures d’activité), sans aucun risque produit.',
   },
   etapes: [
     {
@@ -493,21 +493,21 @@ export const tarifDynamique = {
     stat2Caption: 'cet écart se répète, ce qui rend le décalage de consommation économiquement intéressant',
   },
   scenarios: {
-    label: 'Deux scénarios pour vos chambres froides',
+    label: 'Deux formules selon votre contrat',
     title: 'Vous choisissez le contrat. Altileo pilote la flexibilité.',
     body: 'Altileo ne vend pas d’électricité et ne vous impose aucun fournisseur : vous restez libre de votre contrat. Notre rôle est technique — piloter vos groupes frigorifiques pour concentrer la consommation aux bonnes heures. Selon le contrat que vous choisissez, le gain diffère.',
     items: [
       {
-        tag: 'Scénario 1',
-        title: 'Vous gardez votre contrat HP/HC',
-        value: '~20%',
-        body: 'Vous conservez votre contrat réglementé actuel. L’Altileo Box concentre le délestage sur les heures pleines les plus chères. Économie mesurée sur notre pilote : environ 20 % sur la facture d’électricité du froid.',
+        tag: 'Formule 1',
+        title: 'Vous gardez votre contrat actuel',
+        value: '15 à 20 %',
+        body: 'Mise en place immédiate, sans renégocier votre contrat. L’Altileo Box efface les heures de pointe et limite les dépassements de puissance. Économie mesurée : 15 à 20 % sur la facture électrique du froid.',
       },
       {
-        tag: 'Scénario 2',
-        title: 'Vous passez à un contrat dynamique',
-        value: '~30%',
-        body: 'Vous souscrivez une offre indexée au marché (le choix du fournisseur vous appartient). L’algorithme exploite la volatilité horaire : délestage aux pointes, consommation aux creux. Économie estimée : jusqu’à ~30 % sur la facture.',
+        tag: 'Formule 2',
+        title: 'Vous passez en offre Bloc + Spot',
+        value: 'jusqu’à 35 %',
+        body: 'Une part fixe (ruban) sécurise votre budget et le reste s’achète aux heures les moins chères sur le marché Spot France (2025/2026), avec le bonus de flexibilité de RTE. Économie simulée : jusqu’à 35 % sur la facture.',
         featured: true,
       },
     ],
@@ -528,12 +528,12 @@ export const etudeDeCas = {
   hero: {
     pill: 'Étude de cas pilote · MIN de Rungis',
     title: 'Un entrepôt frigorifique négatif, piloté pendant 12 mois.',
-    body: 'Un négociant grossiste en fruits et légumes au Marché International de Rungis a confié à Altileo le pilotage de sa chambre froide négative — le cas le plus exigeant en sécurité sanitaire et en consommation. Données mesurées sur site pendant 12 mois, simulation sur prix Spot réels 2025.',
+    body: 'Un négociant grossiste en fruits et légumes au Marché International de Rungis a confié à Altileo le pilotage de sa chambre froide négative de 75 m³ — le cas le plus exigeant en sécurité sanitaire et en consommation. Données mesurées sur site pendant 12 mois (82 992 relevés IoT), simulations sur prix Spot France 2025/2026.',
     kpis: [
-      { label: 'Économie annuelle', value: '2 442 €', caption: '−35 % vs contrat HC/HP actuel', color: 'success' as const },
-      { label: 'Retour sur investissement', value: '~7,4 mois', caption: 'installation 1 500 €', color: 'white' as const },
-      { label: 'Énergie économisée', value: '9 085 kWh', caption: '0,45 t CO₂/an évitée', color: 'brand' as const },
-      { label: 'Conformité HACCP', value: '100 %', caption: '−16,97 °C max simulé', color: 'success' as const },
+      { label: 'Économies simulées', value: 'jusqu’à 35 %', caption: 'en Bloc + Spot (15 à 20 % contrat actuel)', color: 'success' as const },
+      { label: 'Retour sur investissement', value: '12 à 18 mois', caption: 'ou 0 € avec les primes CEE', color: 'white' as const },
+      { label: 'Dérive à cœur', value: '+0,21 °C/h', caption: 'mesurée sur 6 h 55 sans relance', color: 'brand' as const },
+      { label: 'Conformité HACCP', value: '100 %', caption: '−17,17 °C max simulé (seuil −15 °C)', color: 'success' as const },
     ],
   },
   site: {
@@ -563,22 +563,22 @@ export const etudeDeCas = {
   },
   simulation: {
     label: 'Paramètres de la simulation',
-    title: 'Une simulation sur l’année 2025 complète',
+    title: 'Simulations sur 12 mois réels (prix Spot France 2025/2026)',
     params: [
       { param: 'Données de consommation', value: 'Mesures réelles IoT (12 mois, 82 992 points)' },
-      { param: 'Prix Spot', value: 'Historique réel 2025 (Nord Pool)' },
-      { param: 'Prix Spot moyen annuel', value: '61,1 €/MWh' },
-      { param: 'Délestage', value: '5 heures / jour' },
+      { param: 'Référence marché', value: 'Prix Spot France 2025/2026 (EPEX Spot) · offre Bloc + Spot' },
+      { param: 'Délestage standard', value: '4 heures / jour (blocs max 3 h, hors activité)' },
       { param: 'Rattrapage thermique', value: '10 %' },
-      { param: 'Bonus COP nuit', value: '10 %' },
-      { param: 'Marge de sécurité', value: '10 %' },
-      { param: 'Abonnement SaaS Altileo', value: '240 € HT / an (20 €/mois)' },
+      { param: 'Bonus COP nuit', value: '+10 %' },
+      { param: 'Température max simulée', value: '−17,17 °C (seuil HACCP −15 °C)' },
+      { param: 'Valorisation flexibilité', value: 'Bonus flexibilité RTE en complément' },
+      { param: 'Abonnement pilotage Altileo', value: 'Indexé sur une fraction des économies (chiffré à l’audit)' },
     ],
     scenarios: [
-      { name: 'HC/HP classique (sans rien)', facture: '6 920 €', eco: '—', vs: '—', featured: false },
-      { name: 'HC/HP avec Altileo', facture: '5 548 €', eco: '~20 %', vs: '−1 372 €', featured: false },
-      { name: 'Spot sans Altileo', facture: '5 692 €', eco: '18 %', vs: '−1 228 €', featured: false },
-      { name: 'Spot + Altileo', facture: '4 478 €', eco: '35 %', vs: '−2 442 €', featured: true },
+      { name: 'Contrat actuel (sans pilotage)', facture: '6 920 €', eco: '—', vs: '—', featured: false },
+      { name: 'Contrat actuel + Altileo', facture: '5 548 €', eco: '15 à 20 %', vs: '−1 372 €', featured: false },
+      { name: 'Offre Bloc + Spot sans Altileo', facture: '5 692 €', eco: '18 %', vs: '−1 228 €', featured: false },
+      { name: 'Offre Bloc + Spot + Altileo', facture: '4 478 €', eco: 'jusqu’à 35 %', vs: '−2 442 €', featured: true },
     ],
   },
   monthly: [
@@ -619,7 +619,7 @@ export const etudeDeCas = {
     items: [
       {
         title: 'Conformité HACCP 100 %',
-        body: 'Température maximale simulée : −16,97 °C, pour une limite réglementaire à −15 °C. La sécurité sanitaire est maintenue en permanence, avec une marge contractuelle d’un degré.',
+        body: 'Température maximale simulée : −17,17 °C pour une consigne à −18 °C et une limite réglementaire à −15 °C. La sécurité sanitaire est maintenue en permanence avec près de 2 °C de marge.',
       },
       {
         title: 'Sécurité matérielle fail-safe',
@@ -706,27 +706,27 @@ export const notreOffre = {
   hero: {
     pill: 'Notre offre',
     title: 'Le matériel se rembourse tout seul. Le reste, c’est du gain.',
-    body: 'Vous payez l’installation une fois — elle se rembourse en 3 à 5 ans grâce à vos économies. Ensuite, un abonnement mensuel toujours bien plus petit que ce que vous économisez. C’est aussi simple que ça.',
+    body: 'Vous payez l’installation une fois : elle s’amortit en 12 à 18 mois grâce à vos économies, voire 0 € à investir avec les primes CEE. Ensuite, un abonnement mensuel toujours bien plus petit que ce que vous économisez.',
   },
   parcours: {
     label: 'Comment ça se passe',
     title: 'Vous savez tout avant de vous engager',
     steps: [
-      { number: '01', title: 'Diagnostic gratuit', body: 'On étudie vos installations et on vous dit si le froid chez vous a un vrai potentiel d’économies. Sans engagement, sans frais.' },
-      { number: '02', title: 'Audit chiffré', body: 'On mesure précisément. On vous annonce combien vous allez économiser, et combien vous allez payer — les deux chiffres, noir sur blanc, avant toute décision.' },
-      { number: '03', title: 'Installation', body: 'Pose du boîtier en une demi-journée, sans toucher à vos équipements, sans couper le froid. On calibre, on met en route.' },
+      { number: '01', title: 'Audit et simulation gratuits', body: 'Nous analysons vos consommations et chiffrons votre gain chambre par chambre (contrat actuel vs Bloc + Spot), sans frais ni engagement.' },
+      { number: '02', title: 'Mesures sur site', body: 'Si nécessaire, nous mesurons l’inertie réelle de vos chambres et validons vos seuils HACCP avant tout pilotage.' },
+      { number: '03', title: 'Installation rapide', body: 'Pose du boîtier en moins de 2 h par armoire, sans toucher à vos équipements et sans couper le froid. On calibre, on met en route.' },
       { number: '04', title: 'Vous suivez vos économies', body: 'Le système travaille tout seul. Vous voyez vos euros économisés chaque mois sur votre tableau de bord. Rapport mensuel automatique.' },
     ],
   },
   paiement: {
-    label: 'Deux façons de payer',
-    title: 'Vous achetez, ou vous étalez. À vous de choisir.',
-    body: 'Le résultat est le même : vous gagnez plus que vous ne payez. La différence, c’est simplement comment vous réglez le matériel.',
+    label: 'Deux façons de financer',
+    title: 'Achat direct, primes CEE ou étalement. À vous de choisir.',
+    body: 'Le résultat est le même : vous gagnez plus que vous ne payez. La différence, c’est simplement comment vous financez le matériel.',
     options: [
       {
-        title: 'Vous achetez le matériel',
-        body: 'Un seul paiement au départ. Il se rembourse en 3 à 5 ans par vos économies. Ensuite, vous ne payez plus que l’abonnement mensuel.',
-        tag: 'Le plus rentable sur la durée',
+        title: 'Vous achetez le matériel (avec ou sans CEE)',
+        body: 'Un seul paiement au départ, amorti en 12 à 18 mois grâce à vos économies, et pouvant descendre jusqu’à 0 € à investir grâce aux primes CEE (option haute pression flottante BAT-TH-134). Ensuite, vous ne payez plus que l’abonnement mensuel.',
+        tag: 'ROI 12 à 18 mois · ou 0 € avec CEE',
       },
       {
         title: 'Vous étalez tout',
@@ -760,16 +760,16 @@ export const secteurs = {
     title: 'Votre froid tourne 24h/24. Sans jamais choisir quand.',
     intro: 'Chez un grossiste, le froid pèse jusqu’à 60 % de la facture d’électricité. Vos chambres gardent le froid des heures sans compresseur : on exploite cette inertie pour effacer les heures chères, sans jamais rompre la chaîne du froid.',
     kpis: [
-      { v: '−35 %', l: 'sur la facture du froid', c: 'brand' as const },
-      { v: '3–5 ans', l: 'et le matériel est remboursé', c: 'white' as const },
-      { v: '100 %', l: 'conforme HACCP', c: 'success' as const },
+      { v: 'jusqu’à 35 %', l: 'en Bloc + Spot (15 à 20 % contrat actuel)', c: 'brand' as const },
+      { v: '12–18 mois', l: 'de ROI (ou 0 € avec les primes CEE)', c: 'white' as const },
+      { v: '100 %', l: 'conforme HACCP (−17,17 °C max simulé)', c: 'success' as const },
     ],
     points: [
       { t: 'Multi-chambres', b: 'Positif et négatif pilotés ensemble, chacun selon son inertie thermique propre.' },
-      { t: 'Respect de vos horaires', b: 'Le délestage ne s’active que portes fermées, en dehors de votre activité commerciale.' },
-      { t: 'Conforme Décret BACS', b: 'Monitoring et automatisation prêts pour l’échéance réglementaire 2026.' },
+      { t: 'Respect de vos horaires', b: 'Le délestage (4 h/jour, blocs max 3 h) ne s’active que portes fermées, en dehors de votre activité commerciale.' },
+      { t: 'Conforme Décret BACS', b: 'Monitoring et automatisation prêts pour l’échéance réglementaire.' },
     ],
-    proof: 'Mesuré sur un site pilote au MIN de Rungis : chambre négative −18 °C, 12 mois de données réelles, 2 442 € d’économie annuelle et un retour sur investissement en 7,4 mois.',
+    proof: 'Mesuré sur un site pilote au MIN de Rungis : chambre négative de 75 m³ (−18 °C), 12 mois de données réelles (82 992 relevés), 6 h 55 sans relance du froid, jusqu’à 35 % d’économies en Bloc + Spot et un ROI de 12 à 18 mois (ou 0 € avec CEE).',
     proofLink: { label: 'Voir l’étude de cas complète', href: '/etude-de-cas' },
   },
   logisticiens: {
@@ -777,15 +777,15 @@ export const secteurs = {
     nav: 'Logisticiens du froid',
     tag: 'Logisticiens du froid',
     title: 'De gros volumes. De gros kilowatts. De grosses économies.',
-    intro: 'Sur un entrepôt frigorifique, chaque kilowatt compte. Plus l’installation est grande, plus le gisement d’économies est important — et plus la flexibilité de votre froid a de la valeur sur le marché de l’électricité.',
+    intro: 'Sur un entrepôt frigorifique, chaque kilowatt compte. Plus l’installation est grande, plus le gisement d’économies est important — et plus la flexibilité de votre froid a de la valeur sur le marché de l’électricité et auprès de RTE.',
     kpis: [
-      { v: '30–40 %', l: 'de facture électrique en moins', c: 'brand' as const },
-      { v: '5 h/j', l: 'de délestage sans risque', c: 'white' as const },
+      { v: 'jusqu’à 35 %', l: 'en Bloc + Spot (15 à 20 % contrat actuel)', c: 'brand' as const },
+      { v: '4 h/j', l: 'de délestage standard (blocs max 3 h)', c: 'white' as const },
       { v: '0', l: 'coupure de courant à l’installation', c: 'success' as const },
     ],
     points: [
-      { t: 'Tarification dynamique', b: 'On exploite la volatilité des prix : consommer aux heures creuses, effacer aux pics.' },
-      { t: 'Stockage thermique MCP', b: 'Jusqu’à 10 h d’autonomie pour délester une nuit complète sans compresseur.' },
+      { t: 'Offre Bloc + Spot & flexibilité RTE', b: 'Un ruban fixe sécurise le budget, le reste s’achète aux heures les moins chères, avec le bonus de flexibilité RTE.' },
+      { t: 'Altileo Shield (stockage MCP)', b: 'Jusqu’à 13 h d’autonomie (et jusqu’à 10 h de délestage continu) pour passer une nuit complète sans compresseur.' },
       { t: 'Puissance souscrite réduite', b: 'Lissage des pics de démarrage des compresseurs, gain direct sur l’abonnement.' },
     ],
     proof: 'Le froid enfin piloté par la donnée : on mesure, on optimise, on sécurise — sans toucher à vos équipements existants, sans interrompre votre exploitation.',
@@ -799,7 +799,7 @@ export const secteurs = {
     intro: 'En agroalimentaire, une panne de froid, c’est un stock menacé et une chaîne à l’arrêt. On pilote la consommation pour la réduire, et on surveille l’installation en continu pour voir la panne venir avant qu’elle n’arrive.',
     kpis: [
       { v: '8–12 k€', l: 'de pannes évitées par an', c: 'brand' as const },
-      { v: '−30 %', l: 'sur la facture du froid', c: 'white' as const },
+      { v: 'jusqu’à 35 %', l: 'en Bloc + Spot (15 à 20 % contrat actuel)', c: 'white' as const },
       { v: 'F-Gas', l: 'conformité simplifiée', c: 'success' as const },
     ],
     points: [
@@ -817,8 +817,8 @@ export const secteurs = {
     title: 'Vos meubles froids ne dorment jamais. Votre facture non plus.',
     intro: 'En grande distribution, le froid alimentaire représente une part majeure de la consommation du magasin. Meubles, chambres, laboratoires : autant de postes qui tournent en continu et qu’on peut piloter finement pour faire baisser la facture, sans jamais toucher à la qualité des produits.',
     kpis: [
-      { v: '−30 %', l: 'sur la facture du froid', c: 'brand' as const },
-      { v: 'Décret BACS', l: 'conformité 2026 incluse', c: 'white' as const },
+      { v: 'jusqu’à 35 %', l: 'en Bloc + Spot (15 à 20 % contrat actuel)', c: 'brand' as const },
+      { v: '12–18 mois', l: 'de ROI (ou 0 € avec les primes CEE)', c: 'white' as const },
       { v: '100 %', l: 'chaîne du froid préservée', c: 'success' as const },
     ],
     points: [
