@@ -135,6 +135,16 @@ export default function CommentCaMarchePage() {
               </h2>
               <p className="mt-5 text-lg text-muted leading-relaxed">{c.cloud.body}</p>
             </div>
+            <div className="mt-10 bg-surface rounded-2xl border border-line p-4 lg:p-6">
+              <Image
+                src="/screenshots/architecture.png"
+                alt="Boucle complète de pilotage Altileo : signaux EPEX Spot, RTE et météo vers le Cloud Altileo, liaison 4G dédiée isolée du réseau IT/GTC, coffret industriel IP65 et raccordement non invasif sur votre installation frigorifique"
+                width={1920}
+                height={1452}
+                className="w-full block h-auto rounded-lg"
+                sizes="(max-width: 1024px) 100vw, 1200px"
+              />
+            </div>
           </Container>
         </section>
 
