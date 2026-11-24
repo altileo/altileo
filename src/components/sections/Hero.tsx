@@ -16,17 +16,17 @@ export function Hero() {
             {hero.pill}
           </div>
           <h1 className="text-5xl lg:text-7xl font-bold tracking-tight leading-[1.02] text-white">
-            Réduisez de{' '}
+            Réduisez jusqu’à{' '}
             <span className="num text-highlight inline-block">
               {hero.savingsRange}
             </span>{' '}
             la facture électrique de vos installations frigorifiques.
           </h1>
           <p className="mt-8 text-lg lg:text-xl text-muted-dark leading-relaxed max-w-3xl">
-            On audite. On déploie capteurs et automatisation. On ajoute du
-            stockage thermique PCM si le ROI le justifie.{' '}
+            15 à 20 % en gardant votre contrat actuel, jusqu’à 35 % en offre
+            Bloc + Spot. Effacement thermique prédictif et pilotage autonome,{' '}
             <span className="text-white font-medium">
-              Économies vérifiées sur sites réels.
+              sans travaux, sans arrêt d’activité et chaîne du froid garantie.
             </span>
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-3">

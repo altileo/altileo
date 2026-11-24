@@ -8,7 +8,7 @@ import { notreOffre as o } from '@/lib/content';
 export const metadata: Metadata = {
   title: 'Notre offre',
   description:
-    'Un modèle simple : le matériel se rembourse en 3 à 5 ans grâce à vos économies, puis un abonnement mensuel toujours plus petit que ce que vous économisez. Diagnostic gratuit, audit chiffré, deux façons de payer. On avance par étapes sûres et on ne déploie que lorsque le gain est clair et prouvé.',
+    'Un modèle simple : le matériel s’amortit en 12 à 18 mois grâce à vos économies (ou 0 € à investir avec les primes CEE), puis un abonnement mensuel toujours plus petit que ce que vous économisez. Audit gratuit et simulation parc sur mesure.',
   keywords: ['offre', 'tarifs', 'abonnement', 'froid', 'audit', 'économies', 'financement'],
   alternates: { canonical: '/notre-offre' },
   openGraph: {

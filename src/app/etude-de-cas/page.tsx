@@ -10,12 +10,12 @@ import { cn } from '@/lib/cn';
 export const metadata: Metadata = {
   title: 'Étude de cas · Pilote frigorifique au MIN de Rungis',
   description:
-    'Résultats mesurés sur 12 mois d’un pilote Altileo sur une chambre froide négative au MIN de Rungis : 2 442 € d’économie annuelle (−35 %), ROI ~7,4 mois, 9 085 kWh économisés, conformité HACCP 100 %. Simulation sur prix Spot réels 2025.',
-  keywords: ['étude de cas', 'pilote frigorifique', 'délestage', 'économies froid', 'Rungis', 'prix Spot', 'HACCP', 'MCP'],
+    'Résultats mesurés sur 12 mois d’un pilote Altileo sur une chambre froide négative de 75 m³ au MIN de Rungis : 15 à 20 % en contrat actuel, jusqu’à 35 % en Bloc + Spot (prix Spot FR 2025/2026), ROI 12 à 18 mois ou 0 € avec CEE, conformité HACCP 100 % (−17,17 °C max simulé).',
+  keywords: ['étude de cas', 'pilote frigorifique', 'délestage', 'économies froid', 'Rungis', 'Bloc + Spot', 'prix Spot', 'HACCP', 'MCP', 'CEE'],
   alternates: { canonical: '/etude-de-cas' },
   openGraph: {
     title: 'Étude de cas pilote · Altileo',
-    description: '12 mois de données mesurées sur une chambre froide négative. 35 % d’économies, ROI 7,4 mois, HACCP 100 %.',
+    description: '12 mois de données mesurées sur une chambre froide négative. Jusqu’à 35 % d’économies en Bloc + Spot, ROI 12 à 18 mois (ou 0 € avec CEE), HACCP 100 %.',
     url: '/etude-de-cas',
     type: 'article',
   },

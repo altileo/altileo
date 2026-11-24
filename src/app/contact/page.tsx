@@ -9,9 +9,9 @@ import { faqHighlights } from '@/lib/content';
 import { cn } from '@/lib/cn';
 
 const EMAIL = 'contact@altileo.com';
-const PHONE_DISPLAY = '+33 7 56 75 63 02';
-const PHONE_E164 = '+33756756302';
-const WHATSAPP = '33756756302';
+const PHONE_DISPLAY = '+33 6 38 02 56 47';
+const PHONE_E164 = '+33638025647';
+const WHATSAPP = '33638025647';
 
 export default function ContactPage() {
   const [openFaqId, setOpenFaqId] = useState<number | null>(null);

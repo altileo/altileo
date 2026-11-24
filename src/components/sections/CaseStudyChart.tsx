@@ -14,10 +14,10 @@ import {
 import { etudeDeCas } from '@/lib/content';
 
 const series = [
-  { key: 'hchp', label: 'HC/HP classique', color: '#6B7280' },
-  { key: 'spot', label: 'Spot seul', color: '#9CA3AF' },
-  { key: 'hchpAlt', label: 'HC/HP + Altileo', color: '#0E7C8C' },
-  { key: 'spotAlt', label: 'Spot + Altileo', color: '#00A4B4' },
+  { key: 'hchp', label: 'Contrat actuel', color: '#6B7280' },
+  { key: 'spot', label: 'Bloc + Spot seul', color: '#9CA3AF' },
+  { key: 'hchpAlt', label: 'Contrat actuel + Altileo', color: '#0E7C8C' },
+  { key: 'spotAlt', label: 'Bloc + Spot + Altileo', color: '#00A4B4' },
 ];
 
 function CustomTooltip({
@@ -84,7 +84,7 @@ export function CaseStudyChart() {
         ))}
       </div>
 
-      <div className="h-[420px] w-full" role="img" aria-label="Comparaison mensuelle de la facture électrique selon quatre scénarios, en euros HT, sur l'année 2025">
+      <div className="h-[420px] w-full" role="img" aria-label="Comparaison mensuelle de la facture électrique selon quatre scénarios, en euros HT, sur 12 mois réels (prix Spot France 2025/2026)">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
             data={etudeDeCas.monthly}
@@ -124,7 +124,7 @@ export function CaseStudyChart() {
         </ResponsiveContainer>
       </div>
       <p className="mt-4 text-xs text-muted-dark">
-        Facture mensuelle en euros HT · année 2025 · 1 chambre froide négative. Cliquez sur la légende pour filtrer les scénarios.
+        Facture mensuelle en euros HT · référence 12 mois réels (prix Spot France 2025/2026) · 1 chambre froide négative. Cliquez sur la légende pour filtrer les scénarios.
       </p>
     </div>
   );
